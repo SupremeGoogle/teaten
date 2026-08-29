@@ -53,7 +53,7 @@ function GiftCards() {
 
           {g.image && (
             <Reveal variant="right">
-              <div className="w-full overflow-hidden rounded-[1.75rem] shadow-[0_28px_60px_-28px_rgba(74,58,46,0.45)] sm:rounded-[2rem]">
+              <div className="mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[1.75rem] shadow-[0_28px_60px_-28px_rgba(74,58,46,0.45)] sm:aspect-[5/6] sm:max-w-sm sm:rounded-[2rem] lg:max-w-none">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={g.image}

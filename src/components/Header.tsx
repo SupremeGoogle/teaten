@@ -46,12 +46,12 @@ export default function Header() {
             <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="md" />
           </a>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
             {c.nav.map((item) => (
               <a
                 key={item.id}
                 href={linkTo(item.href)}
-                className="eyebrow relative text-espresso-soft transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-espresso hover:after:w-full"
+                className="eyebrow relative whitespace-nowrap tracking-[0.18em] text-espresso-soft transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-espresso hover:after:w-full"
               >
                 {tt(item.label)}
               </a>

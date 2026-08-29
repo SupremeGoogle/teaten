@@ -65,14 +65,16 @@
       "label": {
         "en": "Offers",
         "sq": "Ofertat",
-        "ru": "Предложения"
+        "ru": "Акции"
       },
       "href": "#offers"
     },
     {
       "id": "n6",
       "label": {
-        "en": "Gift cards"
+        "en": "Gift cards",
+        "sq": "Giftcards",
+        "ru": "Сертификаты"
       },
       "href": "/gift-cards"
     },
@@ -97,7 +99,9 @@
     {
       "id": "n7",
       "label": {
-        "en": "Location"
+        "en": "Location",
+        "sq": "Lokacioni",
+        "ru": "Адрес"
       },
       "href": "/location"
     }
@@ -381,7 +385,8 @@
           "/gallery/facial-roller.jpg",
           "/gallery/facial-mask.jpg",
           "/gallery/studio.jpg",
-          "/gallery/skinpen.jpg"
+          "/gallery/skinpen.jpg",
+          "/gallery/dermalux.jpg"
         ],
         "slug": "facial-treatments"
       },
@@ -574,7 +579,9 @@
           "/gallery/nails-white.jpg",
           "/gallery/nails-pedicure.jpg",
           "/gallery/nails-manicure.jpg",
-          "/gallery/pedicure-work.jpg"
+          "/gallery/pedicure-work.jpg",
+          "/gallery/nails-blue.jpg",
+          "/gallery/pedicure-french.jpg"
         ],
         "slug": "nails"
       },
@@ -809,7 +816,9 @@
         "id": "g9",
         "image": "/gallery/vivace.jpg",
         "caption": {
-          "en": "Vivace microneedling"
+          "en": "Vivace microneedling",
+          "sq": "Vivace Microneedling",
+          "ru": "Vivace микронидлинг"
         }
       },
       {
@@ -828,6 +837,78 @@
           "en": "At the manicure table",
           "sq": "Në tavolinën e manikyrit",
           "ru": "За маникюрным столом"
+        }
+      },
+      {
+        "id": "g12",
+        "image": "/gallery/dermalux.jpg",
+        "caption": {
+          "en": "Dermalux Flex LED",
+          "sq": "Dermalux Flex MD",
+          "ru": "Dermalux Flex LED"
+        }
+      },
+      {
+        "id": "g13",
+        "image": "/gallery/nails-blue.jpg",
+        "caption": {
+          "en": "Sapphire glitter",
+          "sq": "Shkëlqim safiri",
+          "ru": "Синий глиттер"
+        }
+      },
+      {
+        "id": "g14",
+        "image": "/gallery/pedicure-french.jpg",
+        "caption": {
+          "en": "French pedicure",
+          "sq": "Pedikyr french",
+          "ru": "Французский педикюр"
+        }
+      },
+      {
+        "id": "g15",
+        "image": "/gallery/spf-sand.jpg",
+        "caption": {
+          "en": "Circadia Light Day SPF 37",
+          "sq": "Circadia Light Day SPF 37",
+          "ru": "Circadia Light Day SPF 37"
+        }
+      },
+      {
+        "id": "g16",
+        "image": "/gallery/circadia-face.jpg",
+        "caption": {
+          "en": "Circadia daily care",
+          "sq": "Kujdesi ditor Circadia",
+          "ru": "Ежедневный уход Circadia"
+        }
+      },
+      {
+        "id": "g17",
+        "image": "/gallery/nails-blue-2.jpg",
+        "caption": {
+          "en": "Glitter gel set",
+          "sq": "Set me shkëlqim",
+          "ru": "Гель с блёстками"
+        }
+      },
+      {
+        "id": "g18",
+        "image": "/gallery/skinpen.jpg",
+        "caption": {
+          "en": "SkinPen microneedling",
+          "sq": "SkinPen",
+          "ru": "SkinPen микронидлинг"
+        }
+      },
+      {
+        "id": "g19",
+        "image": "/gallery/shoulder.jpg",
+        "caption": {
+          "en": "Everything your body needs",
+          "sq": "Gjithçka që trupi yt ka nevojë",
+          "ru": "Всё, что нужно телу"
         }
       }
     ]
@@ -852,7 +933,7 @@
       "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë.",
       "ru": "Заполните форму, и мы откроем WhatsApp с готовым запросом. Мы подтвердим ваше время, как только прочтем его."
     },
-    "image": "/gallery/studio.jpg",
+    "image": "/gallery/shoulder.jpg",
     "note": {
       "en": "Your request is sent through WhatsApp — nothing is stored on this website.",
       "ru": "Ваш запрос отправляется через WhatsApp — ничего не хранится на этом сайте.",
@@ -1132,7 +1213,9 @@
   "giftCards": {
     "enabled": true,
     "linkLabel": {
-      "en": "Gift cards"
+      "en": "Gift cards",
+      "sq": "Giftcards",
+      "ru": "Сертификаты"
     },
     "title": {
       "en": "Gift cards"
@@ -1143,7 +1226,7 @@
     "note": {
       "en": "Available to companies and to individuals. Packages are sold from three cards upwards."
     },
-    "image": "/gallery/vivace.jpg",
+    "image": "/gallery/nails-white.jpg",
     "items": [
       {
         "id": "g1",
@@ -1250,7 +1333,9 @@
   "location": {
     "enabled": true,
     "linkLabel": {
-      "en": "Location"
+      "en": "Location",
+      "sq": "Lokacioni",
+      "ru": "Адрес"
     },
     "title": {
       "en": "Find us"

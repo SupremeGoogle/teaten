@@ -12,7 +12,6 @@ export default function AdminApp({ fallback }: { fallback: SiteContent }) {
   const [status, setStatus] = useState<Status>("checking");
   const [draft, setDraft] = useState<SiteContent>(fallback);
   const [baseline, setBaseline] = useState<SiteContent>(fallback);
-  const [source, setSource] = useState<string>("");
   const [error, setError] = useState("");
 
   const load = useCallback(async () => {
@@ -27,7 +26,6 @@ export default function AdminApp({ fallback }: { fallback: SiteContent }) {
       const data = await res.json();
       setDraft(data.content as SiteContent);
       setBaseline(structuredClone(data.content) as SiteContent);
-      setSource(data.source as string);
       setStatus("ready");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not load the content.");
@@ -71,7 +69,6 @@ export default function AdminApp({ fallback }: { fallback: SiteContent }) {
         setDraft={setDraft}
         baseline={baseline}
         setBaseline={setBaseline}
-        source={source}
         onReload={load}
       />
     </UploadProvider>

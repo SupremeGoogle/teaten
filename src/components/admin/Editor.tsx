@@ -58,14 +58,12 @@ export default function Editor({
   setDraft,
   baseline,
   setBaseline,
-  source,
   onReload,
 }: {
   draft: SiteContent;
   setDraft: (c: SiteContent) => void;
   baseline: SiteContent;
   setBaseline: (c: SiteContent) => void;
-  source: string;
   onReload: () => void;
 }) {
   const [autoTranslate, setAutoTranslate] = useState(true);
@@ -163,10 +161,7 @@ export default function Editor({
       setBaseline(structuredClone(payload));
       setMessage({
         kind: "ok",
-        text:
-          data.mode === "github"
-            ? "Saved and pushed to GitHub. The live site rebuilds in about a minute."
-            : "Saved to the local files.",
+        text: "Saved. The changes appear on the site in about a minute.",
       });
     } catch (e) {
       setMessage({ kind: "err", text: e instanceof Error ? e.message : "Network error" });
@@ -258,7 +253,8 @@ export default function Editor({
             navOpen ? "block" : "hidden"
           } fixed inset-x-4 top-20 z-20 rounded-xl border border-espresso/12 bg-cream p-2 shadow-xl lg:static lg:block lg:w-56 lg:shrink-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none`}
         >
-          <ul className="space-y-1 lg:sticky lg:top-24">
+          <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto lg:pr-1">
+          <ul className="space-y-1">
             {SECTIONS.map((s) => (
               <li key={s.id}>
                 <button
@@ -312,11 +308,11 @@ export default function Editor({
           </div>
 
           <p className="mt-4 px-3 text-[0.68rem] leading-relaxed text-espresso-soft/70">
-            Editing the {source === "github" ? "live version from GitHub" : "bundled copy"}.{" "}
             <button type="button" onClick={onReload} className="underline">
-              Reload
+              Reload the latest version
             </button>
           </p>
+          </div>
         </nav>
 
         <main className="min-w-0 flex-1 space-y-8 pb-24">
