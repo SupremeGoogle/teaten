@@ -1,0 +1,643 @@
+{
+  "brand": {
+    "name": "Tea Ten",
+    "tagline": {
+      "en": "Beauty & Spa",
+      "sq": "Beauty & Spa"
+    },
+    "logoImage": "",
+    "favicon": ""
+  },
+  "theme": {
+    "cream": "#F9EFDF",
+    "creamDeep": "#F2E4D1",
+    "taupe": "#D8C8BA",
+    "sage": "#ABA692",
+    "espresso": "#4A3A2E",
+    "espressoSoft": "#7A6653",
+    "gold": "#C2A165"
+  },
+  "contact": {
+    "phones": [
+      "044 158 234",
+      "038 226 789"
+    ],
+    "whatsapp": "38344158234",
+    "address": {
+      "en": "Rr. Johan V. Hahn, Prishtina, Kosovo",
+      "sq": "Rr. Johan V. Hahn, Prishtinë, Kosovë"
+    },
+    "mapUrl": "https://maps.google.com/?q=Rr.+Johan+V.+Hahn+Prishtina",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Rr.%20Johan%20V.%20Hahn%20Prishtina&output=embed",
+    "hours": {
+      "en": "Monday – Saturday, 09:00 – 19:00",
+      "sq": "E hënë – E shtunë, 09:00 – 19:00"
+    },
+    "email": "",
+    "instagram": "https://www.instagram.com/teaten_beautyspa",
+    "facebook": "https://www.facebook.com/teatendecleor"
+  },
+  "nav": [
+    {
+      "id": "n1",
+      "label": {
+        "en": "About",
+        "sq": "Rreth nesh"
+      },
+      "href": "#about"
+    },
+    {
+      "id": "n2",
+      "label": {
+        "en": "Services",
+        "sq": "Shërbimet"
+      },
+      "href": "#services"
+    },
+    {
+      "id": "n3",
+      "label": {
+        "en": "Offers",
+        "sq": "Ofertat"
+      },
+      "href": "#offers"
+    },
+    {
+      "id": "n4",
+      "label": {
+        "en": "Gallery",
+        "sq": "Galeria"
+      },
+      "href": "#gallery"
+    },
+    {
+      "id": "n5",
+      "label": {
+        "en": "Contact",
+        "sq": "Kontakti"
+      },
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "image": "/gallery/facial-roller.jpg",
+    "kicker": {
+      "en": "Prishtina · Beauty & Spa",
+      "sq": "Prishtinë · Beauty & Spa"
+    },
+    "title": {
+      "en": "More care, more glow",
+      "sq": "Më shumë kujdes, më shumë shkëlqim"
+    },
+    "subtitle": {
+      "en": "Professional facial and body treatments, nails and brows — in a calm, warm space designed around you. Never careless with your beauty.",
+      "sq": "Trajtime profesionale për fytyrën dhe trupin, thonj dhe vetulla — në një ambient të ngrohtë e të qetë. Ne kujdesemi për bukurinë tuaj!"
+    },
+    "primaryCta": {
+      "en": "Book on WhatsApp",
+      "sq": "Rezervo në WhatsApp"
+    },
+    "secondaryCta": {
+      "en": "See services",
+      "sq": "Shiko shërbimet"
+    }
+  },
+  "marquee": [
+    {
+      "en": "Hydrafacial"
+    },
+    {
+      "en": "Circadia"
+    },
+    {
+      "en": "Clarins"
+    },
+    {
+      "en": "Dermalux Flex"
+    },
+    {
+      "en": "OxyGeneo"
+    },
+    {
+      "en": "Manicure & Pedicure"
+    }
+  ],
+  "about": {
+    "title": {
+      "en": "A quiet place for your skin",
+      "sq": "Një vend i qetë për lëkurën tuaj"
+    },
+    "body": [
+      {
+        "en": "Tea Ten Beauty & Spa is a boutique studio in the heart of Prishtina. We work with professional cosmetic lines — Circadia, Clarins and Hydrafacial — and with technology such as Dermalux Flex LED and OxyGeneo, so every treatment is chosen for your skin rather than for a menu."
+      },
+      {
+        "en": "Every appointment starts with a short consultation. We look at your skin, listen to what you want to change, and build a plan that works over time — not just for one afternoon."
+      }
+    ],
+    "image": "/gallery/skin.jpg",
+    "signature": {
+      "en": "Never careless with your beauty.",
+      "sq": "Ne kujdesemi për bukurinë tuaj!"
+    },
+    "stats": [
+      {
+        "id": "s1",
+        "value": "10+",
+        "label": {
+          "en": "Years of care",
+          "sq": "Vite kujdesi"
+        }
+      },
+      {
+        "id": "s2",
+        "value": "25+",
+        "label": {
+          "en": "Treatments",
+          "sq": "Trajtime"
+        }
+      },
+      {
+        "id": "s3",
+        "value": "6",
+        "label": {
+          "en": "Days a week",
+          "sq": "Ditë në javë"
+        }
+      }
+    ]
+  },
+  "services": {
+    "title": {
+      "en": "Our services",
+      "sq": "Shërbimet"
+    },
+    "intro": {
+      "en": "Facial and body treatments, nails and brows. Prices are a guide — the final plan is agreed at your consultation.",
+      "sq": "Trajtime për fytyrën dhe trupin, thonj dhe vetulla. Çmimet janë orientuese — plani përfundimtar caktohet gjatë konsultës."
+    },
+    "categories": [
+      {
+        "id": "c1",
+        "title": {
+          "en": "Facial treatments",
+          "sq": "Trajtime faciale"
+        },
+        "intro": {
+          "en": "Deep cleansing, hydration and anti-ageing protocols with professional cosmetic lines."
+        },
+        "image": "/gallery/facial-roller.jpg",
+        "items": [
+          {
+            "id": "f1",
+            "name": {
+              "en": "Hydrafacial"
+            },
+            "description": {
+              "en": "Cleansing, exfoliation, extraction and hydration in one device-led session."
+            },
+            "price": "100",
+            "duration": ""
+          },
+          {
+            "id": "f2",
+            "name": {
+              "en": "Swich Facial"
+            },
+            "description": {
+              "en": "Advanced resurfacing facial for texture, tone and clarity."
+            },
+            "price": "120",
+            "duration": ""
+          },
+          {
+            "id": "f3",
+            "name": {
+              "en": "Clarins Youthful Lift Treatment"
+            },
+            "description": {
+              "en": "Firming, lifting facial with the Clarins professional line."
+            },
+            "price": "100",
+            "duration": ""
+          },
+          {
+            "id": "f4",
+            "name": {
+              "en": "Clarins Hydrating Facial"
+            },
+            "description": {
+              "en": "Intense moisture for dry and tired skin."
+            },
+            "price": "70",
+            "duration": ""
+          },
+          {
+            "id": "f5",
+            "name": {
+              "en": "Vitamin C Facial"
+            },
+            "description": {
+              "en": "Brightening antioxidant treatment for dull, uneven skin."
+            },
+            "price": "80",
+            "duration": ""
+          },
+          {
+            "id": "f6",
+            "name": {
+              "en": "Enzyme Customized Facial"
+            },
+            "description": {
+              "en": "Gentle enzymatic exfoliation, tailored to your skin on the day."
+            },
+            "price": "70",
+            "duration": ""
+          },
+          {
+            "id": "f7",
+            "name": {
+              "en": "Circadia Treatment"
+            },
+            "description": {
+              "en": "Professional Circadia protocol for renewal and glow."
+            },
+            "price": "90",
+            "duration": ""
+          },
+          {
+            "id": "f8",
+            "name": {
+              "en": "OxyGeneo"
+            },
+            "description": {
+              "en": "Exfoliation, oxygenation and nourishment in a single session."
+            },
+            "price": "60",
+            "duration": ""
+          },
+          {
+            "id": "f9",
+            "name": {
+              "en": "Classic Treatment + Dermalux"
+            },
+            "description": {
+              "en": "Classic cleansing facial finished with Dermalux Flex LED therapy."
+            },
+            "price": "60",
+            "duration": ""
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "title": {
+          "en": "Body & massage",
+          "sq": "Trupi & masazhi"
+        },
+        "intro": {
+          "en": "Peelings, wraps and massage that leave the skin soft and the head quiet."
+        },
+        "image": "/gallery/spa-1.jpg",
+        "items": [
+          {
+            "id": "b1",
+            "name": {
+              "en": "Royal Relax Treatment"
+            },
+            "description": {
+              "en": "Body peeling, mask and a 45-minute massage."
+            },
+            "price": "85",
+            "duration": "45 min massage"
+          },
+          {
+            "id": "b2",
+            "name": {
+              "en": "Hydrating Body Treatment & Massage"
+            },
+            "description": {
+              "en": "Deep moisture treatment combined with a relaxing massage."
+            },
+            "price": "75",
+            "duration": ""
+          },
+          {
+            "id": "b3",
+            "name": {
+              "en": "Body Peeling + Body Mask"
+            },
+            "description": {
+              "en": "Full-body exfoliation followed by a nourishing mask."
+            },
+            "price": "65",
+            "duration": ""
+          },
+          {
+            "id": "b4",
+            "name": {
+              "en": "Scrub + Mask"
+            },
+            "description": {
+              "en": "Smoothing scrub and a hydrating body mask."
+            },
+            "price": "60",
+            "duration": ""
+          },
+          {
+            "id": "b5",
+            "name": {
+              "en": "Massage + Mask"
+            },
+            "description": {
+              "en": "A short reset: 30 minutes of massage plus a mask."
+            },
+            "price": "50",
+            "duration": "30 min"
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "title": {
+          "en": "Nails",
+          "sq": "Thonjtë"
+        },
+        "intro": {
+          "en": "Manicure, pedicure and gel work — clean shapes and long wear."
+        },
+        "image": "/gallery/nails-nude.jpg",
+        "items": [
+          {
+            "id": "n1",
+            "name": {
+              "en": "Classic manicure"
+            },
+            "description": {
+              "en": "Shaping, cuticle care and polish."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "n2",
+            "name": {
+              "en": "Gel manicure"
+            },
+            "description": {
+              "en": "Long-wear gel colour on natural nails."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "n3",
+            "name": {
+              "en": "Nail extensions"
+            },
+            "description": {
+              "en": "Built and shaped extensions with a finish of your choice."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "n4",
+            "name": {
+              "en": "Pedicure"
+            },
+            "description": {
+              "en": "Full foot care with polish or gel."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "n5",
+            "name": {
+              "en": "Nail art"
+            },
+            "description": {
+              "en": "Custom designs, from a single accent to full sets."
+            },
+            "price": "",
+            "duration": ""
+          }
+        ]
+      },
+      {
+        "id": "c4",
+        "title": {
+          "en": "Brows & lashes",
+          "sq": "Vetullat & qerpikët"
+        },
+        "intro": {
+          "en": "Shape, tint and definition that suit your face."
+        },
+        "image": "/gallery/brows.jpg",
+        "items": [
+          {
+            "id": "e1",
+            "name": {
+              "en": "Brow shaping"
+            },
+            "description": {
+              "en": "Precision shaping to open up the eye."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "e2",
+            "name": {
+              "en": "Brow tint"
+            },
+            "description": {
+              "en": "Colour that fills gaps and adds depth."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "e3",
+            "name": {
+              "en": "Lash lift"
+            },
+            "description": {
+              "en": "A lasting curl on your own lashes."
+            },
+            "price": "",
+            "duration": ""
+          },
+          {
+            "id": "e4",
+            "name": {
+              "en": "Facial waxing"
+            },
+            "description": {
+              "en": "Gentle hair removal for the face."
+            },
+            "price": "",
+            "duration": ""
+          }
+        ]
+      }
+    ]
+  },
+  "offers": {
+    "enabled": true,
+    "title": {
+      "en": "Current offers",
+      "sq": "Ofertat aktuale"
+    },
+    "intro": {
+      "en": "Special prices on selected treatments. Book your appointment while they last.",
+      "sq": "Çmime speciale për trajtime të përzgjedhura. Rezervoni terminin tuaj sot!"
+    },
+    "validity": {
+      "en": "Valid 26 August – 3 September",
+      "sq": "Oferta vlen prej 26 Gusht – 3 Shtator"
+    },
+    "image": "/gallery/circadia-spf.jpg",
+    "items": [
+      {
+        "id": "o1",
+        "name": {
+          "en": "Scrub + Mask"
+        },
+        "oldPrice": "60",
+        "newPrice": "49"
+      },
+      {
+        "id": "o2",
+        "name": {
+          "en": "30 min Massage + Mask"
+        },
+        "oldPrice": "50",
+        "newPrice": "35"
+      },
+      {
+        "id": "o3",
+        "name": {
+          "en": "Circadia Treatment · New Session Glow Up"
+        },
+        "oldPrice": "90",
+        "newPrice": "65"
+      },
+      {
+        "id": "o4",
+        "name": {
+          "en": "Hydrafacial"
+        },
+        "oldPrice": "100",
+        "newPrice": "75"
+      }
+    ]
+  },
+  "gallery": {
+    "title": {
+      "en": "Gallery",
+      "sq": "Galeria"
+    },
+    "intro": {
+      "en": "A look at the work and the space.",
+      "sq": "Një vështrim mbi punën dhe ambientin tonë."
+    },
+    "items": [
+      {
+        "id": "g1",
+        "image": "/gallery/nails-nude.jpg",
+        "caption": {
+          "en": "Nude gel set"
+        }
+      },
+      {
+        "id": "g2",
+        "image": "/gallery/facial-roller.jpg",
+        "caption": {
+          "en": "Me-time facial"
+        }
+      },
+      {
+        "id": "g3",
+        "image": "/gallery/nails-pedicure.jpg",
+        "caption": {
+          "en": "Manicure & pedicure"
+        }
+      },
+      {
+        "id": "g4",
+        "image": "/gallery/brows.jpg",
+        "caption": {
+          "en": "Brow shaping"
+        }
+      },
+      {
+        "id": "g5",
+        "image": "/gallery/skin.jpg",
+        "caption": {
+          "en": "Skin, cared for"
+        }
+      },
+      {
+        "id": "g6",
+        "image": "/gallery/nails-art.jpg",
+        "caption": {
+          "en": "Nail art"
+        }
+      },
+      {
+        "id": "g7",
+        "image": "/gallery/spa-1.jpg",
+        "caption": {
+          "en": "In the studio"
+        }
+      },
+      {
+        "id": "g8",
+        "image": "/gallery/circadia-spf.jpg",
+        "caption": {
+          "en": "Circadia daily care"
+        }
+      }
+    ]
+  },
+  "testimonials": {
+    "enabled": false,
+    "title": {
+      "en": "What our clients say",
+      "sq": "Çfarë thonë klientët tanë"
+    },
+    "items": []
+  },
+  "booking": {
+    "title": {
+      "en": "Book an appointment",
+      "sq": "Rezervo një termin"
+    },
+    "intro": {
+      "en": "Fill in the form and we will open WhatsApp with your request ready to send. We confirm your time as soon as we read it.",
+      "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë."
+    },
+    "image": "/gallery/spa-1.jpg",
+    "note": {
+      "en": "Your request is sent through WhatsApp — nothing is stored on this website."
+    }
+  },
+  "footer": {
+    "note": {
+      "en": "Never careless with your beauty.",
+      "sq": "Ne kujdesemi për bukurinë tuaj!"
+    },
+    "credit": "Tea Ten Beauty & Spa"
+  },
+  "seo": {
+    "title": {
+      "en": "Tea Ten Beauty & Spa — Prishtina"
+    },
+    "description": {
+      "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp."
+    },
+    "ogImage": "/gallery/facial-roller.jpg"
+  }
+}

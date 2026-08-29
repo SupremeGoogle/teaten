@@ -1,0 +1,76 @@
+# Tea Ten Beauty & Spa
+
+Сайт салона Tea Ten Beauty & Spa (Приштина) на Next.js 15 + Tailwind CSS 4.
+
+- Весь контент сайта лежит в одном файле — `content/site.json`.
+- Админка `/admin` редактирует этот файл и **коммитит его прямо в GitHub**.
+- Vercel видит новый коммит и автоматически пересобирает сайт (примерно минута).
+- Заявки на запись уходят в **WhatsApp** — форма собирает сообщение и открывает чат.
+- Переключатель языков: **EN · SQ · DE · IT · TR · RU**. Английский — основной,
+  остальные языки заполняются в админке и подставляются вместо английского там,
+  где перевод есть.
+
+---
+
+## 1. Переменные окружения на Vercel
+
+Project → Settings → Environment Variables (для окружения **Production** и **Preview**):
+
+| Переменная | Значение | Зачем |
+|---|---|---|
+| `ADMIN_PASSWORD` | `teaten0826` | пароль от `/admin` |
+| `ADMIN_SESSION_SECRET` | любая длинная случайная строка | подпись cookie сессии |
+| `GITHUB_TOKEN` | personal access token | чтобы админка могла коммитить |
+| `GITHUB_REPO` | `SupremeGoogle/teaten` | репозиторий |
+| `GITHUB_BRANCH` | `main` | ветка (по умолчанию `main`) |
+| `NEXT_PUBLIC_SITE_URL` | `https://ваш-домен` | для превью ссылок в соцсетях |
+
+**Токен GitHub.** Проще всего — fine-grained token:
+GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens →
+Generate new token → Repository access: только `SupremeGoogle/teaten` →
+Permissions → Repository permissions → **Contents: Read and write**.
+Классический токен тоже подойдёт, ему нужен скоуп `repo`.
+
+После изменения переменных Vercel нужно один раз передеплоить проект.
+
+## 2. Как работает админка
+
+1. Открываем `/admin`, вводим пароль.
+2. Слева — разделы: бренд и цвета, контакты, меню, первый экран, «о нас»,
+   услуги, акции, галерея, отзывы, форма записи, футер.
+3. Картинки: кнопка **Choose file** открывает проводник устройства.
+   Фото автоматически уменьшается до 1800 px и кладётся в очередь.
+4. Кнопка **Publish** отправляет один коммит в GitHub: `content/site.json`
+   плюс все новые картинки в `public/uploads/`.
+5. Через ~минуту Vercel выкатывает изменения на живой сайт.
+
+Тексты, у которых есть флажки языков (EN / SQ / DE / IT / TR / RU), можно переводить.
+Пустой язык = показывается английский вариант.
+
+## 3. Телефон WhatsApp
+
+В админке (раздел «Contact») номер задаётся в международном формате без плюса
+и пробелов. `044 158 234` в Косово → `38344158234`.
+
+## 4. Локальная разработка
+
+```bash
+npm install
+cp .env.example .env.local   # впишите ADMIN_PASSWORD
+npm run dev
+```
+
+Без `GITHUB_TOKEN` админка сохраняет изменения прямо в файлы на диске — удобно
+для локальной правки контента.
+
+## 5. Структура
+
+```
+content/site.json        весь контент сайта
+public/gallery/          фотографии из Instagram
+public/uploads/          сюда попадают картинки, загруженные через админку
+src/app/                 страницы и API
+src/components/          секции сайта
+src/components/admin/    админка
+src/lib/                 типы, переводы интерфейса, GitHub API, авторизация
+```
