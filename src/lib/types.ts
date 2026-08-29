@@ -1,11 +1,8 @@
-export type Lang = "en" | "sq" | "de" | "it" | "tr" | "ru";
+export type Lang = "en" | "sq" | "ru";
 
 export const LANGS: { code: Lang; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
   { code: "sq", label: "Shqip", flag: "🇦🇱" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-  { code: "tr", label: "Türkçe", flag: "🇹🇷" },
   { code: "ru", label: "Русский", flag: "🇷🇺" },
 ];
 
@@ -24,7 +21,8 @@ export type ServiceCategory = {
   id: string;
   title: I18nText;
   intro: I18nText;
-  image: string;
+  /** Several photos per category; the first one opens as the large image. */
+  images: string[];
   items: ServiceItem[];
 };
 

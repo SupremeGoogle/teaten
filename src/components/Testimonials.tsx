@@ -8,18 +8,18 @@ export default function Testimonials() {
   if (!c.testimonials.enabled || !c.testimonials.items.length) return null;
 
   return (
-    <section className="bg-cream-deep py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section className="py-16 sm:py-28">
+      <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <Reveal>
           <h2 className="display text-center text-4xl text-espresso sm:text-5xl">
             {tt(c.testimonials.title)}
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mobile-snap-row no-scrollbar -mx-4 mt-8 flex gap-3 overflow-x-auto px-4 pb-4 md:mx-0 md:mt-14 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
           {c.testimonials.items.map((item, i) => (
-            <Reveal key={item.id} delay={i * 80}>
-              <figure className="h-full rounded-[1.75rem] border border-espresso/10 bg-cream p-8">
+            <Reveal key={item.id} delay={i * 80} className="mobile-snap-item min-w-[82vw] md:min-w-0">
+              <figure className="glass-card h-full rounded-[1.75rem] p-6 sm:p-8">
                 <div className="flex gap-1 text-gold" aria-label={`${item.rating} / 5`}>
                   {Array.from({ length: 5 }).map((_, s) => (
                     <svg

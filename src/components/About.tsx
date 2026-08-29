@@ -1,6 +1,6 @@
 "use client";
 
-import { Blob, LeafLine } from "./Decor";
+import CountUp from "./CountUp";
 import Reveal from "./Reveal";
 import { useSite } from "./site-context";
 
@@ -8,49 +8,51 @@ export default function About() {
   const { c, tt } = useSite();
 
   return (
-    <section id="about" className="relative overflow-hidden py-24 sm:py-32">
-      <Blob className="-right-40 top-16 h-[24rem] w-[24rem]" color="var(--color-sage)" opacity={0.25} />
-      <LeafLine className="-left-10 bottom-0 h-64 w-64 rotate-[200deg] text-espresso-soft/20" />
+    <section id="about" className="relative overflow-hidden py-16 sm:py-28">
+      <div className="relative mx-4 min-h-[52rem] max-w-6xl overflow-hidden rounded-[2rem] border border-white/55 shadow-[0_34px_90px_-46px_rgba(74,58,46,0.7)] sm:mx-8 sm:min-h-[47rem] sm:rounded-[2.75rem] lg:mx-auto">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={c.about.image}
+          alt={tt(c.about.title)}
+          className="absolute inset-0 h-full w-full object-cover object-[34%_center] sm:object-center"
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(74,58,46,0)_0%,rgba(74,58,46,0.05)_50%,rgba(74,58,46,0.4)_100%)] sm:bg-[linear-gradient(90deg,rgba(74,58,46,0.02)_0%,rgba(74,58,46,0.16)_38%,rgba(74,58,46,0.82)_66%,rgba(74,58,46,0.96)_100%)]"
+          aria-hidden="true"
+        />
+        <div className="pointer-events-none absolute inset-3 rounded-[1.55rem] border border-white/30 sm:inset-5 sm:rounded-[2.15rem]" aria-hidden="true" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <Reveal className="order-2 lg:order-1">
-          <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={c.about.image}
-              alt={tt(c.about.title)}
-              className="aspect-[3/4] w-full rounded-[2rem] object-cover shadow-[0_28px_60px_-28px_rgba(74,58,46,0.4)]"
-              loading="lazy"
-            />
-            <div className="absolute inset-3 rounded-[1.6rem] border border-cream/40" aria-hidden="true" />
-          </div>
-        </Reveal>
+        <div className="relative flex min-h-[52rem] items-end p-4 sm:min-h-[47rem] sm:items-center sm:justify-end sm:p-10 lg:p-12">
+          <Reveal className="about-copy glass-dark w-full rounded-[1.7rem] p-5 text-cream sm:max-w-[34rem] sm:rounded-[2rem] sm:p-9" delay={80} variant="right">
+          <p className="eyebrow text-gold">{c.brand.name}</p>
+          <h2 className="display mt-3 text-[2.35rem] text-cream sm:text-5xl">{tt(c.about.title)}</h2>
+          <div className="my-5 h-px w-20 bg-gradient-to-r from-gold/80 to-transparent sm:my-7" />
 
-        <Reveal className="order-1 lg:order-2" delay={80}>
-          <h2 className="display text-4xl text-espresso sm:text-5xl">{tt(c.about.title)}</h2>
-          <div className="rule my-8 max-w-24" />
-
-          <div className="space-y-5 text-[1.02rem] leading-relaxed text-espresso-soft">
+          <div className="space-y-4 text-[0.9rem] leading-relaxed text-cream/75 sm:space-y-5 sm:text-[0.98rem]">
             {c.about.body.map((p, i) => (
               <p key={i}>{tt(p)}</p>
             ))}
           </div>
 
           {tt(c.about.signature) && (
-            <p className="script mt-9 text-4xl text-gold">{tt(c.about.signature)}</p>
+            <p className="script mt-6 text-3xl text-gold sm:mt-8 sm:text-4xl">{tt(c.about.signature)}</p>
           )}
 
           {c.about.stats.length > 0 && (
-            <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-espresso/10 pt-8">
+            <dl className="mobile-snap-row no-scrollbar -mx-2 mt-7 flex gap-2 overflow-x-auto px-2 pb-1 sm:mx-0 sm:mt-9 sm:grid sm:grid-cols-3 sm:gap-3 sm:overflow-visible sm:px-0">
               {c.about.stats.map((s) => (
-                <div key={s.id}>
-                  <dt className="display text-4xl text-espresso">{s.value}</dt>
-                  <dd className="eyebrow mt-2 text-espresso-soft">{tt(s.label)}</dd>
+                <div key={s.id} className="mobile-snap-item min-w-[8.25rem] rounded-2xl border border-white/15 bg-white/[0.07] p-4 backdrop-blur-md sm:min-w-0">
+                  <dt className="display text-3xl text-cream sm:text-4xl">
+                    <CountUp value={s.value} />
+                  </dt>
+                  <dd className="eyebrow mt-2 text-cream/55">{tt(s.label)}</dd>
                 </div>
               ))}
             </dl>
           )}
-        </Reveal>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

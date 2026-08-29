@@ -233,6 +233,87 @@ export function ImageInput({
   );
 }
 
+/** An ordered set of photos — used for the several images behind each service category. */
+export function ImageListInput({
+  label,
+  values,
+  onChange,
+  hint,
+}: {
+  label: string;
+  values: string[];
+  onChange: (v: string[]) => void;
+  hint?: string;
+}) {
+  const list = values ?? [];
+  const move = (from: number, to: number) => {
+    if (to < 0 || to >= list.length) return;
+    const next = [...list];
+    const [row] = next.splice(from, 1);
+    next.splice(to, 0, row);
+    onChange(next);
+  };
+
+  return (
+    <div>
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-[0.7rem] font-medium uppercase tracking-[0.14em] text-espresso-soft">
+          {label} ({list.length})
+        </span>
+        <button
+          type="button"
+          onClick={() => onChange([...list, ""])}
+          className="rounded-full border border-espresso/20 px-3 py-1 text-xs uppercase tracking-[0.12em] text-espresso transition-colors hover:border-espresso"
+        >
+          + Add photo
+        </button>
+      </div>
+
+      <div className="space-y-3">
+        {list.map((src, i) => (
+          <div key={i} className="rounded-xl border border-espresso/12 bg-white/70 p-3">
+            <ImageInput
+              label={`Photo ${i + 1}`}
+              value={src}
+              onChange={(v) => onChange(list.map((row, j) => (j === i ? v : row)))}
+            />
+            <div className="mt-2 flex gap-2">
+              <button
+                type="button"
+                onClick={() => move(i, i - 1)}
+                className="rounded-full border border-espresso/15 px-3 py-1 text-xs text-espresso-soft transition-colors hover:border-espresso/40"
+              >
+                ↑
+              </button>
+              <button
+                type="button"
+                onClick={() => move(i, i + 1)}
+                className="rounded-full border border-espresso/15 px-3 py-1 text-xs text-espresso-soft transition-colors hover:border-espresso/40"
+              >
+                ↓
+              </button>
+              <button
+                type="button"
+                onClick={() => onChange(list.filter((_, j) => j !== i))}
+                className="rounded-full border border-espresso/15 px-3 py-1 text-xs text-espresso-soft transition-colors hover:border-[#a4553f] hover:text-[#a4553f]"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {!list.length && (
+        <p className="rounded-xl border border-dashed border-espresso/20 px-4 py-5 text-center text-sm text-espresso-soft">
+          No photos yet.
+        </p>
+      )}
+      {hint && <p className="mt-2 text-xs text-espresso-soft/70">{hint}</p>}
+    </div>
+  );
+}
+
 export function ColorInput({
   label,
   value,

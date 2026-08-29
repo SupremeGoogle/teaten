@@ -2,16 +2,20 @@
 
 import { useEffect, useRef, useState } from "react";
 
+export type RevealVariant = "up" | "left" | "right" | "scale";
+
 /** Fades content in the first time it scrolls into view. */
 export default function Reveal({
   children,
   className = "",
   delay = 0,
+  variant = "up",
   as: Tag = "div",
 }: {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  variant?: RevealVariant;
   as?: "div" | "section" | "li" | "article";
 }) {
   const ref = useRef<HTMLElement | null>(null);
@@ -39,7 +43,7 @@ export default function Reveal({
     <Tag
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ref={ref as any}
-      className={`reveal ${visible ? "is-visible" : ""} ${className}`}
+      className={`reveal reveal-${variant} ${visible ? "is-visible" : ""} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}

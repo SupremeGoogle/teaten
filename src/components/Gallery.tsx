@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import Masonry, { type MasonryItem } from "./Masonry";
 import Reveal from "./Reveal";
 import { useSite } from "./site-context";
 
@@ -8,6 +9,11 @@ export default function Gallery() {
   const { c, tt, L } = useSite();
   const items = c.gallery.items;
   const [open, setOpen] = useState<number | null>(null);
+
+  const masonryItems = useMemo<MasonryItem[]>(
+    () => items.map((g) => ({ id: g.id, img: g.image, caption: tt(g.caption) })),
+    [items, tt],
+  );
 
   const move = useCallback(
     (step: number) => setOpen((i) => (i === null ? null : (i + step + items.length) % items.length)),
@@ -32,36 +38,24 @@ export default function Gallery() {
   if (!items.length) return null;
 
   return (
-    <section id="gallery" className="relative bg-cream-deep py-24 sm:py-32">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section id="gallery" className="relative py-16 sm:py-28">
+      <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <Reveal className="max-w-2xl">
-          <h2 className="display text-4xl text-espresso sm:text-6xl">{tt(c.gallery.title)}</h2>
-          <p className="mt-5 text-[1.02rem] leading-relaxed text-espresso-soft">{tt(c.gallery.intro)}</p>
+          <h2 className="display text-[2.5rem] text-espresso sm:text-6xl">{tt(c.gallery.title)}</h2>
+          <p className="mt-4 text-[0.94rem] leading-relaxed text-espresso-soft sm:mt-5 sm:text-[1.02rem]">{tt(c.gallery.intro)}</p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-          {items.map((g, i) => (
-            <Reveal key={g.id} delay={(i % 4) * 70}>
-              <button
-                type="button"
-                onClick={() => setOpen(i)}
-                className="group relative block h-full w-full overflow-hidden rounded-2xl"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={g.image}
-                  alt={tt(g.caption)}
-                  className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-                {tt(g.caption) && (
-                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso/80 to-transparent px-4 pb-3.5 pt-10 text-left text-xs tracking-[0.14em] uppercase text-cream opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    {tt(g.caption)}
-                  </span>
-                )}
-              </button>
-            </Reveal>
-          ))}
+        <div className="-mx-1.5 mt-8 sm:mt-12">
+          <Masonry
+            items={masonryItems}
+            animateFrom="bottom"
+            duration={0.6}
+            stagger={0.05}
+            scaleOnHover
+            hoverScale={0.97}
+            blurToFocus
+            onItemClick={(_item, index) => setOpen(index)}
+          />
         </div>
       </div>
 

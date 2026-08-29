@@ -8,6 +8,7 @@ import {
   Field,
   I18nInput,
   ImageInput,
+  ImageListInput,
   ListEditor,
   TextArea,
   TextInput,
@@ -493,7 +494,7 @@ function ServicesSection({ draft, set }: Props) {
             id: uid("c"),
             title: { en: "New category" },
             intro: { en: "" },
-            image: "",
+            images: [],
             items: [],
           })}
           labelFor={(cat) => `${cat.title.en} (${cat.items.length})`}
@@ -501,7 +502,12 @@ function ServicesSection({ draft, set }: Props) {
             <>
               <I18nInput label="Category name" value={cat.title} onChange={(v) => update({ title: v })} />
               <I18nInput label="Short intro" value={cat.intro} onChange={(v) => update({ intro: v })} multiline />
-              <ImageInput label="Photo" value={cat.image} onChange={(v) => update({ image: v })} />
+              <ImageListInput
+                label="Photos"
+                values={cat.images}
+                onChange={(images) => update({ images })}
+                hint="The first photo opens large; the rest appear as thumbnails visitors can click."
+              />
               <div className="rounded-xl border border-espresso/12 bg-white/70 p-4">
                 <ListEditor
                   title="Treatments"

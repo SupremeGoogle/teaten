@@ -81,7 +81,7 @@
     }
   ],
   "hero": {
-    "image": "/gallery/hero.jpg",
+    "image": "/gallery/hero-teaten-v2.jpg",
     "kicker": {
       "en": "Prishtina · Beauty & Spa",
       "sq": "Prishtinë · Beauty & Spa"
@@ -136,7 +136,7 @@
         "en": "Every appointment starts with a short consultation. We look at your skin, listen to what you want to change, and build a plan that works over time — not just for one afternoon."
       }
     ],
-    "image": "/gallery/salon.jpg",
+    "image": "/gallery/about-teaten-v2.jpg",
     "signature": {
       "en": "Never careless with your beauty.",
       "sq": "Ne kujdesemi për bukurinë tuaj!"
@@ -187,7 +187,6 @@
         "intro": {
           "en": "Deep cleansing, hydration and anti-ageing protocols with professional cosmetic lines."
         },
-        "image": "/gallery/facial.jpg",
         "items": [
           {
             "id": "f1",
@@ -288,6 +287,12 @@
             "price": "60",
             "duration": ""
           }
+        ],
+        "images": [
+          "/gallery/facial-roller.jpg",
+          "/gallery/facial-mask.jpg",
+          "/gallery/studio.jpg",
+          "/gallery/skinpen.jpg"
         ]
       },
       {
@@ -299,7 +304,6 @@
         "intro": {
           "en": "Peelings, wraps and massage that leave the skin soft and the head quiet."
         },
-        "image": "/gallery/body.jpg",
         "items": [
           {
             "id": "b1",
@@ -356,6 +360,11 @@
             "price": "50",
             "duration": "30 min"
           }
+        ],
+        "images": [
+          "/gallery/body-scrub.jpg",
+          "/gallery/body-peeling.jpg",
+          "/gallery/clarins.jpg"
         ]
       },
       {
@@ -367,7 +376,6 @@
         "intro": {
           "en": "Manicure, pedicure and gel work — clean shapes and long wear."
         },
-        "image": "/gallery/nails.jpg",
         "items": [
           {
             "id": "n1",
@@ -424,6 +432,13 @@
             "price": "",
             "duration": ""
           }
+        ],
+        "images": [
+          "/gallery/nails-nude.jpg",
+          "/gallery/nails-white.jpg",
+          "/gallery/nails-pedicure.jpg",
+          "/gallery/nails-manicure.jpg",
+          "/gallery/pedicure-work.jpg"
         ]
       },
       {
@@ -435,7 +450,6 @@
         "intro": {
           "en": "Shape, tint and definition that suit your face."
         },
-        "image": "/gallery/brows.jpg",
         "items": [
           {
             "id": "e1",
@@ -481,6 +495,10 @@
             "price": "",
             "duration": ""
           }
+        ],
+        "images": [
+          "/gallery/brows.jpg",
+          "/gallery/skin-routine.jpg"
         ]
       }
     ]
@@ -499,7 +517,7 @@
       "en": "Valid 26 August – 3 September",
       "sq": "Oferta vlen prej 26 Gusht – 3 Shtator"
     },
-    "image": "/gallery/products.jpg",
+    "image": "/gallery/clarins.jpg",
     "items": [
       {
         "id": "o1",
@@ -549,56 +567,108 @@
         "id": "g1",
         "image": "/gallery/nails-nude.jpg",
         "caption": {
-          "en": "Nude gel manicure"
+          "en": "Nude almond set",
+          "sq": "Thonj nude",
+          "ru": "Нюдовый маникюр"
         }
       },
       {
         "id": "g2",
-        "image": "/gallery/facial-mask.jpg",
+        "image": "/gallery/facial-roller.jpg",
         "caption": {
-          "en": "Treatment mask"
+          "en": "Me-time facial",
+          "sq": "Trajtim fytyre",
+          "ru": "Уход за лицом"
         }
       },
       {
         "id": "g3",
-        "image": "/gallery/nails-pink.jpg",
+        "image": "/gallery/nails-pedicure.jpg",
         "caption": {
-          "en": "Soft pink set"
+          "en": "Manicure & pedicure",
+          "sq": "Manikyr & pedikyr",
+          "ru": "Маникюр и педикюр"
         }
       },
       {
         "id": "g4",
         "image": "/gallery/brows.jpg",
         "caption": {
-          "en": "Brows & lashes"
+          "en": "Brow shaping",
+          "sq": "Formimi i vetullave",
+          "ru": "Коррекция бровей"
         }
       },
       {
         "id": "g5",
-        "image": "/gallery/towels.jpg",
+        "image": "/gallery/studio.jpg",
         "caption": {
-          "en": "Ready for you"
+          "en": "Clarins purifying treatment",
+          "sq": "Clarins Purifying",
+          "ru": "Очищающий уход Clarins"
         }
       },
       {
         "id": "g6",
-        "image": "/gallery/stones.jpg",
+        "image": "/gallery/body-scrub.jpg",
         "caption": {
-          "en": "Hot stone massage"
+          "en": "Body exfoliation",
+          "sq": "Eksfolim i trupit",
+          "ru": "Пилинг тела"
         }
       },
       {
         "id": "g7",
-        "image": "/gallery/product-tube.jpg",
+        "image": "/gallery/facial-mask.jpg",
         "caption": {
-          "en": "Professional lines"
+          "en": "Monthly facial",
+          "sq": "Trajtim mujor",
+          "ru": "Ежемесячный уход"
         }
       },
       {
         "id": "g8",
-        "image": "/gallery/massage-warm.jpg",
+        "image": "/gallery/nails-white.jpg",
         "caption": {
-          "en": "Facial massage"
+          "en": "White almond nails",
+          "sq": "Thonj të bardhë",
+          "ru": "Белый миндаль"
+        }
+      },
+      {
+        "id": "g9",
+        "image": "/gallery/skinpen.jpg",
+        "caption": {
+          "en": "SkinPen microneedling",
+          "sq": "SkinPen",
+          "ru": "SkinPen"
+        }
+      },
+      {
+        "id": "g10",
+        "image": "/gallery/body-peeling.jpg",
+        "caption": {
+          "en": "Body peeling",
+          "sq": "Peeling i trupit",
+          "ru": "Пилинг тела"
+        }
+      },
+      {
+        "id": "g11",
+        "image": "/gallery/nails-manicure.jpg",
+        "caption": {
+          "en": "At the manicure table",
+          "sq": "Në tavolinën e manikyrit",
+          "ru": "За маникюрным столом"
+        }
+      },
+      {
+        "id": "g12",
+        "image": "/gallery/clarins.jpg",
+        "caption": {
+          "en": "Clarins professional line",
+          "sq": "Clarins",
+          "ru": "Линия Clarins"
         }
       }
     ]
@@ -620,7 +690,7 @@
       "en": "Fill in the form and we will open WhatsApp with your request ready to send. We confirm your time as soon as we read it.",
       "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë."
     },
-    "image": "/gallery/interior.jpg",
+    "image": "/gallery/skin-routine.jpg",
     "note": {
       "en": "Your request is sent through WhatsApp — nothing is stored on this website."
     }
@@ -639,6 +709,6 @@
     "description": {
       "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp."
     },
-    "ogImage": "/gallery/hero.jpg"
+    "ogImage": "/gallery/studio.jpg"
   }
 }

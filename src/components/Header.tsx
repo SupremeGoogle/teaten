@@ -31,11 +31,13 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled ? "bg-cream/92 shadow-[0_1px_0_rgba(122,102,83,0.14)] backdrop-blur-md" : "bg-transparent"
+        className={`fixed inset-x-0 top-0 z-50 border-b border-white/40 bg-cream/35 backdrop-blur-xl transition-all duration-500 ${
+          scrolled
+            ? "glass rounded-none border-x-0 border-t-0"
+            : "shadow-[0_12px_40px_-32px_rgba(74,58,46,0.5)]"
         }`}
       >
-        <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between gap-6 px-5 sm:px-8">
+        <div className="mx-auto flex h-[64px] max-w-6xl items-center justify-between gap-4 px-4 sm:h-[68px] sm:gap-6 sm:px-8">
           <a href="#top" className="text-espresso transition-opacity hover:opacity-70">
             <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="md" />
           </a>
@@ -45,7 +47,7 @@ export default function Header() {
               <a
                 key={item.id}
                 href={item.href}
-                className="eyebrow text-espresso-soft transition-colors hover:text-espresso"
+                className="eyebrow relative text-espresso-soft transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-espresso hover:after:w-full"
               >
                 {tt(item.label)}
               </a>
@@ -58,7 +60,7 @@ export default function Header() {
                 type="button"
                 onClick={() => setLangOpen((v) => !v)}
                 onBlur={() => window.setTimeout(() => setLangOpen(false), 160)}
-                className="flex items-center gap-1.5 rounded-full border border-espresso/15 px-3 py-1.5 text-xs tracking-[0.16em] uppercase text-espresso-soft transition-colors hover:border-espresso/35 hover:text-espresso"
+                className="glass flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs tracking-[0.16em] uppercase text-espresso-soft transition-all duration-300 hover:-translate-y-0.5 hover:text-espresso"
                 aria-haspopup="listbox"
                 aria-expanded={langOpen}
                 aria-label={L.language}
@@ -69,7 +71,7 @@ export default function Header() {
               {langOpen && (
                 <ul
                   role="listbox"
-                  className="absolute right-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-xl border border-espresso/10 bg-cream shadow-lg shadow-espresso/10"
+                  className="glass absolute right-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-xl"
                 >
                   {LANGS.map((l) => (
                     <li key={l.code}>
@@ -99,7 +101,7 @@ export default function Header() {
               href={wa}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden rounded-full bg-espresso px-5 py-2.5 text-xs tracking-[0.18em] uppercase text-cream transition-colors hover:bg-espresso-soft sm:inline-block"
+              className="sheen hidden rounded-full bg-espresso px-5 py-2.5 text-xs tracking-[0.18em] uppercase text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-espresso-soft sm:inline-block"
             >
               {L.book}
             </a>
@@ -107,7 +109,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              className="flex h-9 w-9 items-center justify-center text-espresso lg:hidden"
+              className="glass flex h-9 w-9 items-center justify-center rounded-full text-espresso lg:hidden"
               aria-label={L.menu}
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -124,13 +126,13 @@ export default function Header() {
           menuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <div className="absolute inset-0 bg-espresso/35" onClick={() => setMenuOpen(false)} />
+        <div className="absolute inset-0 bg-espresso/35 backdrop-blur-sm" onClick={() => setMenuOpen(false)} />
         <div
-          className={`absolute inset-y-0 right-0 flex w-[82%] max-w-sm flex-col bg-cream px-7 pt-6 pb-10 transition-transform duration-400 ${
+          className={`glass absolute inset-y-0 right-0 flex w-[86%] max-w-sm flex-col rounded-none border-y-0 border-r-0 px-6 pt-5 pb-7 transition-transform duration-500 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="mb-10 flex items-center justify-between">
+          <div className="mb-7 flex items-center justify-between">
             <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="sm" />
             <button
               type="button"
@@ -150,7 +152,7 @@ export default function Header() {
                 key={item.id}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="display border-b border-espresso/10 py-4 text-3xl text-espresso"
+                className="display border-b border-white/45 py-3.5 text-[1.75rem] text-espresso transition-all duration-300 hover:translate-x-1.5 hover:text-gold"
               >
                 {tt(item.label)}
               </a>

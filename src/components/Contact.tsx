@@ -9,16 +9,16 @@ export default function Contact() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-espresso text-cream">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
-        <div className="grid gap-14 lg:grid-cols-[1fr_1fr]">
+    <footer id="contact" className="relative overflow-hidden bg-espresso/95 text-cream backdrop-blur-xl">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-24">
+        <div className="glass-dark grid gap-9 rounded-[2rem] p-5 sm:gap-14 sm:p-8 lg:grid-cols-[1fr_1fr] lg:p-10">
           <Reveal>
             <Logo name={c.brand.name} image={c.brand.logoImage} size="lg" className="text-cream" />
             {tt(c.footer.note) && (
-              <p className="script mt-6 text-4xl text-gold">{tt(c.footer.note)}</p>
+              <p className="script mt-5 text-3xl text-gold sm:mt-6 sm:text-4xl">{tt(c.footer.note)}</p>
             )}
 
-            <dl className="mt-12 space-y-7">
+            <dl className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-7 lg:grid-cols-1">
               <div>
                 <dt className="eyebrow text-cream/50">{L.openingHours}</dt>
                 <dd className="mt-1.5 text-lg text-cream/90">{tt(c.contact.hours)}</dd>
@@ -67,7 +67,7 @@ export default function Contact() {
                 href={whatsappLink(c.contact.whatsapp, L.greeting)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-cream px-6 py-3.5 text-xs tracking-[0.2em] uppercase text-espresso transition-colors hover:bg-gold hover:text-cream"
+                className="glass rounded-full px-5 py-3 text-[0.68rem] tracking-[0.16em] uppercase text-espresso transition-colors hover:bg-gold hover:text-cream sm:px-6 sm:py-3.5 sm:text-xs sm:tracking-[0.2em]"
               >
                 {L.bookOnWhatsapp}
               </a>
@@ -86,11 +86,11 @@ export default function Contact() {
 
           <Reveal delay={80}>
             {c.contact.mapEmbedUrl ? (
-              <div className="h-full min-h-[22rem] overflow-hidden rounded-[2rem] border border-cream/15">
+              <div className="glass-image h-full min-h-[16rem] overflow-hidden rounded-[1.5rem] sm:min-h-[22rem] sm:rounded-[2rem]">
                 <iframe
                   src={c.contact.mapEmbedUrl}
                   title={tt(c.contact.address)}
-                  className="h-full min-h-[22rem] w-full"
+                  className="h-full min-h-[16rem] w-full sm:min-h-[22rem]"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
@@ -107,7 +107,7 @@ export default function Contact() {
           </Reveal>
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-cream/15 pt-7 text-xs tracking-[0.14em] uppercase text-cream/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t border-cream/15 pt-6 text-[0.65rem] tracking-[0.12em] uppercase text-cream/45 sm:mt-16 sm:flex-row sm:items-center sm:justify-between sm:pt-7 sm:text-xs sm:tracking-[0.14em]">
           <span>
             © {year} {c.footer.credit}. {L.allRights}
           </span>
@@ -135,7 +135,7 @@ function SocialLink({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/25 text-cream transition-colors hover:border-gold hover:text-gold"
+      className="glass-dark flex h-11 w-11 items-center justify-center rounded-full text-cream transition-colors hover:border-gold hover:text-gold sm:h-12 sm:w-12"
     >
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
         {children}
