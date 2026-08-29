@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost, Pinyon_Script } from "next/font/google";
+import BackgroundVideoPreload from "@/components/BackgroundVideoPreload";
 import { content } from "@/lib/content";
 import "./globals.css";
 
@@ -61,7 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {content.location.enabled && <BackgroundVideoPreload src={content.location.video} />}
+      </body>
     </html>
   );
 }

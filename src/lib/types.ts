@@ -1,9 +1,9 @@
-export type Lang = "en" | "sq" | "ru";
+export type Lang = "en" | "sq" | "sr";
 
 export const LANGS: { code: Lang; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
   { code: "sq", label: "Shqip", flag: "🇦🇱" },
-  { code: "ru", label: "Русский", flag: "🇷🇺" },
+  { code: "sr", label: "Srpski", flag: "🇷🇸" },
 ];
 
 /** A text value: English is required, other languages are optional overrides. */

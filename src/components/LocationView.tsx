@@ -58,7 +58,7 @@ function Location() {
                   muted
                   loop
                   playsInline
-                  preload="metadata"
+                  preload="auto"
                 />
               </div>
             </Reveal>

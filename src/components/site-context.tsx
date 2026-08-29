@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { t, ui } from "@/lib/i18n";
-import type { I18nText, Lang, SiteContent } from "@/lib/types";
+import { LANGS, type I18nText, type Lang, type SiteContent } from "@/lib/types";
 
 type Ctx = {
   c: SiteContent;
@@ -21,9 +21,15 @@ export function SiteProvider({ content, children }: { content: SiteContent; chil
   const [lang, setLangState] = useState<Lang>("en");
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Lang | null;
-    if (stored) {
-      setLangState(stored);
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+    if (stored === "ru") {
+      // Migrate the retired Russian option for returning visitors.
+      setLangState("sr");
+      window.localStorage.setItem(STORAGE_KEY, "sr");
+      return;
+    }
+    if (LANGS.some(({ code }) => code === stored)) {
+      setLangState(stored as Lang);
       return;
     }
     // Auto-select the visitor's language only once it has real translations,

@@ -93,7 +93,7 @@ export default function Editor({
   }, [dirty, pending.length]);
 
   /**
-   * Fills Albanian and Russian from the English source. Only fields whose English
+   * Fills Albanian and Serbian from the English source. Only fields whose English
    * changed, or whose translation is empty, are sent — a translation typed by hand
    * survives as long as its English text stays the same.
    */
@@ -132,7 +132,7 @@ export default function Editor({
     if (translated !== draft) {
       setDraft(translated);
       setDirty(true);
-      setMessage({ kind: "ok", text: "Albanian and Russian filled in from the English text." });
+      setMessage({ kind: "ok", text: "Albanian and Serbian filled in from the English text." });
     } else {
       setMessage({ kind: "ok", text: "Nothing new to translate." });
     }
@@ -291,7 +291,7 @@ export default function Editor({
                 onChange={(e) => setAutoTranslate(e.target.checked)}
                 className="mt-0.5 accent-[color:var(--color-espresso)]"
               />
-              <span>Fill Albanian and Russian automatically when publishing</span>
+              <span>Fill Albanian and Serbian automatically when publishing</span>
             </label>
             <button
               type="button"
@@ -303,7 +303,7 @@ export default function Editor({
             </button>
             <p className="mt-2 text-[0.65rem] leading-relaxed text-espresso-soft/70">
               Only English that you changed is re-translated. Anything you wrote yourself
-              in Albanian or Russian stays untouched.
+              in Albanian or Serbian stays untouched.
             </p>
           </div>
 

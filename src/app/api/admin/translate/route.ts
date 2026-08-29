@@ -12,7 +12,7 @@ const BATCH_SIZE = 30;
 const LANG_NAMES: Record<Lang, string> = {
   en: "English",
   sq: "Albanian",
-  ru: "Russian",
+  sr: "Serbian (Latin script)",
 };
 
 type Entry = { path: string; text: string; missing: Lang[] };
@@ -22,6 +22,7 @@ function systemPrompt(target: Lang): string {
     `You translate website copy for Tea Ten Beauty & Spa, a beauty salon in Prishtina, Kosovo, from English into ${LANG_NAMES[target]}.`,
     "Rules:",
     "- Keep the warm, calm, premium tone of a boutique spa.",
+    "- For Serbian, always use the Latin alphabet, never Cyrillic.",
     "- Keep brand and product names exactly as written: Tea Ten, Clarins, Circadia, Hydrafacial, Dermalux Flex, OxyGeneo, SkinPen, WhatsApp.",
     "- Keep numbers, prices, currency symbols, dates and units unchanged.",
     "- Do not add, remove or explain anything. Translate only.",
