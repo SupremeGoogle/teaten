@@ -481,7 +481,10 @@
         ],
         "images": [
           "/gallery/body-scrub.jpg",
-          "/gallery/body-peeling.jpg"
+          "/gallery/body-peeling.jpg",
+          "/gallery/massage-back.jpg",
+          "/gallery/massage-stones.jpg",
+          "/gallery/shoulder.jpg"
         ],
         "slug": "body-massage"
       },
@@ -661,7 +664,10 @@
         ],
         "images": [
           "/gallery/brows.jpg",
-          "/gallery/skin-routine.jpg"
+          "/gallery/skin-routine.jpg",
+          "/gallery/brow-tint.jpg",
+          "/gallery/brow-threading.jpg",
+          "/gallery/circadia-face.jpg"
         ],
         "slug": "brows-lashes"
       }
@@ -933,7 +939,7 @@
       "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë.",
       "ru": "Заполните форму, и мы откроем WhatsApp с готовым запросом. Мы подтвердим ваше время, как только прочтем его."
     },
-    "image": "/gallery/shoulder.jpg",
+    "image": "/gallery/welcome-robe.jpg",
     "note": {
       "en": "Your request is sent through WhatsApp — nothing is stored on this website.",
       "ru": "Ваш запрос отправляется через WhatsApp — ничего не хранится на этом сайте.",
@@ -1226,7 +1232,7 @@
     "note": {
       "en": "Available to companies and to individuals. Packages are sold from three cards upwards."
     },
-    "image": "/gallery/nails-white.jpg",
+    "image": "/gallery/giftcard.jpg",
     "items": [
       {
         "id": "g1",

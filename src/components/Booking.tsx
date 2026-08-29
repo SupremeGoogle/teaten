@@ -38,7 +38,7 @@ export default function Booking() {
   };
 
   return (
-    <section id="booking" className="relative overflow-hidden py-16 sm:py-28">
+    <section id="booking" className="relative overflow-hidden py-12 sm:py-28">
 
       <div className="relative mx-auto grid max-w-6xl gap-7 px-4 sm:gap-12 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <Reveal>
@@ -63,9 +63,9 @@ export default function Booking() {
         <Reveal delay={80} variant="right">
           <form
             onSubmit={submit}
-            className="glass-panel glass-sheen relative rounded-[2rem] p-5 sm:p-9"
+            className="glass-panel glass-sheen relative rounded-[1.5rem] p-4 sm:rounded-[2rem] sm:p-9"
           >
-            <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-5">
               <div>
                 <label className="label" htmlFor="bk-name">
                   {L.name} *
@@ -142,7 +142,7 @@ export default function Booking() {
                 </label>
                 <textarea
                   id="bk-notes"
-                  className="field min-h-24 resize-y"
+                  className="field min-h-20 resize-y sm:min-h-24"
                   value={form.notes}
                   onChange={set("notes")}
                   placeholder={L.notesPlaceholder}

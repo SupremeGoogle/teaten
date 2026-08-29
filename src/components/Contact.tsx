@@ -84,9 +84,9 @@ export default function Contact() {
             </div>
           </Reveal>
 
-          <Reveal delay={80}>
+          <Reveal delay={80} className="flex h-full flex-col">
             {c.contact.mapEmbedUrl ? (
-              <div className="glass-image h-full min-h-[16rem] overflow-hidden rounded-[1.5rem] sm:min-h-[22rem] sm:rounded-[2rem]">
+              <div className="glass-image min-h-[16rem] flex-1 overflow-hidden rounded-[1.5rem] sm:min-h-[22rem] sm:rounded-[2rem]">
                 <iframe
                   src={c.contact.mapEmbedUrl}
                   title={tt(c.contact.address)}
@@ -100,7 +100,7 @@ export default function Contact() {
               href={c.contact.mapUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="eyebrow mt-5 inline-block text-cream/60 transition-colors hover:text-gold"
+              className="eyebrow mt-4 inline-block shrink-0 self-start text-cream/60 transition-colors hover:text-gold"
             >
               {L.viewOnMap} →
             </a>
@@ -111,14 +111,9 @@ export default function Contact() {
           <span>
             © {year} {c.footer.credit}. {L.allRights}
           </span>
-          <span className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <a href="/privacy" className="transition-colors hover:text-cream/80">
-              {tt(c.legal.linkLabel)}
-            </a>
-            <a href="/admin" className="transition-colors hover:text-cream/80">
-              Admin
-            </a>
-          </span>
+          <a href="/privacy" className="transition-colors hover:text-cream/80">
+            {tt(c.legal.linkLabel)}
+          </a>
         </div>
       </div>
     </footer>

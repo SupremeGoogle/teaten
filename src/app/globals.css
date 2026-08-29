@@ -370,3 +370,17 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .splash-logo, .splash-bar::after { animation: none; }
 }
+
+/* compact form on phones */
+@media (max-width: 639px) {
+  .field {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 0.65rem;
+  }
+  .label {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.3rem;
+  }
+}

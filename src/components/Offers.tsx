@@ -24,13 +24,13 @@ export default function Offers() {
               </Reveal>
 
               <Reveal>
-                <ul className="mobile-snap-row no-scrollbar -mx-5 mt-7 flex gap-3 overflow-x-auto px-5 pb-2 sm:mx-0 sm:mt-10 sm:block sm:space-y-1 sm:overflow-visible sm:px-0 sm:pb-0">
+                <ul className="mt-6 space-y-2 sm:mt-10 sm:space-y-1">
                 {c.offers.items.map((o, i) => {
                   const msg = `${L.greeting}\n\n${L.service}: ${tt(o.name)} (${L.currency}${o.newPrice})`;
                   return (
                     <li
                       key={o.id}
-                      className="rise mobile-snap-item min-w-[78vw] sm:min-w-0"
+                      className="rise"
                       style={{ animationDelay: `${i * 70}ms` }}
                     >
                       <a

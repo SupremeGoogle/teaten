@@ -11,7 +11,8 @@ export default function Gallery() {
   const [open, setOpen] = useState<number | null>(null);
 
   const masonryItems = useMemo<MasonryItem[]>(
-    () => items.map((g) => ({ id: g.id, img: g.image, caption: tt(g.caption) })),
+    // Captions stay out of the grid; the lightbox still shows them.
+    () => items.map((g) => ({ id: g.id, img: g.image })),
     [items, tt],
   );
 

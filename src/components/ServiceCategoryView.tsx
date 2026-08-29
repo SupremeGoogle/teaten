@@ -100,36 +100,35 @@ function CategoryPage({ categoryId }: { categoryId: string }) {
                     rel="noopener noreferrer"
                     className="block transition-transform duration-500 group-hover:translate-x-1.5"
                   >
-                    <div className="flex items-baseline gap-3">
+                    {/* name and description on the left, price pinned to its own
+                        column on the right so every row lines up */}
+                    <div className="grid grid-cols-[1fr_5.25rem] items-baseline gap-x-3 sm:grid-cols-[1fr_auto]">
                       <h3 className="display text-lg text-espresso transition-colors duration-300 group-hover:text-gold sm:text-2xl">
                         {tt(item.name)}
                       </h3>
-                      <span
-                        className="mb-1.5 hidden flex-1 border-b border-dotted border-espresso/30 transition-colors duration-300 group-hover:border-gold/60 sm:block"
-                        aria-hidden="true"
-                      />
-                      <span className="display shrink-0 text-lg text-espresso transition-colors duration-300 group-hover:text-gold sm:text-2xl">
+                      <span className="col-start-2 row-start-1 text-right">
                         {item.price ? (
-                          <>
+                          <span className="display text-lg text-espresso transition-colors duration-300 group-hover:text-gold sm:text-2xl">
                             {L.currency}
                             {item.price}
-                          </>
+                          </span>
                         ) : (
-                          <span className="text-[0.65rem] tracking-[0.14em] uppercase text-espresso-soft">
+                          <span className="block text-[0.62rem] leading-tight tracking-[0.12em] uppercase text-espresso-soft">
                             {L.onRequest}
                           </span>
                         )}
                       </span>
-                    </div>
-                    <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1">
-                      {tt(item.description) && (
-                        <p className="text-[0.82rem] leading-relaxed text-espresso-soft">
-                          {tt(item.description)}
-                        </p>
-                      )}
-                      {item.duration && (
-                        <span className="eyebrow shrink-0 text-espresso-soft/70">{item.duration}</span>
-                      )}
+
+                      <div className="col-start-1 mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1">
+                        {tt(item.description) && (
+                          <p className="text-[0.82rem] leading-relaxed text-espresso-soft">
+                            {tt(item.description)}
+                          </p>
+                        )}
+                        {item.duration && (
+                          <span className="eyebrow shrink-0 text-espresso-soft/70">{item.duration}</span>
+                        )}
+                      </div>
                     </div>
                   </a>
                 </li>

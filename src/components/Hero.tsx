@@ -1,11 +1,9 @@
 "use client";
 
-import { useSite, whatsappLink } from "./site-context";
-import { WhatsAppIcon } from "./icons";
+import { useSite } from "./site-context";
 
 export default function Hero() {
   const { c, tt, L } = useSite();
-  const wa = whatsappLink(c.contact.whatsapp, L.greeting);
 
   return (
     <section id="top" className="relative isolate min-h-[46rem] overflow-hidden pt-[64px] sm:min-h-[48rem] sm:pt-[68px]">
@@ -44,15 +42,6 @@ export default function Hero() {
           </p>
 
           <div className="rise mt-7 grid gap-2.5 sm:mt-9 sm:flex sm:flex-wrap sm:items-center sm:gap-3.5" style={{ animationDelay: "460ms" }}>
-            <a
-              href={wa}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sheen inline-flex items-center justify-center gap-2.5 rounded-full bg-espresso px-6 py-3.5 text-[0.68rem] tracking-[0.18em] uppercase text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-espresso-soft sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.2em]"
-            >
-              <WhatsAppIcon className="h-4 w-4" />
-              {tt(c.hero.primaryCta)}
-            </a>
             <a
               href="#services"
               className="glass sheen inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-[0.68rem] tracking-[0.18em] uppercase text-espresso transition-all duration-300 hover:-translate-y-0.5 sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.2em]"

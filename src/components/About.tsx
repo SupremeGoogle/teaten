@@ -40,9 +40,9 @@ export default function About() {
           )}
 
           {c.about.stats.length > 0 && (
-            <dl className="mobile-snap-row no-scrollbar -mx-2 mt-7 flex gap-2 overflow-x-auto px-2 pb-1 sm:mx-0 sm:mt-9 sm:grid sm:grid-cols-3 sm:gap-3 sm:overflow-visible sm:px-0">
+            <dl className="mt-7 grid grid-cols-3 gap-2 sm:mt-9 sm:gap-3">
               {c.about.stats.map((s) => (
-                <div key={s.id} className="mobile-snap-item min-w-[8.25rem] rounded-2xl border border-white/15 bg-white/[0.07] p-4 backdrop-blur-md sm:min-w-0">
+                <div key={s.id} className="rounded-2xl border border-white/15 bg-white/[0.07] px-2.5 py-3.5 backdrop-blur-md sm:p-4">
                   <dt className="display text-3xl text-cream sm:text-4xl">
                     <CountUp value={s.value} />
                   </dt>
