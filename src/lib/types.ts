@@ -19,6 +19,8 @@ export type ServiceItem = {
 
 export type ServiceCategory = {
   id: string;
+  /** URL segment for this category's own price page, e.g. "facial-treatments". */
+  slug: string;
   title: I18nText;
   intro: I18nText;
   /** Several photos per category; the first one opens as the large image. */

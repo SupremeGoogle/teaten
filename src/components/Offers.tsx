@@ -23,11 +23,16 @@ export default function Offers() {
                 </p>
               </Reveal>
 
-              <ul className="mobile-snap-row no-scrollbar -mx-5 mt-7 flex gap-3 overflow-x-auto px-5 pb-2 sm:mx-0 sm:mt-10 sm:block sm:space-y-1 sm:overflow-visible sm:px-0 sm:pb-0">
+              <Reveal>
+                <ul className="mobile-snap-row no-scrollbar -mx-5 mt-7 flex gap-3 overflow-x-auto px-5 pb-2 sm:mx-0 sm:mt-10 sm:block sm:space-y-1 sm:overflow-visible sm:px-0 sm:pb-0">
                 {c.offers.items.map((o, i) => {
                   const msg = `${L.greeting}\n\n${L.service}: ${tt(o.name)} (${L.currency}${o.newPrice})`;
                   return (
-                    <Reveal as="li" key={o.id} delay={i * 60} variant="right" className="mobile-snap-item min-w-[78vw] sm:min-w-0">
+                    <li
+                      key={o.id}
+                      className="rise mobile-snap-item min-w-[78vw] sm:min-w-0"
+                      style={{ animationDelay: `${i * 70}ms` }}
+                    >
                       <a
                         href={whatsappLink(c.contact.whatsapp, msg)}
                         target="_blank"
@@ -54,10 +59,11 @@ export default function Offers() {
                           </span>
                         </span>
                       </a>
-                    </Reveal>
+                    </li>
                   );
                 })}
-              </ul>
+                </ul>
+              </Reveal>
 
               {tt(c.offers.validity) && (
                 <p className="eyebrow glass-dark mt-6 inline-block rounded-full px-4 py-2 text-cream/80 sm:mt-8">

@@ -26,12 +26,12 @@
     ],
     "whatsapp": "38344158234",
     "address": {
-      "en": "Rr. Johan V. Hahn, Prishtina, Kosovo",
-      "sq": "Rr. Johan V. Hahn, Prishtinë, Kosovë",
-      "ru": "Rr. Johan V. Hahn, Prishtina, Kosovo"
+      "en": "Rr. Johan V. Hahn 7, Prishtina 10000, Kosovo",
+      "sq": "Rr. Johan V. Hahn 7, Prishtinë 10000, Kosovë",
+      "ru": "Ул. Johan V. Hahn 7, Приштина 10000, Косово"
     },
-    "mapUrl": "https://maps.google.com/?q=Rr.+Johan+V.+Hahn+Prishtina",
-    "mapEmbedUrl": "https://www.google.com/maps?q=Rr.%20Johan%20V.%20Hahn%20Prishtina&output=embed",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tea+Ten+Beauty+%26+Spa%2C+Rr.+Johan+V.+Hahn%2C+Prishtina",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=Tea%20Ten%20Beauty%20%26%20Spa%2C%20Rr.%20Johan%20V.%20Hahn%2C%20Prishtina&t=&z=17&ie=UTF8&iwloc=B&output=embed",
     "hours": {
       "en": "Monday – Saturday, 09:00 – 19:00",
       "sq": "E hënë – E shtunë, 09:00 – 19:00",
@@ -368,7 +368,8 @@
           "/gallery/facial-mask.jpg",
           "/gallery/studio.jpg",
           "/gallery/skinpen.jpg"
-        ]
+        ],
+        "slug": "facial-treatments"
       },
       {
         "id": "c2",
@@ -462,7 +463,8 @@
         "images": [
           "/gallery/body-scrub.jpg",
           "/gallery/body-peeling.jpg"
-        ]
+        ],
+        "slug": "body-massage"
       },
       {
         "id": "c3",
@@ -559,7 +561,8 @@
           "/gallery/nails-pedicure.jpg",
           "/gallery/nails-manicure.jpg",
           "/gallery/pedicure-work.jpg"
-        ]
+        ],
+        "slug": "nails"
       },
       {
         "id": "c4",
@@ -638,7 +641,8 @@
         "images": [
           "/gallery/brows.jpg",
           "/gallery/skin-routine.jpg"
-        ]
+        ],
+        "slug": "brows-lashes"
       }
     ]
   },
@@ -659,7 +663,7 @@
       "sq": "Oferta vlen prej 26 Gusht – 3 Shtator",
       "ru": "Действует с 26 августа по 3 сентября"
     },
-    "image": "/gallery/facial-warm.jpg",
+    "image": "/gallery/skin-routine.jpg",
     "items": [
       {
         "id": "o1",
@@ -836,7 +840,7 @@
       "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë.",
       "ru": "Заполните форму, и мы откроем WhatsApp с готовым запросом. Мы подтвердим ваше время, как только прочтем его."
     },
-    "image": "/gallery/skin-routine.jpg",
+    "image": "/gallery/studio.jpg",
     "note": {
       "en": "Your request is sent through WhatsApp — nothing is stored on this website.",
       "ru": "Ваш запрос отправляется через WhatsApp — ничего не хранится на этом сайте.",

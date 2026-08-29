@@ -19,6 +19,17 @@ export default function CountUp({ value, duration = 1400 }: { value: string; dur
     const el = ref.current;
     if (!el) return;
 
+    // A stat can sit inside a horizontally scrollable row, where it is clipped
+    // out of view and would never intersect. Watch the row itself in that case —
+    // it scrolls with the page like anything else.
+    let watched: Element = el;
+    for (let node: HTMLElement | null = el; node && node !== document.body; node = node.parentElement) {
+      if (getComputedStyle(node).overflowX !== "visible") {
+        watched = node;
+        break;
+      }
+    }
+
     let frame = 0;
     const io = new IntersectionObserver(
       ([entry]) => {
@@ -35,7 +46,7 @@ export default function CountUp({ value, duration = 1400 }: { value: string; dur
       },
       { threshold: 0.4 },
     );
-    io.observe(el);
+    io.observe(watched);
     return () => {
       io.disconnect();
       if (frame) cancelAnimationFrame(frame);

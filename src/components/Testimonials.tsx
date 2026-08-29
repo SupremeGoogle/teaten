@@ -16,9 +16,14 @@ export default function Testimonials() {
           </h2>
         </Reveal>
 
-        <div className="mobile-snap-row no-scrollbar -mx-4 mt-8 flex gap-3 overflow-x-auto px-4 pb-4 md:mx-0 md:mt-14 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
+        <Reveal>
+          <div className="mobile-snap-row no-scrollbar -mx-4 mt-8 flex gap-3 overflow-x-auto px-4 pb-4 md:mx-0 md:mt-14 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
           {c.testimonials.items.map((item, i) => (
-            <Reveal key={item.id} delay={i * 80} className="mobile-snap-item min-w-[82vw] md:min-w-0">
+            <div
+              key={item.id}
+              className="rise mobile-snap-item min-w-[82vw] md:min-w-0"
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
               <figure className="glass-card h-full rounded-[1.75rem] p-6 sm:p-8">
                 <div className="flex gap-1 text-gold" aria-label={`${item.rating} / 5`}>
                   {Array.from({ length: 5 }).map((_, s) => (
@@ -40,9 +45,10 @@ export default function Testimonials() {
                 </blockquote>
                 <figcaption className="eyebrow mt-6 text-espresso">{item.name}</figcaption>
               </figure>
-            </Reveal>
+            </div>
           ))}
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

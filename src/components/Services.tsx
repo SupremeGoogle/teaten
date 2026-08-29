@@ -1,30 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import AccordionGallery, { type AccordionGalleryItem } from "./AccordionGallery";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite } from "./site-context";
 
 export default function Services() {
   const { c, tt, L } = useSite();
   const cats = c.services.categories;
-  const [active, setActive] = useState(0);
-
-  const cat = cats[Math.min(active, Math.max(cats.length - 1, 0))];
-
-  const panels = useMemo<AccordionGalleryItem[]>(
-    () =>
-      cats.map((k) => {
-        const images = (k.images ?? []).filter(Boolean);
-        return {
-          image: images[0] ?? "",
-          images: images.length ? images : undefined,
-          label: tt(k.title),
-          alt: tt(k.title),
-        };
-      }),
-    [cats, tt],
-  );
 
   if (!cats.length) return null;
 
@@ -41,93 +22,69 @@ export default function Services() {
           </p>
         </Reveal>
 
-        <Reveal className="mt-8 sm:mt-12" variant="scale">
-          <AccordionGallery
-            items={panels}
-            defaultIndex={0}
-            trigger="hover"
-            accentColor="var(--color-gold)"
-            overlayColor="var(--color-espresso)"
-            textColor="var(--color-cream)"
-            height={420}
-            gap={12}
-            radius={26}
-            expandRatio={0.4}
-            tilt={6}
-            parallax={0.45}
-            grayscale={false}
-            onActiveChange={setActive}
-          />
-        </Reveal>
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4">
+          {cats.map((cat, i) => {
+            const shot = (cat.images ?? []).filter(Boolean)[0] ?? "";
+            const cheapest = cat.items
+              .map((item) => Number(item.price))
+              .filter((n) => Number.isFinite(n) && n > 0);
+            const from = cheapest.length ? Math.min(...cheapest) : null;
 
-        <Reveal className="mt-6 sm:mt-8">
-          <div className="glass-panel rounded-[2rem] p-5 sm:p-8 lg:p-10">
-            <div className="flex flex-wrap items-baseline justify-between gap-3">
-              <h3 className="display text-2xl text-espresso sm:text-[2rem]">{tt(cat.title)}</h3>
-              <span className="eyebrow text-espresso-soft/80">
-                {cat.items.length} {tt(c.services.title)}
-              </span>
-            </div>
+            return (
+              <Reveal key={cat.id} delay={(i % 4) * 70} variant="scale">
+                <a
+                  href={`/services/${cat.slug}`}
+                  className="group block h-full overflow-hidden rounded-[1.5rem] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_48px_-24px_rgba(74,58,46,0.6)] sm:rounded-[1.75rem]"
+                >
+                  <span className="relative block aspect-[4/5] overflow-hidden">
+                    {shot && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={shot}
+                        alt={tt(cat.title)}
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    )}
+                    <span
+                      className="absolute inset-0 bg-gradient-to-t from-espresso/90 via-espresso/25 to-transparent"
+                      aria-hidden="true"
+                    />
 
-            {tt(cat.intro) && (
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-espresso-soft">
-                {tt(cat.intro)}
-              </p>
-            )}
-
-            <ul key={cat.id} className="mt-6 grid gap-x-12 sm:mt-8 lg:grid-cols-2">
-              {cat.items.map((item, i) => {
-                const msg = `${L.greeting}\n\n${L.service}: ${tt(item.name)}`;
-                return (
-                  <li
-                    key={item.id}
-                    className="rise group border-b border-espresso/12 py-4 last:border-b-0 lg:last:border-b lg:[&:nth-last-child(-n+1)]:border-b-0"
-                    style={{ animationDelay: `${i * 55}ms` }}
-                  >
-                    <a
-                      href={whatsappLink(c.contact.whatsapp, msg)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block transition-transform duration-500 group-hover:translate-x-1.5"
-                    >
-                      <div className="flex items-baseline gap-3">
-                        <h4 className="display text-xl text-espresso transition-colors duration-300 group-hover:text-gold sm:text-2xl">
-                          {tt(item.name)}
-                        </h4>
-                        <span
-                          className="mb-1.5 hidden flex-1 border-b border-dotted border-espresso/30 transition-colors duration-300 group-hover:border-gold/60 sm:block"
-                          aria-hidden="true"
-                        />
-                        <span className="display shrink-0 text-xl text-espresso transition-colors duration-300 group-hover:text-gold sm:text-2xl">
-                          {item.price ? (
-                            <>
-                              {L.currency}
-                              {item.price}
-                            </>
-                          ) : (
-                            <span className="text-[0.7rem] tracking-[0.14em] uppercase text-espresso-soft">
-                              {L.onRequest}
-                            </span>
-                          )}
+                    <span className="absolute inset-x-3.5 bottom-3.5 sm:inset-x-5 sm:bottom-5">
+                      <span className="display block text-left text-[1.15rem] leading-tight text-cream sm:text-[1.45rem]">
+                        {tt(cat.title)}
+                      </span>
+                      <span className="mt-1.5 flex items-center gap-2 text-[0.6rem] tracking-[0.14em] uppercase text-cream/70 sm:text-[0.68rem]">
+                        <span>
+                          {cat.items.length} {tt(c.services.title)}
                         </span>
-                      </div>
-                      <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1">
-                        {tt(item.description) && (
-                          <p className="text-[0.83rem] leading-relaxed text-espresso-soft">
-                            {tt(item.description)}
-                          </p>
+                        {from !== null && (
+                          <>
+                            <span className="h-2.5 w-px bg-cream/30" aria-hidden="true" />
+                            <span className="text-gold">
+                              {L.from} {L.currency}
+                              {from}
+                            </span>
+                          </>
                         )}
-                        {item.duration && (
-                          <span className="eyebrow shrink-0 text-espresso-soft/70">{item.duration}</span>
-                        )}
-                      </div>
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </Reveal>
+                      </span>
+                    </span>
+
+                    <span
+                      className="glass-dark absolute right-3.5 top-3.5 flex h-8 w-8 items-center justify-center rounded-full text-cream transition-transform duration-500 group-hover:translate-x-0.5 sm:right-5 sm:top-5 sm:h-9 sm:w-9"
+                      aria-hidden="true"
+                    >
+                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

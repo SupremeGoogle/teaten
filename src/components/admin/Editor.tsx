@@ -582,6 +582,7 @@ function ServicesSection({ draft, set }: Props) {
           onChange={(v) => set("services", { ...s, categories: v })}
           create={() => ({
             id: uid("c"),
+            slug: `category-${uid("")}`,
             title: { en: "New category" },
             intro: { en: "" },
             images: [],
@@ -591,6 +592,17 @@ function ServicesSection({ draft, set }: Props) {
           renderItem={(cat, update) => (
             <>
               <I18nInput label="Category name" value={cat.title} onChange={(v) => update({ title: v })} />
+              <Field
+                label="Page address"
+                hint={`This category's own price page: /services/${cat.slug || "…"}. Lower-case letters and dashes only — changing it breaks old links.`}
+              >
+                <TextInput
+                  value={cat.slug}
+                  onChange={(v) =>
+                    update({ slug: v.toLowerCase().replace(/[^a-z0-9-]+/g, "-").replace(/^-|-$/g, "") })
+                  }
+                />
+              </Field>
               <I18nInput label="Short intro" value={cat.intro} onChange={(v) => update({ intro: v })} multiline />
               <ImageListInput
                 label="Photos"
