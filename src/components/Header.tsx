@@ -42,7 +42,7 @@ export default function Header() {
         }`}
       >
         <div className="mx-auto flex h-[64px] max-w-6xl items-center justify-between gap-4 px-4 sm:h-[68px] sm:gap-6 sm:px-8">
-          <a href="#top" className="text-espresso transition-opacity hover:opacity-70">
+          <a href={onHome ? "#top" : "/#top"} className="text-espresso transition-opacity hover:opacity-70">
             <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="md" />
           </a>
 
