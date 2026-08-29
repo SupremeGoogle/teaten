@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { useSite, whatsappLink } from "./site-context";
@@ -7,6 +8,9 @@ import { LANGS } from "@/lib/types";
 
 export default function Header() {
   const { c, tt, L, lang, setLang } = useSite();
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+  const linkTo = (href: string) => (onHome || !href.startsWith("#") ? href : `/${href}`);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -46,7 +50,7 @@ export default function Header() {
             {c.nav.map((item) => (
               <a
                 key={item.id}
-                href={item.href}
+                href={linkTo(item.href)}
                 className="eyebrow relative text-espresso-soft transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-espresso hover:after:w-full"
               >
                 {tt(item.label)}
@@ -150,7 +154,7 @@ export default function Header() {
             {c.nav.map((item) => (
               <a
                 key={item.id}
-                href={item.href}
+                href={linkTo(item.href)}
                 onClick={() => setMenuOpen(false)}
                 className="display border-b border-white/45 py-3.5 text-[1.75rem] text-espresso transition-all duration-300 hover:translate-x-1.5 hover:text-gold"
               >

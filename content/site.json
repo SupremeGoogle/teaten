@@ -70,6 +70,13 @@
       "href": "#offers"
     },
     {
+      "id": "n6",
+      "label": {
+        "en": "Gift cards"
+      },
+      "href": "/gift-cards"
+    },
+    {
       "id": "n4",
       "label": {
         "en": "Gallery",
@@ -86,6 +93,13 @@
         "ru": "Контакты"
       },
       "href": "#contact"
+    },
+    {
+      "id": "n7",
+      "label": {
+        "en": "Location"
+      },
+      "href": "/location"
     }
   ],
   "hero": {
@@ -793,11 +807,9 @@
       },
       {
         "id": "g9",
-        "image": "/gallery/skinpen.jpg",
+        "image": "/gallery/vivace.jpg",
         "caption": {
-          "en": "SkinPen microneedling",
-          "sq": "SkinPen",
-          "ru": "SkinPen"
+          "en": "Vivace microneedling"
         }
       },
       {
@@ -1114,6 +1126,152 @@
             "sq": "Nëse ndryshojmë mënyrën se si funksionon faqja, do të përditësojmë këtë faqe dhe datën në krye. Versioni që shihni këtu është ai që zbatohet sot."
           }
         ]
+      }
+    ]
+  },
+  "giftCards": {
+    "enabled": true,
+    "linkLabel": {
+      "en": "Gift cards"
+    },
+    "title": {
+      "en": "Gift cards"
+    },
+    "intro": {
+      "en": "Give a treatment rather than an object. Choose a package, and we prepare the card for you to hand over — the person books their time whenever it suits them."
+    },
+    "note": {
+      "en": "Available to companies and to individuals. Packages are sold from three cards upwards."
+    },
+    "image": "/gallery/vivace.jpg",
+    "items": [
+      {
+        "id": "g1",
+        "badge": {
+          "en": "Package 1"
+        },
+        "name": {
+          "en": "Manicure + pedicure + facial massage + mask"
+        },
+        "price": "60"
+      },
+      {
+        "id": "g2",
+        "badge": {
+          "en": "Package 2"
+        },
+        "name": {
+          "en": "Scrub + 30 min massage + body mask"
+        },
+        "price": "55"
+      },
+      {
+        "id": "g3",
+        "badge": {
+          "en": "Package 3"
+        },
+        "name": {
+          "en": "Vitamin infusion facial"
+        },
+        "price": "45"
+      },
+      {
+        "id": "g4",
+        "badge": {
+          "en": "Package 4"
+        },
+        "name": {
+          "en": "Body mask + facial massage"
+        },
+        "price": "35"
+      },
+      {
+        "id": "g5",
+        "badge": {
+          "en": "Package 5"
+        },
+        "name": {
+          "en": "Lunch packet + Dermalux"
+        },
+        "price": "30"
+      },
+      {
+        "id": "g6",
+        "badge": {
+          "en": "Package 6"
+        },
+        "name": {
+          "en": "Vivace + exosomes"
+        },
+        "price": "200"
+      },
+      {
+        "id": "g7",
+        "badge": {
+          "en": "Package 7"
+        },
+        "name": {
+          "en": "Vivace + skin boosters"
+        },
+        "price": "190"
+      },
+      {
+        "id": "g8",
+        "badge": {
+          "en": "Package 8"
+        },
+        "name": {
+          "en": "Vivace"
+        },
+        "price": "170"
+      },
+      {
+        "id": "g9",
+        "badge": {
+          "en": "Package 9"
+        },
+        "name": {
+          "en": "SkinPen"
+        },
+        "price": "120"
+      },
+      {
+        "id": "g10",
+        "badge": {
+          "en": "Package 10"
+        },
+        "name": {
+          "en": "PRX-T33"
+        },
+        "price": "50"
+      }
+    ]
+  },
+  "location": {
+    "enabled": true,
+    "linkLabel": {
+      "en": "Location"
+    },
+    "title": {
+      "en": "Find us"
+    },
+    "intro": {
+      "en": "We are on Johan V. Hahn in the centre of Prishtina, at number 7 — look for the burgundy sign and the little terrace with the plants."
+    },
+    "video": "/video/salon.mp4",
+    "videoPoster": "/video/salon-poster.jpg",
+    "directions": [
+      {
+        "en": "A few minutes on foot from Grand Hotel Prishtina and the Newborn monument."
+      },
+      {
+        "en": "The entrance is at street level, with tables and greenery outside the window."
+      },
+      {
+        "en": "Street parking runs along Johan V. Hahn; come a little early at busy hours."
+      },
+      {
+        "en": "Not sure you have found it? Send us a message on WhatsApp and we will guide you in."
       }
     ]
   }

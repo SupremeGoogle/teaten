@@ -54,6 +54,14 @@ export type LegalSection = {
   body: I18nText[];
 };
 
+export type GiftCardItem = {
+  id: string;
+  /** Small badge above the name, e.g. "Package 1". */
+  badge: I18nText;
+  name: I18nText;
+  price: string;
+};
+
 export type SiteContent = {
   brand: {
     name: string;
@@ -138,6 +146,27 @@ export type SiteContent = {
     title: I18nText;
     description: I18nText;
     ogImage: string;
+  };
+  giftCards: {
+    enabled: boolean;
+    linkLabel: I18nText;
+    title: I18nText;
+    intro: I18nText;
+    /** Small print under the packages, e.g. minimum order. */
+    note: I18nText;
+    image: string;
+    items: GiftCardItem[];
+  };
+  location: {
+    enabled: boolean;
+    linkLabel: I18nText;
+    title: I18nText;
+    intro: I18nText;
+    /** Short vertical clip of the salon, served from /public. */
+    video: string;
+    videoPoster: string;
+    /** Practical directions, one line each. */
+    directions: I18nText[];
   };
   legal: {
     /** Label used for the footer link. */

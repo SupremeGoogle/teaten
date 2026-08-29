@@ -29,6 +29,8 @@ type SectionId =
   | "gallery"
   | "testimonials"
   | "booking"
+  | "giftcards"
+  | "location"
   | "footer"
   | "legal";
 
@@ -43,6 +45,8 @@ const SECTIONS: { id: SectionId; label: string; note: string }[] = [
   { id: "gallery", label: "Gallery", note: "Photos" },
   { id: "testimonials", label: "Reviews", note: "Client quotes" },
   { id: "booking", label: "Booking", note: "Form texts" },
+  { id: "giftcards", label: "Gift cards", note: "Packages and prices" },
+  { id: "location", label: "Location", note: "Video, address, directions" },
   { id: "footer", label: "Footer", note: "Closing line" },
   { id: "legal", label: "Privacy page", note: "Personal data policy" },
 ];
@@ -326,6 +330,8 @@ export default function Editor({
           {section === "gallery" && <GallerySection draft={draft} set={set} />}
           {section === "testimonials" && <TestimonialsSection draft={draft} set={set} />}
           {section === "booking" && <BookingSection draft={draft} set={set} />}
+          {section === "giftcards" && <GiftCardsSection draft={draft} set={set} />}
+          {section === "location" && <LocationSection draft={draft} set={set} />}
           {section === "footer" && <FooterSection draft={draft} set={set} />}
           {section === "legal" && <LegalSectionEditor draft={draft} set={set} />}
         </main>
@@ -776,6 +782,94 @@ function BookingSection({ draft, set }: Props) {
       <ImageInput label="Photo" value={b.image} onChange={(v) => set("booking", { ...b, image: v })} />
       <I18nInput label="Small note under the button" value={b.note} onChange={(v) => set("booking", { ...b, note: v })} />
     </Card>
+  );
+}
+
+function GiftCardsSection({ draft, set }: Props) {
+  const g = draft.giftCards;
+  return (
+    <>
+      <Card title="Gift cards page">
+        <Toggle
+          label="Show the gift cards page"
+          value={g.enabled}
+          onChange={(v) => set("giftCards", { ...g, enabled: v })}
+        />
+        <I18nInput label="Menu label" value={g.linkLabel} onChange={(v) => set("giftCards", { ...g, linkLabel: v })} />
+        <I18nInput label="Title" value={g.title} onChange={(v) => set("giftCards", { ...g, title: v })} />
+        <I18nInput label="Intro" value={g.intro} onChange={(v) => set("giftCards", { ...g, intro: v })} multiline />
+        <I18nInput
+          label="Small print"
+          value={g.note}
+          onChange={(v) => set("giftCards", { ...g, note: v })}
+          multiline
+          hint="Shown under the packages — minimum order, who the offer is for, dates."
+        />
+        <ImageInput label="Photo" value={g.image} onChange={(v) => set("giftCards", { ...g, image: v })} />
+      </Card>
+
+      <Card title="Packages">
+        <ListEditor
+          title="Packages"
+          items={g.items}
+          onChange={(items) => set("giftCards", { ...g, items })}
+          create={() => ({ id: uid("gc"), badge: { en: "Package" }, name: { en: "New package" }, price: "" })}
+          labelFor={(item) => `${item.name.en}${item.price ? ` — €${item.price}` : ""}`}
+          renderItem={(item, update) => (
+            <>
+              <I18nInput label="Badge" value={item.badge} onChange={(v) => update({ badge: v })} />
+              <I18nInput label="What is included" value={item.name} onChange={(v) => update({ name: v })} />
+              <Field label="Price in €">
+                <TextInput value={item.price} onChange={(v) => update({ price: v })} />
+              </Field>
+            </>
+          )}
+        />
+      </Card>
+    </>
+  );
+}
+
+function LocationSection({ draft, set }: Props) {
+  const l = draft.location;
+  return (
+    <>
+      <Card title="Location page">
+        <Toggle
+          label="Show the location page"
+          value={l.enabled}
+          onChange={(v) => set("location", { ...l, enabled: v })}
+        />
+        <I18nInput label="Menu label" value={l.linkLabel} onChange={(v) => set("location", { ...l, linkLabel: v })} />
+        <I18nInput label="Title" value={l.title} onChange={(v) => set("location", { ...l, title: v })} />
+        <I18nInput label="Intro" value={l.intro} onChange={(v) => set("location", { ...l, intro: v })} multiline />
+        <Field
+          label="Video file"
+          hint="Path to a vertical clip in the project, e.g. /video/salon.mp4. Upload new video files to the repository — the panel only handles images."
+        >
+          <TextInput value={l.video} onChange={(v) => set("location", { ...l, video: v })} />
+        </Field>
+        <ImageInput
+          label="Video poster"
+          value={l.videoPoster}
+          onChange={(v) => set("location", { ...l, videoPoster: v })}
+          hint="Still frame shown before the video starts."
+        />
+      </Card>
+
+      <Card title="How to find us">
+        <ListEditor
+          title="Directions"
+          items={l.directions}
+          onChange={(directions) => set("location", { ...l, directions })}
+          create={() => ({ en: "" })}
+          labelFor={(item, i) => item.en.slice(0, 60) || `Line ${i + 1}`}
+          renderItem={(item, update) => (
+            <I18nInput label="Line" value={item} onChange={(v) => update(v)} multiline rows={3} />
+          )}
+        />
+      </Card>
+    </>
   );
 }
 
