@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Logo from "../Logo";
-import type { SiteContent } from "@/lib/types";
+import { applyTranslations, collectMissing } from "@/lib/i18n-fields";
+import { LANGS, type Lang, type SiteContent } from "@/lib/types";
 import {
   ColorInput,
   Field,
@@ -28,7 +29,8 @@ type SectionId =
   | "gallery"
   | "testimonials"
   | "booking"
-  | "footer";
+  | "footer"
+  | "legal";
 
 const SECTIONS: { id: SectionId; label: string; note: string }[] = [
   { id: "brand", label: "Brand & colours", note: "Name, logo, palette, page title" },
@@ -42,19 +44,28 @@ const SECTIONS: { id: SectionId; label: string; note: string }[] = [
   { id: "testimonials", label: "Reviews", note: "Client quotes" },
   { id: "booking", label: "Booking", note: "Form texts" },
   { id: "footer", label: "Footer", note: "Closing line" },
+  { id: "legal", label: "Privacy page", note: "Personal data policy" },
 ];
+
+const TARGET_LANGS: Lang[] = LANGS.map((l) => l.code).filter((l) => l !== "en");
 
 export default function Editor({
   draft,
   setDraft,
+  baseline,
+  setBaseline,
   source,
   onReload,
 }: {
   draft: SiteContent;
   setDraft: (c: SiteContent) => void;
+  baseline: SiteContent;
+  setBaseline: (c: SiteContent) => void;
   source: string;
   onReload: () => void;
 }) {
+  const [autoTranslate, setAutoTranslate] = useState(true);
+  const [translating, setTranslating] = useState(false);
   const [section, setSection] = useState<SectionId>("brand");
   const [dirty, setDirty] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -79,14 +90,63 @@ export default function Editor({
     return () => window.removeEventListener("beforeunload", warn);
   }, [dirty, pending.length]);
 
+  /**
+   * Fills Albanian and Russian from the English source. Only fields whose English
+   * changed, or whose translation is empty, are sent — a translation typed by hand
+   * survives as long as its English text stays the same.
+   */
+  const runTranslation = async (content: SiteContent): Promise<SiteContent> => {
+    const entries = collectMissing(content, baseline, TARGET_LANGS);
+    if (!entries.length) return content;
+
+    setTranslating(true);
+    try {
+      const res = await fetch("/api/admin/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ entries }),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        // Translation is a convenience: never let it block a save.
+        setMessage({ kind: "err", text: `Translation skipped — ${data.error || res.status}` });
+        return content;
+      }
+      return applyTranslations(content, data.translations || {});
+    } catch (e) {
+      setMessage({
+        kind: "err",
+        text: `Translation skipped — ${e instanceof Error ? e.message : "network error"}`,
+      });
+      return content;
+    } finally {
+      setTranslating(false);
+    }
+  };
+
+  const translateNow = async () => {
+    const translated = await runTranslation(draft);
+    if (translated !== draft) {
+      setDraft(translated);
+      setDirty(true);
+      setMessage({ kind: "ok", text: "Albanian and Russian filled in from the English text." });
+    } else {
+      setMessage({ kind: "ok", text: "Nothing new to translate." });
+    }
+  };
+
   const save = async () => {
     setSaving(true);
     setMessage(null);
     try {
+      const payload = autoTranslate ? await runTranslation(draft) : draft;
+      if (payload !== draft) setDraft(payload);
+
       const res = await fetch("/api/admin/content", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content: draft, uploads: pending }),
+        body: JSON.stringify({ content: payload, uploads: pending }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
@@ -95,6 +155,8 @@ export default function Editor({
       }
       clearPending();
       setDirty(false);
+      // What we just published becomes the yardstick for the next round of changes.
+      setBaseline(structuredClone(payload));
       setMessage({
         kind: "ok",
         text:
@@ -154,10 +216,10 @@ export default function Editor({
             <button
               type="button"
               onClick={save}
-              disabled={saving || (!dirty && !pending.length)}
+              disabled={saving || translating || (!dirty && !pending.length)}
               className="rounded-full bg-espresso px-5 py-2 text-xs uppercase tracking-[0.14em] text-cream transition-colors hover:bg-espresso-soft disabled:opacity-40"
             >
-              {saving ? "Publishing…" : "Publish"}
+              {translating ? "Translating…" : saving ? "Publishing…" : "Publish"}
             </button>
           </div>
         </div>
@@ -218,7 +280,34 @@ export default function Editor({
               </li>
             ))}
           </ul>
-          <p className="mt-4 px-3 text-[0.68rem] leading-relaxed text-espresso-soft/70 lg:sticky lg:top-[30rem]">
+          <div className="mt-5 rounded-xl border border-espresso/12 bg-white/60 px-3 py-3">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.14em] text-espresso-soft">
+              Translation
+            </p>
+            <label className="mt-2 flex cursor-pointer items-start gap-2 text-[0.72rem] leading-snug text-espresso">
+              <input
+                type="checkbox"
+                checked={autoTranslate}
+                onChange={(e) => setAutoTranslate(e.target.checked)}
+                className="mt-0.5 accent-[color:var(--color-espresso)]"
+              />
+              <span>Fill Albanian and Russian automatically when publishing</span>
+            </label>
+            <button
+              type="button"
+              onClick={translateNow}
+              disabled={translating || saving}
+              className="mt-2.5 w-full rounded-full border border-espresso/20 px-3 py-1.5 text-[0.68rem] uppercase tracking-[0.12em] text-espresso transition-colors hover:border-espresso disabled:opacity-50"
+            >
+              {translating ? "Translating…" : "Translate now"}
+            </button>
+            <p className="mt-2 text-[0.65rem] leading-relaxed text-espresso-soft/70">
+              Only English that you changed is re-translated. Anything you wrote yourself
+              in Albanian or Russian stays untouched.
+            </p>
+          </div>
+
+          <p className="mt-4 px-3 text-[0.68rem] leading-relaxed text-espresso-soft/70">
             Editing the {source === "github" ? "live version from GitHub" : "bundled copy"}.{" "}
             <button type="button" onClick={onReload} className="underline">
               Reload
@@ -238,6 +327,7 @@ export default function Editor({
           {section === "testimonials" && <TestimonialsSection draft={draft} set={set} />}
           {section === "booking" && <BookingSection draft={draft} set={set} />}
           {section === "footer" && <FooterSection draft={draft} set={set} />}
+          {section === "legal" && <LegalSectionEditor draft={draft} set={set} />}
         </main>
       </div>
     </div>
@@ -674,6 +764,50 @@ function BookingSection({ draft, set }: Props) {
       <ImageInput label="Photo" value={b.image} onChange={(v) => set("booking", { ...b, image: v })} />
       <I18nInput label="Small note under the button" value={b.note} onChange={(v) => set("booking", { ...b, note: v })} />
     </Card>
+  );
+}
+
+function LegalSectionEditor({ draft, set }: Props) {
+  const l = draft.legal;
+  return (
+    <>
+      <Card title="Privacy page">
+        <I18nInput label="Footer link label" value={l.linkLabel} onChange={(v) => set("legal", { ...l, linkLabel: v })} />
+        <I18nInput label="Page title" value={l.title} onChange={(v) => set("legal", { ...l, title: v })} />
+        <I18nInput
+          label="Last updated"
+          value={l.updated}
+          onChange={(v) => set("legal", { ...l, updated: v })}
+          hint="Change this date whenever you edit the policy."
+        />
+        <I18nInput label="Intro" value={l.intro} onChange={(v) => set("legal", { ...l, intro: v })} multiline />
+      </Card>
+
+      <Card title="Sections">
+        <ListEditor
+          title="Sections"
+          items={l.sections}
+          onChange={(sections) => set("legal", { ...l, sections })}
+          create={() => ({ id: uid("l"), heading: { en: "New section" }, body: [{ en: "" }] })}
+          labelFor={(item) => item.heading.en}
+          renderItem={(item, update) => (
+            <>
+              <I18nInput label="Heading" value={item.heading} onChange={(v) => update({ heading: v })} />
+              <ListEditor
+                title="Paragraphs"
+                items={item.body}
+                onChange={(body) => update({ body })}
+                create={() => ({ en: "" })}
+                labelFor={(para, i) => para.en.slice(0, 60) || `Paragraph ${i + 1}`}
+                renderItem={(para, updatePara) => (
+                  <I18nInput label="Text" value={para} onChange={(v) => updatePara(v)} multiline rows={5} />
+                )}
+              />
+            </>
+          )}
+        />
+      </Card>
+    </>
   );
 }
 

@@ -3,7 +3,8 @@
     "name": "Tea Ten",
     "tagline": {
       "en": "Beauty & Spa",
-      "sq": "Beauty & Spa"
+      "sq": "Beauty & Spa",
+      "ru": "Beauty & Spa"
     },
     "logoImage": "/brand/logo-white.png",
     "favicon": "/brand/favicon.png",
@@ -26,13 +27,15 @@
     "whatsapp": "38344158234",
     "address": {
       "en": "Rr. Johan V. Hahn, Prishtina, Kosovo",
-      "sq": "Rr. Johan V. Hahn, Prishtinë, Kosovë"
+      "sq": "Rr. Johan V. Hahn, Prishtinë, Kosovë",
+      "ru": "Rr. Johan V. Hahn, Prishtina, Kosovo"
     },
     "mapUrl": "https://maps.google.com/?q=Rr.+Johan+V.+Hahn+Prishtina",
     "mapEmbedUrl": "https://www.google.com/maps?q=Rr.%20Johan%20V.%20Hahn%20Prishtina&output=embed",
     "hours": {
       "en": "Monday – Saturday, 09:00 – 19:00",
-      "sq": "E hënë – E shtunë, 09:00 – 19:00"
+      "sq": "E hënë – E shtunë, 09:00 – 19:00",
+      "ru": "Понедельник – Суббота, 09:00 – 19:00"
     },
     "email": "",
     "instagram": "https://www.instagram.com/teaten_beautyspa",
@@ -43,7 +46,8 @@
       "id": "n1",
       "label": {
         "en": "About",
-        "sq": "Rreth nesh"
+        "sq": "Rreth nesh",
+        "ru": "О нас"
       },
       "href": "#about"
     },
@@ -51,7 +55,8 @@
       "id": "n2",
       "label": {
         "en": "Services",
-        "sq": "Shërbimet"
+        "sq": "Shërbimet",
+        "ru": "Услуги"
       },
       "href": "#services"
     },
@@ -59,7 +64,8 @@
       "id": "n3",
       "label": {
         "en": "Offers",
-        "sq": "Ofertat"
+        "sq": "Ofertat",
+        "ru": "Предложения"
       },
       "href": "#offers"
     },
@@ -67,7 +73,8 @@
       "id": "n4",
       "label": {
         "en": "Gallery",
-        "sq": "Galeria"
+        "sq": "Galeria",
+        "ru": "Галерея"
       },
       "href": "#gallery"
     },
@@ -75,7 +82,8 @@
       "id": "n5",
       "label": {
         "en": "Contact",
-        "sq": "Kontakti"
+        "sq": "Kontakti",
+        "ru": "Контакты"
       },
       "href": "#contact"
     }
@@ -84,62 +92,85 @@
     "image": "/gallery/hero-teaten-v2.jpg",
     "kicker": {
       "en": "Prishtina · Beauty & Spa",
-      "sq": "Prishtinë · Beauty & Spa"
+      "sq": "Prishtinë · Beauty & Spa",
+      "ru": "Приштина · Beauty & Spa"
     },
     "title": {
       "en": "More care, more glow",
-      "sq": "Më shumë kujdes, më shumë shkëlqim"
+      "sq": "Më shumë kujdes, më shumë shkëlqim",
+      "ru": "Больше заботы, больше сияния"
     },
     "subtitle": {
       "en": "Professional facial and body treatments, nails and brows — in a calm, warm space designed around you. Never careless with your beauty.",
-      "sq": "Trajtime profesionale për fytyrën dhe trupin, thonj dhe vetulla — në një ambient të ngrohtë e të qetë. Ne kujdesemi për bukurinë tuaj!"
+      "sq": "Trajtime profesionale për fytyrën dhe trupin, thonj dhe vetulla — në një ambient të ngrohtë e të qetë. Ne kujdesemi për bukurinë tuaj!",
+      "ru": "Профессиональные процедуры для лица и тела, маникюр и брови — в спокойном, тёплом пространстве, созданном вокруг вас. Никогда не относимся к вашей красоте небрежно."
     },
     "primaryCta": {
       "en": "Book on WhatsApp",
-      "sq": "Rezervo në WhatsApp"
+      "sq": "Rezervo në WhatsApp",
+      "ru": "Записаться через WhatsApp"
     },
     "secondaryCta": {
       "en": "See services",
-      "sq": "Shiko shërbimet"
+      "sq": "Shiko shërbimet",
+      "ru": "Смотреть услуги"
     }
   },
   "marquee": [
     {
-      "en": "Hydrafacial"
+      "en": "Hydrafacial",
+      "ru": "Hydrafacial",
+      "sq": "Hydrafacial"
     },
     {
-      "en": "Circadia"
+      "en": "Circadia",
+      "ru": "Circadia",
+      "sq": "Circadia"
     },
     {
-      "en": "Clarins"
+      "en": "Clarins",
+      "ru": "Clarins",
+      "sq": "Clarins"
     },
     {
-      "en": "Dermalux Flex"
+      "en": "Dermalux Flex",
+      "ru": "Dermalux Flex",
+      "sq": "Dermalux Flex"
     },
     {
-      "en": "OxyGeneo"
+      "en": "OxyGeneo",
+      "ru": "OxyGeneo",
+      "sq": "OxyGeneo"
     },
     {
-      "en": "Manicure & Pedicure"
+      "en": "Manicure & Pedicure",
+      "ru": "Маникюр и педикюр",
+      "sq": "Manicure & Pedicure"
     }
   ],
   "about": {
     "title": {
       "en": "A quiet place for your skin",
-      "sq": "Një vend i qetë për lëkurën tuaj"
+      "sq": "Një vend i qetë për lëkurën tuaj",
+      "ru": "Тихое место для вашей кожи"
     },
     "body": [
       {
-        "en": "Tea Ten Beauty & Spa is a boutique studio in the heart of Prishtina. We work with professional cosmetic lines — Circadia, Clarins and Hydrafacial — and with technology such as Dermalux Flex LED and OxyGeneo, so every treatment is chosen for your skin rather than for a menu."
+        "en": "Tea Ten Beauty & Spa is a boutique studio in the heart of Prishtina. We work with professional cosmetic lines — Circadia, Clarins and Hydrafacial — and with technology such as Dermalux Flex LED and OxyGeneo, so every treatment is chosen for your skin rather than for a menu.",
+        "ru": "Tea Ten Beauty & Spa — это бутик-студия в самом центре Приштины. Мы работаем с профессиональными косметическими линиями — Circadia, Clarins и Hydrafacial — и с технологиями, такими как Dermalux Flex LED и OxyGeneo, поэтому каждая процедура подбирается под вашу кожу, а не под меню.",
+        "sq": "Tea Ten Beauty & Spa është një studio butik në zemër të Prishtinës. Ne punojmë me linja kozmetike profesionale — Circadia, Clarins dhe Hydrafacial — dhe me teknologji si Dermalux Flex LED dhe OxyGeneo, kështu që çdo trajtim është zgjedhur për lëkurën tuaj, jo për një menu."
       },
       {
-        "en": "Every appointment starts with a short consultation. We look at your skin, listen to what you want to change, and build a plan that works over time — not just for one afternoon."
+        "en": "Every appointment starts with a short consultation. We look at your skin, listen to what you want to change, and build a plan that works over time — not just for one afternoon.",
+        "ru": "Каждая запись начинается с короткой консультации. Мы смотрим на вашу кожу, слушаем, что вы хотите изменить, и составляем план, который работает со временем — а не только на один день.",
+        "sq": "Çdo takim fillon me një konsultim të shkurtër. Ne shikojmë lëkurën tuaj, dëgjojmë çfarë doni të ndryshoni dhe ndërtojmë një plan që funksionon me kalimin e kohës — jo vetëm për një pasdite."
       }
     ],
     "image": "/gallery/about-teaten-v2.jpg",
     "signature": {
       "en": "Never careless with your beauty.",
-      "sq": "Ne kujdesemi për bukurinë tuaj!"
+      "sq": "Ne kujdesemi për bukurinë tuaj!",
+      "ru": "Никогда не относимся к вашей красоте небрежно."
     },
     "stats": [
       {
@@ -147,7 +178,8 @@
         "value": "10+",
         "label": {
           "en": "Years of care",
-          "sq": "Vite kujdesi"
+          "sq": "Vite kujdesi",
+          "ru": "Лет заботы"
         }
       },
       {
@@ -155,7 +187,8 @@
         "value": "25+",
         "label": {
           "en": "Treatments",
-          "sq": "Trajtime"
+          "sq": "Trajtime",
+          "ru": "Процедур"
         }
       },
       {
@@ -163,7 +196,8 @@
         "value": "6",
         "label": {
           "en": "Days a week",
-          "sq": "Ditë në javë"
+          "sq": "Ditë në javë",
+          "ru": "Дней в неделю"
         }
       }
     ]
@@ -171,30 +205,39 @@
   "services": {
     "title": {
       "en": "Services",
-      "sq": "Shërbimet"
+      "sq": "Shërbimet",
+      "ru": "Услуги"
     },
     "intro": {
       "en": "Facial and body treatments, nails and brows. Prices are a guide — the final plan is agreed at your consultation.",
-      "sq": "Trajtime për fytyrën dhe trupin, thonj dhe vetulla. Çmimet janë orientuese — plani përfundimtar caktohet gjatë konsultës."
+      "sq": "Trajtime për fytyrën dhe trupin, thonj dhe vetulla. Çmimet janë orientuese — plani përfundimtar caktohet gjatë konsultës.",
+      "ru": "Процедуры для лица и тела, маникюр и брови. Цены указаны как ориентир — окончательный план согласовывается на консультации."
     },
     "categories": [
       {
         "id": "c1",
         "title": {
           "en": "Facial treatments",
-          "sq": "Trajtime faciale"
+          "sq": "Trajtime faciale",
+          "ru": "Уход за лицом"
         },
         "intro": {
-          "en": "Deep cleansing, hydration and anti-ageing protocols with professional cosmetic lines."
+          "en": "Deep cleansing, hydration and anti-ageing protocols with professional cosmetic lines.",
+          "ru": "Глубокое очищение, увлажнение и антивозрастные протоколы с профессиональными косметическими линиями.",
+          "sq": "Pastrim i thellë, hidratim dhe protokolle kundër plakjes me linja kozmetike profesionale."
         },
         "items": [
           {
             "id": "f1",
             "name": {
-              "en": "Hydrafacial"
+              "en": "Hydrafacial",
+              "ru": "Hydrafacial",
+              "sq": "Hydrafacial"
             },
             "description": {
-              "en": "Cleansing, exfoliation, extraction and hydration in one device-led session."
+              "en": "Cleansing, exfoliation, extraction and hydration in one device-led session.",
+              "ru": "Очищение, отшелушивание, экстракция и увлажнение в одной процедуре с использованием аппарата.",
+              "sq": "Pastrim, eksfolim, ekstraktim dhe hidratim në një seancë të drejtuar nga pajisja."
             },
             "price": "100",
             "duration": ""
@@ -202,10 +245,14 @@
           {
             "id": "f2",
             "name": {
-              "en": "Swich Facial"
+              "en": "Swich Facial",
+              "ru": "Swich Facial",
+              "sq": "Swich Facial"
             },
             "description": {
-              "en": "Advanced resurfacing facial for texture, tone and clarity."
+              "en": "Advanced resurfacing facial for texture, tone and clarity.",
+              "ru": "Продвинутая омолаживающая процедура для текстуры, тона и чистоты кожи.",
+              "sq": "Facial avancuar për riformim të lëkurës për teksturë, ton dhe qartësi."
             },
             "price": "120",
             "duration": ""
@@ -213,10 +260,14 @@
           {
             "id": "f3",
             "name": {
-              "en": "Clarins Youthful Lift Treatment"
+              "en": "Clarins Youthful Lift Treatment",
+              "ru": "Clarins Youthful Lift Treatment",
+              "sq": "Clarins Youthful Lift Treatment"
             },
             "description": {
-              "en": "Firming, lifting facial with the Clarins professional line."
+              "en": "Firming, lifting facial with the Clarins professional line.",
+              "ru": "Лифтинг-процедура, укрепляющая и подтягивающая кожу, с использованием профессиональной линии Clarins.",
+              "sq": "Facial firmosës dhe ngritës me linjën profesionale Clarins."
             },
             "price": "100",
             "duration": ""
@@ -224,10 +275,14 @@
           {
             "id": "f4",
             "name": {
-              "en": "Clarins Hydrating Facial"
+              "en": "Clarins Hydrating Facial",
+              "ru": "Clarins Hydrating Facial",
+              "sq": "Clarins Hydrating Facial"
             },
             "description": {
-              "en": "Intense moisture for dry and tired skin."
+              "en": "Intense moisture for dry and tired skin.",
+              "ru": "Интенсивное увлажнение для сухой и уставшей кожи.",
+              "sq": "Hidratim intensiv për lëkurë të thatë dhe të lodhur."
             },
             "price": "70",
             "duration": ""
@@ -235,10 +290,14 @@
           {
             "id": "f5",
             "name": {
-              "en": "Vitamin C Facial"
+              "en": "Vitamin C Facial",
+              "ru": "Vitamin C Facial",
+              "sq": "Vitamin C Facial"
             },
             "description": {
-              "en": "Brightening antioxidant treatment for dull, uneven skin."
+              "en": "Brightening antioxidant treatment for dull, uneven skin.",
+              "ru": "Осветляющая антиоксидантная процедура для тусклой и неровной кожи.",
+              "sq": "Trajtim ndriçues me antioksidantë për lëkurë të shurdhër dhe të pabarabartë."
             },
             "price": "80",
             "duration": ""
@@ -246,10 +305,14 @@
           {
             "id": "f6",
             "name": {
-              "en": "Enzyme Customized Facial"
+              "en": "Enzyme Customized Facial",
+              "ru": "Enzyme Customized Facial",
+              "sq": "Enzyme Customized Facial"
             },
             "description": {
-              "en": "Gentle enzymatic exfoliation, tailored to your skin on the day."
+              "en": "Gentle enzymatic exfoliation, tailored to your skin on the day.",
+              "ru": "Мягкое ферментативное отшелушивание, адаптированное под вашу кожу в день процедуры.",
+              "sq": "Eksfolim enzimatik i butë, i përshtatur për lëkurën tuaj atë ditë."
             },
             "price": "70",
             "duration": ""
@@ -257,10 +320,14 @@
           {
             "id": "f7",
             "name": {
-              "en": "Circadia Treatment"
+              "en": "Circadia Treatment",
+              "ru": "Circadia Treatment",
+              "sq": "Circadia Treatment"
             },
             "description": {
-              "en": "Professional Circadia protocol for renewal and glow."
+              "en": "Professional Circadia protocol for renewal and glow.",
+              "ru": "Профессиональный протокол Circadia для обновления и сияния.",
+              "sq": "Protokoll profesional Circadia për rinovim dhe shkëlqim."
             },
             "price": "90",
             "duration": ""
@@ -268,10 +335,14 @@
           {
             "id": "f8",
             "name": {
-              "en": "OxyGeneo"
+              "en": "OxyGeneo",
+              "ru": "OxyGeneo",
+              "sq": "OxyGeneo"
             },
             "description": {
-              "en": "Exfoliation, oxygenation and nourishment in a single session."
+              "en": "Exfoliation, oxygenation and nourishment in a single session.",
+              "ru": "Отшелушивание, оксигенация и питание за одну процедуру.",
+              "sq": "Eksfolim, oksigjenim dhe ushqim në një seancë të vetme."
             },
             "price": "60",
             "duration": ""
@@ -279,10 +350,14 @@
           {
             "id": "f9",
             "name": {
-              "en": "Classic Treatment + Dermalux"
+              "en": "Classic Treatment + Dermalux",
+              "ru": "Classic Treatment + Dermalux",
+              "sq": "Classic Treatment + Dermalux"
             },
             "description": {
-              "en": "Classic cleansing facial finished with Dermalux Flex LED therapy."
+              "en": "Classic cleansing facial finished with Dermalux Flex LED therapy.",
+              "ru": "Классическая очищающая процедура с завершающей LED-терапией Dermalux Flex.",
+              "sq": "Facial klasik pastrimi i përfunduar me terapi Dermalux Flex LED."
             },
             "price": "60",
             "duration": ""
@@ -299,19 +374,26 @@
         "id": "c2",
         "title": {
           "en": "Body & massage",
-          "sq": "Trupi & masazhi"
+          "sq": "Trupi & masazhi",
+          "ru": "Тело и массаж"
         },
         "intro": {
-          "en": "Peelings, wraps and massage that leave the skin soft and the head quiet."
+          "en": "Peelings, wraps and massage that leave the skin soft and the head quiet.",
+          "ru": "Пилинги, обертывания и массаж, которые делают кожу мягкой, а голову ясной.",
+          "sq": "Peelingje, mbështjellje dhe masazh që lënë lëkurën të butë dhe kokën të qetë."
         },
         "items": [
           {
             "id": "b1",
             "name": {
-              "en": "Royal Relax Treatment"
+              "en": "Royal Relax Treatment",
+              "ru": "Royal Relax Treatment",
+              "sq": "Royal Relax Treatment"
             },
             "description": {
-              "en": "Body peeling, mask and a 45-minute massage."
+              "en": "Body peeling, mask and a 45-minute massage.",
+              "ru": "Пилинг тела, маска и 45-минутный массаж.",
+              "sq": "Peeling trupi, maskë dhe masazh 45-minutësh."
             },
             "price": "85",
             "duration": "45 min massage"
@@ -319,10 +401,14 @@
           {
             "id": "b2",
             "name": {
-              "en": "Hydrating Body Treatment & Massage"
+              "en": "Hydrating Body Treatment & Massage",
+              "ru": "Hydrating Body Treatment & Massage",
+              "sq": "Hidratues Trupi & Masazh"
             },
             "description": {
-              "en": "Deep moisture treatment combined with a relaxing massage."
+              "en": "Deep moisture treatment combined with a relaxing massage.",
+              "ru": "Глубокое увлажнение в сочетании с расслабляющим массажем.",
+              "sq": "Trajtim i thellë hidratues i kombinuar me masazh relaksues."
             },
             "price": "75",
             "duration": ""
@@ -330,10 +416,14 @@
           {
             "id": "b3",
             "name": {
-              "en": "Body Peeling + Body Mask"
+              "en": "Body Peeling + Body Mask",
+              "ru": "Body Peeling + Body Mask",
+              "sq": "Piling Trupi + Maskë Trupi"
             },
             "description": {
-              "en": "Full-body exfoliation followed by a nourishing mask."
+              "en": "Full-body exfoliation followed by a nourishing mask.",
+              "ru": "Отшелушивание всего тела с последующей питательной маской.",
+              "sq": "Eksfolim i gjithë trupit i ndjekur nga një maskë ushqyese."
             },
             "price": "65",
             "duration": ""
@@ -341,10 +431,14 @@
           {
             "id": "b4",
             "name": {
-              "en": "Scrub + Mask"
+              "en": "Scrub + Mask",
+              "ru": "Scrub + Mask",
+              "sq": "Piling + Maskë"
             },
             "description": {
-              "en": "Smoothing scrub and a hydrating body mask."
+              "en": "Smoothing scrub and a hydrating body mask.",
+              "ru": "Смягчающий скраб и увлажняющая маска для тела.",
+              "sq": "Piling lëmues dhe maskë trupi hidratuese."
             },
             "price": "60",
             "duration": ""
@@ -352,10 +446,14 @@
           {
             "id": "b5",
             "name": {
-              "en": "Massage + Mask"
+              "en": "Massage + Mask",
+              "ru": "Massage + Mask",
+              "sq": "Masazh + Maskë"
             },
             "description": {
-              "en": "A short reset: 30 minutes of massage plus a mask."
+              "en": "A short reset: 30 minutes of massage plus a mask.",
+              "ru": "Короткая перезагрузка: 30 минут массажа плюс маска.",
+              "sq": "Një rikthim i shkurtër: 30 minuta masazh plus maskë."
             },
             "price": "50",
             "duration": "30 min"
@@ -363,27 +461,33 @@
         ],
         "images": [
           "/gallery/body-scrub.jpg",
-          "/gallery/body-peeling.jpg",
-          "/gallery/clarins.jpg"
+          "/gallery/body-peeling.jpg"
         ]
       },
       {
         "id": "c3",
         "title": {
           "en": "Nails",
-          "sq": "Thonjtë"
+          "sq": "Thonjtë",
+          "ru": "Ногти"
         },
         "intro": {
-          "en": "Manicure, pedicure and gel work — clean shapes and long wear."
+          "en": "Manicure, pedicure and gel work — clean shapes and long wear.",
+          "ru": "Маникюр, педикюр и гель-покрытие — чистые формы и долговечность.",
+          "sq": "Manikyr, pedikyr dhe punë me xhel — forma të pastra dhe qëndrueshmëri e gjatë."
         },
         "items": [
           {
             "id": "n1",
             "name": {
-              "en": "Classic manicure"
+              "en": "Classic manicure",
+              "ru": "Классический маникюр",
+              "sq": "Manikyr klasik"
             },
             "description": {
-              "en": "Shaping, cuticle care and polish."
+              "en": "Shaping, cuticle care and polish.",
+              "ru": "Придание формы, уход за кутикулой и покрытие лаком.",
+              "sq": "Formësim, kujdes për kutikulat dhe llak."
             },
             "price": "",
             "duration": ""
@@ -391,10 +495,14 @@
           {
             "id": "n2",
             "name": {
-              "en": "Gel manicure"
+              "en": "Gel manicure",
+              "ru": "Гелевый маникюр",
+              "sq": "Manikyr me xhel"
             },
             "description": {
-              "en": "Long-wear gel colour on natural nails."
+              "en": "Long-wear gel colour on natural nails.",
+              "ru": "Долговечное гель-покрытие на натуральных ногтях.",
+              "sq": "Ngjyrë xhel me qëndrueshmëri të gjatë në thonjtë natyralë."
             },
             "price": "",
             "duration": ""
@@ -402,10 +510,14 @@
           {
             "id": "n3",
             "name": {
-              "en": "Nail extensions"
+              "en": "Nail extensions",
+              "ru": "Наращивание ногтей",
+              "sq": "Zgjatim thonjsh"
             },
             "description": {
-              "en": "Built and shaped extensions with a finish of your choice."
+              "en": "Built and shaped extensions with a finish of your choice.",
+              "ru": "Наращенные ногти любой формы и длины с покрытием на ваш выбор.",
+              "sq": "Zgjatime të ndërtuara dhe të formësuara me finish sipas zgjedhjes suaj."
             },
             "price": "",
             "duration": ""
@@ -413,10 +525,14 @@
           {
             "id": "n4",
             "name": {
-              "en": "Pedicure"
+              "en": "Pedicure",
+              "ru": "Педикюр",
+              "sq": "Pedikyr"
             },
             "description": {
-              "en": "Full foot care with polish or gel."
+              "en": "Full foot care with polish or gel.",
+              "ru": "Полный уход за стопами с покрытием лаком или гелем.",
+              "sq": "Kujdes i plotë për këmbët me llak ose xhel."
             },
             "price": "",
             "duration": ""
@@ -424,10 +540,14 @@
           {
             "id": "n5",
             "name": {
-              "en": "Nail art"
+              "en": "Nail art",
+              "ru": "Нейл-арт",
+              "sq": "Art në thonj"
             },
             "description": {
-              "en": "Custom designs, from a single accent to full sets."
+              "en": "Custom designs, from a single accent to full sets.",
+              "ru": "Индивидуальный дизайн — от одного акцента до полного покрытия.",
+              "sq": "Dizajne të personalizuara, nga një theks i vetëm deri te sete të plota."
             },
             "price": "",
             "duration": ""
@@ -445,19 +565,26 @@
         "id": "c4",
         "title": {
           "en": "Brows & lashes",
-          "sq": "Vetullat & qerpikët"
+          "sq": "Vetullat & qerpikët",
+          "ru": "Брови и ресницы"
         },
         "intro": {
-          "en": "Shape, tint and definition that suit your face."
+          "en": "Shape, tint and definition that suit your face.",
+          "ru": "Форма, оттенок и выразительность, которые подходят вашему лицу.",
+          "sq": "Formë, ngjyrë dhe përcaktim që i shkojnë fytyrës suaj."
         },
         "items": [
           {
             "id": "e1",
             "name": {
-              "en": "Brow shaping"
+              "en": "Brow shaping",
+              "ru": "Коррекция бровей",
+              "sq": "Formësim i vetullave"
             },
             "description": {
-              "en": "Precision shaping to open up the eye."
+              "en": "Precision shaping to open up the eye.",
+              "ru": "Точная коррекция, чтобы распахнуть взгляд.",
+              "sq": "Formësim i saktë për të hapur syrin."
             },
             "price": "",
             "duration": ""
@@ -465,10 +592,14 @@
           {
             "id": "e2",
             "name": {
-              "en": "Brow tint"
+              "en": "Brow tint",
+              "ru": "Окрашивание бровей",
+              "sq": "Ngjyrosje e vetullave"
             },
             "description": {
-              "en": "Colour that fills gaps and adds depth."
+              "en": "Colour that fills gaps and adds depth.",
+              "ru": "Цвет, который заполняет пробелы и добавляет глубину.",
+              "sq": "Ngjyrë që mbush boshllëqet dhe shton thellësi."
             },
             "price": "",
             "duration": ""
@@ -476,10 +607,14 @@
           {
             "id": "e3",
             "name": {
-              "en": "Lash lift"
+              "en": "Lash lift",
+              "ru": "Ламинирование ресниц",
+              "sq": "Ngritje e qerpikëve"
             },
             "description": {
-              "en": "A lasting curl on your own lashes."
+              "en": "A lasting curl on your own lashes.",
+              "ru": "Долговременный изгиб ваших собственных ресниц.",
+              "sq": "Një kaçurrel e qëndrueshme në qerpikët tuaj natyralë."
             },
             "price": "",
             "duration": ""
@@ -487,10 +622,14 @@
           {
             "id": "e4",
             "name": {
-              "en": "Facial waxing"
+              "en": "Facial waxing",
+              "ru": "Восковая депиляция лица",
+              "sq": "Heqje qimesh me dyllë në fytyrë"
             },
             "description": {
-              "en": "Gentle hair removal for the face."
+              "en": "Gentle hair removal for the face.",
+              "ru": "Деликатное удаление волос на лице.",
+              "sq": "Heqje e butë e qimeve për fytyrën."
             },
             "price": "",
             "duration": ""
@@ -507,22 +646,27 @@
     "enabled": true,
     "title": {
       "en": "Current offers",
-      "sq": "Ofertat aktuale"
+      "sq": "Ofertat aktuale",
+      "ru": "Текущие предложения"
     },
     "intro": {
       "en": "Special prices on selected treatments. Book your appointment while they last.",
-      "sq": "Çmime speciale për trajtime të përzgjedhura. Rezervoni terminin tuaj sot!"
+      "sq": "Çmime speciale për trajtime të përzgjedhura. Rezervoni terminin tuaj sot!",
+      "ru": "Специальные цены на выбранные процедуры. Запишитесь, пока они действуют."
     },
     "validity": {
       "en": "Valid 26 August – 3 September",
-      "sq": "Oferta vlen prej 26 Gusht – 3 Shtator"
+      "sq": "Oferta vlen prej 26 Gusht – 3 Shtator",
+      "ru": "Действует с 26 августа по 3 сентября"
     },
-    "image": "/gallery/clarins.jpg",
+    "image": "/gallery/facial-warm.jpg",
     "items": [
       {
         "id": "o1",
         "name": {
-          "en": "Scrub + Mask"
+          "en": "Scrub + Mask",
+          "ru": "Скраб + Маска",
+          "sq": "Piling + Maskë"
         },
         "oldPrice": "60",
         "newPrice": "49"
@@ -530,7 +674,9 @@
       {
         "id": "o2",
         "name": {
-          "en": "30 min Massage + Mask"
+          "en": "30 min Massage + Mask",
+          "ru": "Массаж 30 мин + Маска",
+          "sq": "30 min Masazh + Maskë"
         },
         "oldPrice": "50",
         "newPrice": "35"
@@ -538,7 +684,9 @@
       {
         "id": "o3",
         "name": {
-          "en": "Circadia Treatment · New Session Glow Up"
+          "en": "Circadia Treatment · New Session Glow Up",
+          "ru": "Уход Circadia · New Session Glow Up",
+          "sq": "Trajtim Circadia · New Session Glow Up"
         },
         "oldPrice": "90",
         "newPrice": "65"
@@ -546,7 +694,9 @@
       {
         "id": "o4",
         "name": {
-          "en": "Hydrafacial"
+          "en": "Hydrafacial",
+          "ru": "Hydrafacial",
+          "sq": "Hydrafacial"
         },
         "oldPrice": "100",
         "newPrice": "75"
@@ -556,11 +706,13 @@
   "gallery": {
     "title": {
       "en": "Gallery",
-      "sq": "Galeria"
+      "sq": "Galeria",
+      "ru": "Галерея"
     },
     "intro": {
       "en": "A look at the work and the space.",
-      "sq": "Një vështrim mbi punën dhe ambientin tonë."
+      "sq": "Një vështrim mbi punën dhe ambientin tonë.",
+      "ru": "Взгляд на работу и пространство."
     },
     "items": [
       {
@@ -661,15 +813,6 @@
           "sq": "Në tavolinën e manikyrit",
           "ru": "За маникюрным столом"
         }
-      },
-      {
-        "id": "g12",
-        "image": "/gallery/clarins.jpg",
-        "caption": {
-          "en": "Clarins professional line",
-          "sq": "Clarins",
-          "ru": "Линия Clarins"
-        }
       }
     ]
   },
@@ -677,38 +820,297 @@
     "enabled": false,
     "title": {
       "en": "What our clients say",
-      "sq": "Çfarë thonë klientët tanë"
+      "sq": "Çfarë thonë klientët tanë",
+      "ru": "Что говорят наши клиенты"
     },
     "items": []
   },
   "booking": {
     "title": {
       "en": "Book an appointment",
-      "sq": "Rezervo një termin"
+      "sq": "Rezervo një termin",
+      "ru": "Записаться на прием"
     },
     "intro": {
       "en": "Fill in the form and we will open WhatsApp with your request ready to send. We confirm your time as soon as we read it.",
-      "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë."
+      "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë.",
+      "ru": "Заполните форму, и мы откроем WhatsApp с готовым запросом. Мы подтвердим ваше время, как только прочтем его."
     },
     "image": "/gallery/skin-routine.jpg",
     "note": {
-      "en": "Your request is sent through WhatsApp — nothing is stored on this website."
+      "en": "Your request is sent through WhatsApp — nothing is stored on this website.",
+      "ru": "Ваш запрос отправляется через WhatsApp — ничего не хранится на этом сайте.",
+      "sq": "Kërkesa juaj dërgohet përmes WhatsApp — asgjë nuk ruhet në këtë faqe."
     }
   },
   "footer": {
     "note": {
       "en": "Never careless with your beauty.",
-      "sq": "Ne kujdesemi për bukurinë tuaj!"
+      "sq": "Ne kujdesemi për bukurinë tuaj!",
+      "ru": "Никогда не небрежны с вашей красотой."
     },
     "credit": "Tea Ten Beauty & Spa"
   },
   "seo": {
     "title": {
-      "en": "Tea Ten Beauty & Spa — Prishtina"
+      "en": "Tea Ten Beauty & Spa — Prishtina",
+      "ru": "Tea Ten Beauty & Spa — Приштина",
+      "sq": "Tea Ten Beauty & Spa — Prishtinë"
     },
     "description": {
-      "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp."
+      "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp.",
+      "ru": "Уход за лицом и телом, ногти и брови в Приштине. Hydrafacial, Circadia, Clarins, Dermalux Flex и OxyGeneo. Запись через WhatsApp.",
+      "sq": "Trajtime fytyre dhe trupi, manikyr dhe vetulla në Prishtinë. Hydrafacial, Circadia, Clarins, Dermalux Flex dhe OxyGeneo. Rezervoni në WhatsApp."
     },
     "ogImage": "/gallery/studio.jpg"
+  },
+  "legal": {
+    "linkLabel": {
+      "en": "Privacy",
+      "ru": "Конфиденциальность",
+      "sq": "Privatësia"
+    },
+    "title": {
+      "en": "Privacy & personal data",
+      "ru": "Конфиденциальность и личные данные",
+      "sq": "Privatësia & të dhënat personale"
+    },
+    "updated": {
+      "en": "Last updated 29 August 2026",
+      "ru": "Последнее обновление 29 августа 2026",
+      "sq": "Përditësuar së fundmi më 29 gusht 2026"
+    },
+    "intro": {
+      "en": "This page explains what happens to your personal data when you use the Tea Ten Beauty & Spa website. We have kept it short and specific, because the site itself collects very little.",
+      "ru": "На этой странице объясняется, что происходит с вашими личными данными при использовании сайта Tea Ten Beauty & Spa. Мы сделали описание коротким и конкретным, потому что сам сайт собирает очень мало данных.",
+      "sq": "Kjo faqe shpjegon se çfarë ndodh me të dhënat tuaja personale kur përdorni faqen e Tea Ten Beauty & Spa. E kemi mbajtur të shkurtër dhe specifike, sepse vetë faqja mbledh shumë pak."
+    },
+    "sections": [
+      {
+        "id": "l1",
+        "heading": {
+          "en": "Who is responsible",
+          "ru": "Кто несет ответственность",
+          "sq": "Kush është përgjegjës"
+        },
+        "body": [
+          {
+            "en": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtina, Kosovo, is the controller of the personal data described here. You can reach us on 044 158 234 or 038 226 789, or through the WhatsApp number shown on the site.",
+            "ru": "Tea Ten Beauty & Spa, ул. Йохан В. Хан, Приштина, Косово, является контролером личных данных, описанных здесь. Вы можете связаться с нами по телефону 044 158 234 или 038 226 789, или через номер WhatsApp, указанный на сайте.",
+            "sq": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtinë, Kosovë, është kontrolluesi i të dhënave personale të përshkruara këtu. Mund të na kontaktoni në 044 158 234 ose 038 226 789, ose përmes numrit të WhatsApp të treguar në faqe."
+          },
+          {
+            "en": "Personal data is processed in line with the Law on Protection of Personal Data of the Republic of Kosovo (No. 06/L-082), which follows the same principles as the EU General Data Protection Regulation.",
+            "ru": "Личные данные обрабатываются в соответствии с Законом о защите личных данных Республики Косово (№ 06/L-082), который следует тем же принципам, что и Общий регламент ЕС по защите данных.",
+            "sq": "Të dhënat personale përpunohen në përputhje me Ligjin për Mbrojtjen e të Dhënave Personale të Republikës së Kosovës (Nr. 06/L-082), i cili ndjek të njëjtat parime si Rregullorja e Përgjithshme e BE-së për Mbrojtjen e të Dhënave."
+          }
+        ]
+      },
+      {
+        "id": "l2",
+        "heading": {
+          "en": "The booking form does not send data to us",
+          "ru": "Форма бронирования не отправляет данные нам",
+          "sq": "Formulari i rezervimit nuk na dërgon të dhëna"
+        },
+        "body": [
+          {
+            "en": "The booking form on this website does not submit anything to a server and nothing is stored here. When you press the button, your browser opens WhatsApp with a message already written out — your name, the treatment, your preferred date and time, and anything you added.",
+            "ru": "Форма бронирования на этом сайте не отправляет ничего на сервер, и здесь ничего не хранится. Когда вы нажимаете кнопку, ваш браузер открывает WhatsApp с уже написанным сообщением — ваше имя, процедура, предпочтительная дата и время, и все, что вы добавили.",
+            "sq": "Formulari i rezervimit në këtë faqe nuk dërgon asgjë në një server dhe asgjë nuk ruhet këtu. Kur shtypni butonin, shfletuesi juaj hap WhatsApp me një mesazh të shkruar paraprakisht — emrin tuaj, trajtimin, datën dhe orën e preferuar, dhe çdo gjë që keni shtuar."
+          },
+          {
+            "en": "Nothing is sent until you press send inside WhatsApp yourself. You can edit or delete the message before that, or simply close it.",
+            "ru": "Ничего не отправляется, пока вы сами не нажмете кнопку отправки в WhatsApp. Вы можете изменить или удалить сообщение до этого или просто закрыть его.",
+            "sq": "Asgjë nuk dërgohet derisa të shtypni dërgo brenda WhatsApp vetë. Mund ta redaktoni ose fshini mesazhin para kësaj, ose thjesht ta mbyllni."
+          }
+        ]
+      },
+      {
+        "id": "l3",
+        "heading": {
+          "en": "What we receive when you write to us",
+          "ru": "Что мы получаем, когда вы пишете нам",
+          "sq": "Çfarë marrim kur na shkruani"
+        },
+        "body": [
+          {
+            "en": "Once you send the message, we receive what it contains: your name, your WhatsApp phone number, the treatment you are interested in, your preferred time, and any notes you chose to add.",
+            "ru": "Когда вы отправляете сообщение, мы получаем то, что в нем содержится: ваше имя, ваш номер телефона в WhatsApp, интересующая вас процедура, предпочтительное время и любые заметки, которые вы решили добавить.",
+            "sq": "Pasi të dërgoni mesazhin, ne marrim atë që përmban: emrin tuaj, numrin tuaj të telefonit WhatsApp, trajtimin që ju intereson, kohën tuaj të preferuar dhe çdo shënim që zgjidhni të shtoni."
+          },
+          {
+            "en": "We use this only to answer you, agree a time and provide the treatment. The legal basis is the steps taken at your request before entering into a service agreement, and our legitimate interest in running the salon.",
+            "ru": "Мы используем это только для ответа вам, согласования времени и предоставления процедуры. Правовым основанием являются шаги, предпринятые по вашему запросу до заключения договора на оказание услуг, а также наша законная заинтересованность в работе салона.",
+            "sq": "Këtë e përdorim vetëm për t'ju përgjigjur, për të rënë dakord për një kohë dhe për të ofruar trajtimin. Baza ligjore janë hapat e ndërmarrë me kërkesën tuaj përpara lidhjes së një marrëveshjeje shërbimi, dhe interesi ynë legjitim në drejtimin e sallonit."
+          },
+          {
+            "en": "Please do not send health details through WhatsApp. If a treatment requires them, we will ask you at the salon and record only what is necessary.",
+            "ru": "Пожалуйста, не отправляйте данные о здоровье через WhatsApp. Если процедура требует их, мы спросим вас в салоне и запишем только необходимое.",
+            "sq": "Ju lutemi mos dërgoni detaje shëndetësore përmes WhatsApp. Nëse një trajtim i kërkon ato, ne do t'ju pyesim në sallon dhe do të regjistrojmë vetëm atë që është e nevojshme."
+          }
+        ]
+      },
+      {
+        "id": "l4",
+        "heading": {
+          "en": "WhatsApp is a separate service",
+          "ru": "WhatsApp — это отдельный сервис",
+          "sq": "WhatsApp është një shërbim i veçantë"
+        },
+        "body": [
+          {
+            "en": "Your conversation with us takes place inside WhatsApp, which is operated by Meta Platforms Ireland Ltd. Meta processes the message and its metadata under its own privacy policy, over which we have no control.",
+            "ru": "Ваш разговор с нами происходит внутри WhatsApp, который управляется компанией Meta Platforms Ireland Ltd. Meta обрабатывает сообщение и его метаданные в соответствии со своей собственной политикой конфиденциальности, которую мы не контролируем.",
+            "sq": "Biseda juaj me ne zhvillohet brenda WhatsApp, i cili operohet nga Meta Platforms Ireland Ltd. Meta përpunon mesazhin dhe të dhënat shoqëruese sipas politikës së vet të privatësisë, mbi të cilën ne nuk kemi kontroll."
+          },
+          {
+            "en": "If you would rather not use WhatsApp, call us on 044 158 234 or come to the salon.",
+            "ru": "Если вы предпочитаете не использовать WhatsApp, позвоните нам по номеру 044 158 234 или приходите в салон.",
+            "sq": "Nëse preferoni të mos përdorni WhatsApp, na telefononi në 044 158 234 ose ejani në sallon."
+          }
+        ]
+      },
+      {
+        "id": "l5",
+        "heading": {
+          "en": "What the website stores in your browser",
+          "ru": "Что сайт хранит в вашем браузере",
+          "sq": "Çfarë ruan faqja në shfletuesin tuaj"
+        },
+        "body": [
+          {
+            "en": "This site sets no advertising or analytics cookies. It stores a single item in your browser's local storage — the language you picked — so the site opens in that language next time. It never leaves your device and you can clear it at any time through your browser settings.",
+            "ru": "Этот сайт не устанавливает рекламных или аналитических файлов cookie. Он сохраняет один элемент в локальном хранилище вашего браузера — выбранный вами язык, — чтобы в следующий раз сайт открывался на этом языке. Это никогда не покидает ваше устройство, и вы можете очистить это в любой момент через настройки браузера.",
+            "sq": "Kjo faqe nuk vendos cookie reklamuese ose analitike. Ajo ruan një artikull të vetëm në hapësirën lokale të shfletuesit tuaj — gjuhën që zgjodhët — në mënyrë që faqja të hapet në atë gjuhë herën tjetër. Ajo kurrë nuk largohet nga pajisja juaj dhe mund ta pastroni në çdo kohë përmes cilësimeve të shfletuesit."
+          }
+        ]
+      },
+      {
+        "id": "l6",
+        "heading": {
+          "en": "Hosting and server logs",
+          "ru": "Хостинг и серверные журналы",
+          "sq": "Hostingu dhe regjistrat e serverit"
+        },
+        "body": [
+          {
+            "en": "The website is hosted by Vercel Inc. Like any web host, Vercel records technical request logs, which include your IP address, the time of the request, the page requested and your browser's user agent. These logs exist to keep the site running and secure, and are kept for a short period by the host.",
+            "ru": "Сайт размещается на хостинге Vercel Inc. Как и любой веб-хостинг, Vercel записывает технические журналы запросов, которые включают ваш IP-адрес, время запроса, запрошенную страницу и пользовательский агент вашего браузера. Эти журналы существуют для обеспечения работы и безопасности сайта и хранятся у хостинг-провайдера короткое время.",
+            "sq": "Faqja është e hostuar nga Vercel Inc. Si çdo host uebi, Vercel regjistron regjistra teknikë kërkesash, të cilët përfshijnë adresën tuaj IP, kohën e kërkesës, faqen e kërkuar dhe agjentin e përdoruesit të shfletuesit tuaj. Këta regjistra ekzistojnë për të mbajtur faqen funksional dhe të sigurt, dhe mbahen për një periudhë të shkurtër nga hosti."
+          },
+          {
+            "en": "The website's photos and text are served from the same host. We do not run any tracking or profiling on top of this.",
+            "ru": "Фотографии и текст сайта загружаются с того же хостинга. Мы не используем никакого отслеживания или профилирования поверх этого.",
+            "sq": "Fotot dhe teksti i faqes shërbehen nga i njëjti host. Ne nuk bëjmë asnjë gjurmim ose profilizim mbi këtë."
+          }
+        ]
+      },
+      {
+        "id": "l7",
+        "heading": {
+          "en": "The map and the social links",
+          "ru": "Карта и ссылки на социальные сети",
+          "sq": "Harta dhe lidhjet sociale"
+        },
+        "body": [
+          {
+            "en": "The contact section embeds a Google Maps frame. When it loads, Google receives your IP address and may set its own cookies under Google's privacy policy. If you prefer to avoid this, use the address written on the page rather than the map.",
+            "ru": "В разделе контактов встроена карта Google Maps. При её загрузке Google получает ваш IP-адрес и может устанавливать свои собственные файлы cookie в соответствии с политикой конфиденциальности Google. Если вы хотите этого избежать, используйте адрес, указанный на странице, а не карту.",
+            "sq": "Seksioni i kontaktit përfshin një kornizë Google Maps. Kur ajo ngarkohet, Google merr adresën tuaj IP dhe mund të vendosë cookie-t e veta sipas politikës së privatësisë së Google. Nëse preferoni ta shmangni këtë, përdorni adresën e shkruar në faqe në vend të hartës."
+          },
+          {
+            "en": "The Instagram and Facebook icons are ordinary links. Nothing is shared with those networks until you click one.",
+            "ru": "Иконки Instagram и Facebook — обычные ссылки. Никакая информация не передаётся этим сетям, пока вы не нажмёте на одну из них.",
+            "sq": "Ikonat e Instagram dhe Facebook janë lidhje të zakonshme. Asgjë nuk ndahet me ato rrjete derisa të klikoni njërën."
+          }
+        ]
+      },
+      {
+        "id": "l8",
+        "heading": {
+          "en": "How long we keep things",
+          "ru": "Как долго мы храним данные",
+          "sq": "Sa kohë i mbajmë gjërat"
+        },
+        "body": [
+          {
+            "en": "WhatsApp conversations and appointment details are kept for as long as you are a client and for a reasonable period afterwards, so we can refer to what was done in previous sessions. Ask us and we will delete your conversation.",
+            "ru": "Переписка в WhatsApp и детали записей хранятся, пока вы являетесь клиентом, и в течение разумного периода после этого, чтобы мы могли обращаться к тому, что было сделано во время предыдущих визитов. Обратитесь к нам, и мы удалим вашу переписку.",
+            "sq": "Bisedat në WhatsApp dhe detajet e takimeve mbahen për aq kohë sa ju jeni klient dhe për një periudhë të arsyeshme pas kësaj, në mënyrë që të mund të referohemi për atë që është bërë në seancat e mëparshme. Na pyesni dhe ne do ta fshijmë bisedën tuaj."
+          },
+          {
+            "en": "Records we are required by law to keep, such as accounting documents, are kept for the period the law requires.",
+            "ru": "Записи, которые мы обязаны хранить по закону, такие как бухгалтерские документы, хранятся в течение срока, требуемого законом.",
+            "sq": "Regjistrat që jemi të detyruar me ligj t'i mbajmë, siç janë dokumentet e kontabilitetit, mbahen për periudhën që kërkon ligji."
+          }
+        ]
+      },
+      {
+        "id": "l9",
+        "heading": {
+          "en": "Who else sees your data",
+          "ru": "Кто ещё видит ваши данные",
+          "sq": "Kush tjetër i sheh të dhënat tuaja"
+        },
+        "body": [
+          {
+            "en": "We do not sell personal data and we do not share it for marketing. It is seen by the people working at Tea Ten who need it to serve you, and by the service providers named on this page — our host and WhatsApp — acting in their own capacity.",
+            "ru": "Мы не продаём личные данные и не передаём их для маркетинга. Их видят сотрудники Tea Ten, которым они необходимы для обслуживания вас, а также упомянутые на этой странице поставщики услуг — наш хостинг и WhatsApp — в рамках своей собственной деятельности.",
+            "sq": "Ne nuk i shesim të dhënat personale dhe nuk i ndajmë ato për marketing. Ato shihen nga njerëzit që punojnë në Tea Ten që u nevojiten për t'ju shërbyer, dhe nga ofruesit e shërbimeve të përmendur në këtë faqe — hosti ynë dhe WhatsApp — që veprojnë në kapacitetin e tyre."
+          }
+        ]
+      },
+      {
+        "id": "l10",
+        "heading": {
+          "en": "Your rights",
+          "ru": "Ваши права",
+          "sq": "Të drejtat tuaja"
+        },
+        "body": [
+          {
+            "en": "You can ask us for a copy of the personal data we hold about you, ask us to correct it, ask us to delete it, or object to how we use it. You can also withdraw consent where we relied on it, without affecting what happened before.",
+            "ru": "Вы можете попросить нас предоставить копию личных данных, которые мы храним о вас, попросить исправить их, попросить удалить их или возразить против их использования. Вы также можете отозвать согласие, если мы полагались на него, без влияния на то, что было сделано ранее.",
+            "sq": "Ju mund të na kërkoni një kopje të të dhënave personale që mbajmë për ju, të na kërkoni t'i korrigjojmë, të na kërkoni t'i fshijmë, ose të kundërshtoni mënyrën se si i përdorim. Ju gjithashtu mund të tërhiqni pëlqimin aty ku jemi mbështetur në të, pa ndikuar në atë që ka ndodhur më parë."
+          },
+          {
+            "en": "Write to us on WhatsApp or call 044 158 234 and we will answer. If you believe we have handled your data wrongly, you may complain to the Information and Privacy Agency of the Republic of Kosovo.",
+            "ru": "Напишите нам в WhatsApp или позвоните по номеру 044 158 234, и мы ответим. Если вы считаете, что мы неправильно обработали ваши данные, вы можете подать жалобу в Агентство по информации и конфиденциальности Республики Косово.",
+            "sq": "Na shkruani në WhatsApp ose na telefononi në 044 158 234 dhe ne do të përgjigjemi. Nëse besoni se i kemi trajtuar të dhënat tuaja gabimisht, mund të ankoheni pranë Agjencisë për Informim dhe Privatësi të Republikës së Kosovës."
+          }
+        ]
+      },
+      {
+        "id": "l11",
+        "heading": {
+          "en": "Children",
+          "ru": "Дети",
+          "sq": "Fëmijët"
+        },
+        "body": [
+          {
+            "en": "Treatments for anyone under 18 are arranged with a parent or guardian, and we do not knowingly collect personal data from children through this website.",
+            "ru": "Процедуры для лиц младше 18 лет организуются с участием родителя или опекуна, и мы сознательно не собираем личные данные детей через этот веб-сайт.",
+            "sq": "Trajtimet për këdo nën 18 vjeç organizohen me një prind ose kujdestar, dhe ne nuk i mbledhim me vetëdije të dhëna personale nga fëmijët përmes kësaj faqeje."
+          }
+        ]
+      },
+      {
+        "id": "l12",
+        "heading": {
+          "en": "Changes to this page",
+          "ru": "Изменения на этой странице",
+          "sq": "Ndryshimet në këtë faqe"
+        },
+        "body": [
+          {
+            "en": "If we change how the site works we will update this page and the date at the top. The version you see here is the one that applies today.",
+            "ru": "Если мы изменим работу сайта, мы обновим эту страницу и дату вверху. Версия, которую вы видите здесь, является действующей на сегодняшний день.",
+            "sq": "Nëse ndryshojmë mënyrën se si funksionon faqja, do të përditësojmë këtë faqe dhe datën në krye. Versioni që shihni këtu është ai që zbatohet sot."
+          }
+        ]
+      }
+    ]
   }
 }

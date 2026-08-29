@@ -46,6 +46,12 @@ export type Testimonial = {
   rating: number;
 };
 
+export type LegalSection = {
+  id: string;
+  heading: I18nText;
+  body: I18nText[];
+};
+
 export type SiteContent = {
   brand: {
     name: string;
@@ -130,5 +136,14 @@ export type SiteContent = {
     title: I18nText;
     description: I18nText;
     ogImage: string;
+  };
+  legal: {
+    /** Label used for the footer link. */
+    linkLabel: I18nText;
+    title: I18nText;
+    /** Free text, e.g. "Last updated 29 August 2026". */
+    updated: I18nText;
+    intro: I18nText;
+    sections: LegalSection[];
   };
 };

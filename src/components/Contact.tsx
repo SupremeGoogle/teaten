@@ -111,9 +111,14 @@ export default function Contact() {
           <span>
             © {year} {c.footer.credit}. {L.allRights}
           </span>
-          <a href="/admin" className="transition-colors hover:text-cream/80">
-            Admin
-          </a>
+          <span className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <a href="/privacy" className="transition-colors hover:text-cream/80">
+              {tt(c.legal.linkLabel)}
+            </a>
+            <a href="/admin" className="transition-colors hover:text-cream/80">
+              Admin
+            </a>
+          </span>
         </div>
       </div>
     </footer>

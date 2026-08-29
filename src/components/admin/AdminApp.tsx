@@ -11,6 +11,7 @@ type Status = "checking" | "locked" | "ready" | "error";
 export default function AdminApp({ fallback }: { fallback: SiteContent }) {
   const [status, setStatus] = useState<Status>("checking");
   const [draft, setDraft] = useState<SiteContent>(fallback);
+  const [baseline, setBaseline] = useState<SiteContent>(fallback);
   const [source, setSource] = useState<string>("");
   const [error, setError] = useState("");
 
@@ -25,6 +26,7 @@ export default function AdminApp({ fallback }: { fallback: SiteContent }) {
       if (!res.ok) throw new Error(await res.text());
       const data = await res.json();
       setDraft(data.content as SiteContent);
+      setBaseline(structuredClone(data.content) as SiteContent);
       setSource(data.source as string);
       setStatus("ready");
     } catch (e) {
@@ -64,7 +66,14 @@ export default function AdminApp({ fallback }: { fallback: SiteContent }) {
 
   return (
     <UploadProvider>
-      <Editor draft={draft} setDraft={setDraft} source={source} onReload={load} />
+      <Editor
+        draft={draft}
+        setDraft={setDraft}
+        baseline={baseline}
+        setBaseline={setBaseline}
+        source={source}
+        onReload={load}
+      />
     </UploadProvider>
   );
 }
