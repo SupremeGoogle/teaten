@@ -14,12 +14,12 @@ export default function About() {
 
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20">
         <Reveal className="order-2 lg:order-1">
-          <div className="relative">
+          <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={c.about.image}
               alt={tt(c.about.title)}
-              className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-[0_28px_60px_-28px_rgba(74,58,46,0.4)]"
+              className="aspect-[3/4] w-full rounded-[2rem] object-cover shadow-[0_28px_60px_-28px_rgba(74,58,46,0.4)]"
               loading="lazy"
             />
             <div className="absolute inset-3 rounded-[1.6rem] border border-cream/40" aria-hidden="true" />

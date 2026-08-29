@@ -129,7 +129,7 @@ export default function Editor({
             </svg>
           </button>
 
-          <Logo name={draft.brand.name} size="sm" />
+          <Logo name={draft.brand.name} image={draft.brand.logoImageDark || draft.brand.logoImage} size="sm" />
           <span className="hidden text-[0.65rem] uppercase tracking-[0.18em] text-espresso-soft sm:inline">
             Admin
           </span>
@@ -269,10 +269,16 @@ function BrandSection({ draft, set }: Props) {
           onChange={(v) => set("brand", { ...b, tagline: v })}
         />
         <ImageInput
-          label="Logo image"
+          label="Logo — white version"
           value={b.logoImage}
           onChange={(v) => set("brand", { ...b, logoImage: v })}
-          hint="Leave empty to use the built-in TEA·TEN wordmark. A transparent PNG works best."
+          hint="Used on the dark footer. Transparent PNG. Empty = built-in TEA·TEN wordmark."
+        />
+        <ImageInput
+          label="Logo — dark version"
+          value={b.logoImageDark}
+          onChange={(v) => set("brand", { ...b, logoImageDark: v })}
+          hint="Used on the cream header. Falls back to the white version."
         />
         <ImageInput
           label="Favicon"

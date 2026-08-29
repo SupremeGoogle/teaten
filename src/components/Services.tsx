@@ -46,7 +46,7 @@ export default function Services() {
                 <img
                   src={cat.image}
                   alt={tt(cat.title)}
-                  className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-[0_24px_50px_-26px_rgba(74,58,46,0.45)]"
+                  className="aspect-[3/4] w-full max-w-sm rounded-[2rem] object-cover shadow-[0_24px_50px_-26px_rgba(74,58,46,0.45)]"
                   loading="lazy"
                 />
               )}

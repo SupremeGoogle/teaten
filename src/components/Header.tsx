@@ -37,7 +37,7 @@ export default function Header() {
       >
         <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between gap-6 px-5 sm:px-8">
           <a href="#top" className="text-espresso transition-opacity hover:opacity-70">
-            <Logo name={c.brand.name} image={c.brand.logoImage} size="md" />
+            <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="md" />
           </a>
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -131,7 +131,7 @@ export default function Header() {
           }`}
         >
           <div className="mb-10 flex items-center justify-between">
-            <Logo name={c.brand.name} image={c.brand.logoImage} size="sm" />
+            <Logo name={c.brand.name} image={c.brand.logoImageDark || c.brand.logoImage} size="sm" />
             <button
               type="button"
               onClick={() => setMenuOpen(false)}

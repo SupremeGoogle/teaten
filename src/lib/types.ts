@@ -52,7 +52,10 @@ export type SiteContent = {
   brand: {
     name: string;
     tagline: I18nText;
-    logoImage: string; // empty string -> use the built-in vector logo
+    /** White artwork, used on the dark footer. Empty -> built-in vector wordmark. */
+    logoImage: string;
+    /** Dark artwork, used on the cream header. Falls back to the white one. */
+    logoImageDark: string;
     favicon: string;
   };
   theme: {

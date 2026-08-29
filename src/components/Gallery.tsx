@@ -39,13 +39,9 @@ export default function Gallery() {
           <p className="mt-5 text-[1.02rem] leading-relaxed text-espresso-soft">{tt(c.gallery.intro)}</p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
           {items.map((g, i) => (
-            <Reveal
-              key={g.id}
-              delay={(i % 4) * 70}
-              className={i % 6 === 0 || i % 6 === 5 ? "lg:row-span-2" : ""}
-            >
+            <Reveal key={g.id} delay={(i % 4) * 70}>
               <button
                 type="button"
                 onClick={() => setOpen(i)}
@@ -55,9 +51,7 @@ export default function Gallery() {
                 <img
                   src={g.image}
                   alt={tt(g.caption)}
-                  className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
-                    i % 6 === 0 || i % 6 === 5 ? "aspect-[3/4] lg:h-full" : "aspect-square"
-                  }`}
+                  className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 {tt(g.caption) && (

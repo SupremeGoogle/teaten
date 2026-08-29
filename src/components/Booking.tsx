@@ -54,7 +54,7 @@ export default function Booking() {
             <img
               src={c.booking.image}
               alt={tt(c.booking.title)}
-              className="mt-10 hidden aspect-[4/3] w-full rounded-[2rem] object-cover shadow-[0_24px_50px_-28px_rgba(74,58,46,0.45)] lg:block"
+              className="mt-10 hidden aspect-[4/3] w-full max-w-md rounded-[2rem] object-cover shadow-[0_24px_50px_-28px_rgba(74,58,46,0.45)] lg:block"
               loading="lazy"
             />
           )}

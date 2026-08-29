@@ -41,7 +41,7 @@ export default function Logo({
 }
 
 const sizes = {
-  sm: { text: "text-lg", mark: "h-5", gap: "gap-[0.18em]", img: "h-7" },
-  md: { text: "text-2xl", mark: "h-7", gap: "gap-[0.18em]", img: "h-10" },
-  lg: { text: "text-4xl sm:text-5xl", mark: "h-12 sm:h-14", gap: "gap-[0.2em]", img: "h-16 sm:h-20" },
+  sm: { text: "text-lg", mark: "h-5", gap: "gap-[0.18em]", img: "h-6" },
+  md: { text: "text-2xl", mark: "h-7", gap: "gap-[0.18em]", img: "h-8" },
+  lg: { text: "text-4xl sm:text-5xl", mark: "h-12 sm:h-14", gap: "gap-[0.2em]", img: "h-12 sm:h-14" },
 } as const;

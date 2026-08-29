@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="absolute -inset-6 -z-10">
             <Blob className="inset-0 h-full w-full" color="var(--color-taupe-deep)" opacity={0.45} />
           </div>
@@ -61,7 +61,7 @@ export default function Hero() {
           <img
             src={c.hero.image}
             alt={tt(c.hero.title)}
-            className="blob aspect-[4/5] w-full object-cover shadow-[0_30px_70px_-30px_rgba(74,58,46,0.45)]"
+            className="blob aspect-[5/6] w-full max-h-[30rem] object-cover lg:max-h-[34rem] shadow-[0_30px_70px_-30px_rgba(74,58,46,0.45)]"
             loading="eager"
           />
           <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-espresso/10 bg-cream/95 px-6 py-4 backdrop-blur sm:block">

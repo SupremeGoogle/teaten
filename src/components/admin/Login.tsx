@@ -35,7 +35,7 @@ export default function Login({ onSuccess }: { onSuccess: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-cream px-5">
       <form onSubmit={submit} className="w-full max-w-sm">
         <div className="mb-10 flex justify-center text-espresso">
-          <Logo size="lg" />
+          <Logo size="lg" image="/brand/logo-dark.png" />
         </div>
         <label className="mb-1.5 block text-[0.7rem] uppercase tracking-[0.18em] text-espresso-soft">
           Password

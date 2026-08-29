@@ -36,7 +36,10 @@ export const metadata: Metadata = {
     images: content.seo.ogImage ? [content.seo.ogImage] : undefined,
     type: "website",
   },
-  icons: content.brand.favicon ? { icon: content.brand.favicon } : undefined,
+  icons: {
+    icon: content.brand.favicon || "/brand/favicon.png",
+    apple: "/brand/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

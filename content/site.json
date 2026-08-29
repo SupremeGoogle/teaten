@@ -5,8 +5,9 @@
       "en": "Beauty & Spa",
       "sq": "Beauty & Spa"
     },
-    "logoImage": "",
-    "favicon": ""
+    "logoImage": "/brand/logo-white.png",
+    "favicon": "/brand/favicon.png",
+    "logoImageDark": "/brand/logo-dark.png"
   },
   "theme": {
     "cream": "#F9EFDF",
@@ -80,7 +81,7 @@
     }
   ],
   "hero": {
-    "image": "/gallery/facial-roller.jpg",
+    "image": "/gallery/hero.jpg",
     "kicker": {
       "en": "Prishtina · Beauty & Spa",
       "sq": "Prishtinë · Beauty & Spa"
@@ -135,7 +136,7 @@
         "en": "Every appointment starts with a short consultation. We look at your skin, listen to what you want to change, and build a plan that works over time — not just for one afternoon."
       }
     ],
-    "image": "/gallery/skin.jpg",
+    "image": "/gallery/salon.jpg",
     "signature": {
       "en": "Never careless with your beauty.",
       "sq": "Ne kujdesemi për bukurinë tuaj!"
@@ -169,7 +170,7 @@
   },
   "services": {
     "title": {
-      "en": "Our services",
+      "en": "Services",
       "sq": "Shërbimet"
     },
     "intro": {
@@ -186,7 +187,7 @@
         "intro": {
           "en": "Deep cleansing, hydration and anti-ageing protocols with professional cosmetic lines."
         },
-        "image": "/gallery/facial-roller.jpg",
+        "image": "/gallery/facial.jpg",
         "items": [
           {
             "id": "f1",
@@ -298,7 +299,7 @@
         "intro": {
           "en": "Peelings, wraps and massage that leave the skin soft and the head quiet."
         },
-        "image": "/gallery/spa-1.jpg",
+        "image": "/gallery/body.jpg",
         "items": [
           {
             "id": "b1",
@@ -366,7 +367,7 @@
         "intro": {
           "en": "Manicure, pedicure and gel work — clean shapes and long wear."
         },
-        "image": "/gallery/nails-nude.jpg",
+        "image": "/gallery/nails.jpg",
         "items": [
           {
             "id": "n1",
@@ -498,7 +499,7 @@
       "en": "Valid 26 August – 3 September",
       "sq": "Oferta vlen prej 26 Gusht – 3 Shtator"
     },
-    "image": "/gallery/circadia-spf.jpg",
+    "image": "/gallery/products.jpg",
     "items": [
       {
         "id": "o1",
@@ -548,56 +549,56 @@
         "id": "g1",
         "image": "/gallery/nails-nude.jpg",
         "caption": {
-          "en": "Nude gel set"
+          "en": "Nude gel manicure"
         }
       },
       {
         "id": "g2",
-        "image": "/gallery/facial-roller.jpg",
+        "image": "/gallery/facial-mask.jpg",
         "caption": {
-          "en": "Me-time facial"
+          "en": "Treatment mask"
         }
       },
       {
         "id": "g3",
-        "image": "/gallery/nails-pedicure.jpg",
+        "image": "/gallery/nails-pink.jpg",
         "caption": {
-          "en": "Manicure & pedicure"
+          "en": "Soft pink set"
         }
       },
       {
         "id": "g4",
         "image": "/gallery/brows.jpg",
         "caption": {
-          "en": "Brow shaping"
+          "en": "Brows & lashes"
         }
       },
       {
         "id": "g5",
-        "image": "/gallery/skin.jpg",
+        "image": "/gallery/towels.jpg",
         "caption": {
-          "en": "Skin, cared for"
+          "en": "Ready for you"
         }
       },
       {
         "id": "g6",
-        "image": "/gallery/nails-art.jpg",
+        "image": "/gallery/stones.jpg",
         "caption": {
-          "en": "Nail art"
+          "en": "Hot stone massage"
         }
       },
       {
         "id": "g7",
-        "image": "/gallery/spa-1.jpg",
+        "image": "/gallery/product-tube.jpg",
         "caption": {
-          "en": "In the studio"
+          "en": "Professional lines"
         }
       },
       {
         "id": "g8",
-        "image": "/gallery/circadia-spf.jpg",
+        "image": "/gallery/massage-warm.jpg",
         "caption": {
-          "en": "Circadia daily care"
+          "en": "Facial massage"
         }
       }
     ]
@@ -619,7 +620,7 @@
       "en": "Fill in the form and we will open WhatsApp with your request ready to send. We confirm your time as soon as we read it.",
       "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë."
     },
-    "image": "/gallery/spa-1.jpg",
+    "image": "/gallery/interior.jpg",
     "note": {
       "en": "Your request is sent through WhatsApp — nothing is stored on this website."
     }
@@ -638,6 +639,6 @@
     "description": {
       "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp."
     },
-    "ogImage": "/gallery/facial-roller.jpg"
+    "ogImage": "/gallery/hero.jpg"
   }
 }
