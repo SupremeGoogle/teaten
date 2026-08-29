@@ -94,6 +94,11 @@ body {
   transform: none;
 }
 
+/* Without JavaScript nothing would ever reveal itself. */
+@media (scripting: none) {
+  .reveal { opacity: 1; transform: none; }
+}
+
 /* --- marquee --- */
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
