@@ -336,3 +336,37 @@ body {
     text-shadow: 0 1px 14px rgba(36, 25, 18, 0.3);
   }
 }
+
+/* --- opening screen --- */
+@keyframes splash-breathe {
+  0%, 100% { opacity: 0.75; transform: scale(0.99); }
+  50%      { opacity: 1;    transform: scale(1.01); }
+}
+@keyframes splash-sweep {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.splash-logo {
+  animation: splash-breathe 2.2s ease-in-out infinite;
+}
+
+.splash-bar {
+  position: relative;
+  display: block;
+  width: 7rem;
+  height: 1px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--color-espresso) 18%, transparent);
+}
+.splash-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  animation: splash-sweep 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-logo, .splash-bar::after { animation: none; }
+}

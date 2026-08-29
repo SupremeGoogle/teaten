@@ -9,7 +9,7 @@ import type { SiteContent } from "@/lib/types";
 
 export default function LocationView({ content }: { content: SiteContent }) {
   return (
-    <PageShell content={content}>
+    <PageShell content={content} images={[content.location.videoPoster]}>
       <Location />
     </PageShell>
   );

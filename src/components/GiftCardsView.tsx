@@ -8,7 +8,7 @@ import type { SiteContent } from "@/lib/types";
 
 export default function GiftCardsView({ content }: { content: SiteContent }) {
   return (
-    <PageShell content={content}>
+    <PageShell content={content} images={[content.giftCards.image]}>
       <GiftCards />
     </PageShell>
   );

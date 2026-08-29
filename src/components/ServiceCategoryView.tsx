@@ -1,11 +1,8 @@
 "use client";
 
-import AmbientBackground from "./AmbientBackground";
-import Contact from "./Contact";
-import Header from "./Header";
+import PageShell from "./PageShell";
 import Reveal from "./Reveal";
-import ScrollProgress from "./ScrollProgress";
-import { SiteProvider, useSite, whatsappLink } from "./site-context";
+import { useSite, whatsappLink } from "./site-context";
 import { WhatsAppIcon } from "./icons";
 import type { ServiceCategory, SiteContent } from "@/lib/types";
 
@@ -16,16 +13,11 @@ export default function ServiceCategoryView({
   content: SiteContent;
   categoryId: string;
 }) {
+  const lead = content.services.categories.find((k) => k.id === categoryId)?.images?.[0];
   return (
-    <SiteProvider content={content}>
-      <AmbientBackground />
-      <ScrollProgress />
-      <Header />
-      <main>
-        <CategoryPage categoryId={categoryId} />
-      </main>
-      <Contact />
-    </SiteProvider>
+    <PageShell content={content} images={lead ? [lead] : []}>
+      <CategoryPage categoryId={categoryId} />
+    </PageShell>
   );
 }
 
