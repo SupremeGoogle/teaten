@@ -388,6 +388,7 @@
           "/gallery/skinpen.jpg",
           "/gallery/dermalux.jpg"
         ],
+        "fromPrice": "40",
         "slug": "facial-treatments"
       },
       {
@@ -486,6 +487,7 @@
           "/gallery/massage-stones.jpg",
           "/gallery/shoulder.jpg"
         ],
+        "fromPrice": "35",
         "slug": "body-massage"
       },
       {

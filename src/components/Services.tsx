@@ -15,7 +15,13 @@ export default function Services() {
         const prices = cat.items
           .map((item) => Number(item.price))
           .filter((n) => Number.isFinite(n) && n > 0);
-        const from = prices.length ? Math.min(...prices) : null;
+        // An explicit entry price wins; otherwise fall back to the cheapest treatment.
+        const override = Number(cat.fromPrice);
+        const from = Number.isFinite(override) && override > 0
+          ? override
+          : prices.length
+            ? Math.min(...prices)
+            : null;
         return {
           id: cat.id,
           href: `/services/${cat.slug}`,

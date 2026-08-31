@@ -606,6 +606,15 @@ function ServicesSection({ draft, set }: Props) {
                 />
               </Field>
               <I18nInput label="Short intro" value={cat.intro} onChange={(v) => update({ intro: v })} multiline />
+              <Field
+                label="Price from"
+                hint="Shown on the services card as “From €…”. Leave empty to use the cheapest treatment below."
+              >
+                <TextInput
+                  value={cat.fromPrice ?? ""}
+                  onChange={(v) => update({ fromPrice: v.replace(/[^0-9]/g, "") })}
+                />
+              </Field>
               <ImageListInput
                 label="Photos"
                 values={cat.images}

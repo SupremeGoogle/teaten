@@ -25,6 +25,12 @@ export type ServiceCategory = {
   intro: I18nText;
   /** Several photos per category; the first one opens as the large image. */
   images: string[];
+  /**
+   * Entry price shown on the services card. Left empty it falls back to the
+   * cheapest treatment below; set it when the salon quotes a lower starting
+   * price than any single line item.
+   */
+  fromPrice?: string;
   items: ServiceItem[];
 };
 
