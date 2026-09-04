@@ -24,7 +24,7 @@
       "044 158 234",
       "038 226 789"
     ],
-    "whatsapp": "38344158234",
+    "whatsapp": "+38344158234",
     "address": {
       "en": "Rr. Johan V. Hahn 7, Prishtina 10000, Kosovo",
       "sq": "Rr. Johan V. Hahn 7, Prishtinë 10000, Kosovë",
@@ -37,7 +37,7 @@
       "sq": "E hënë – E shtunë, 09:00 – 19:00",
       "sr": "Ponedeljak – subota, 09:00 – 19:00"
     },
-    "email": "",
+    "email": "teaten1995@gmail.com",
     "instagram": "https://www.instagram.com/teaten_beautyspa",
     "facebook": "https://www.facebook.com/teatendecleor"
   },
@@ -1227,15 +1227,18 @@
     },
     "title": {
       "en": "Gift cards",
-      "sr": "Poklon-kartice"
+      "sr": "Poklon-kartice",
+      "sq": "Kartat dhuratë"
     },
     "intro": {
       "en": "Give a treatment rather than an object. Choose a package, and we prepare the card for you to hand over — the person books their time whenever it suits them.",
-      "sr": "Poklonite tretman umesto predmeta. Izaberite paket, a mi ćemo pripremiti karticu koju možete uručiti — osoba zatim rezerviše termin kada joj odgovara."
+      "sr": "Poklonite tretman umesto predmeta. Izaberite paket, a mi ćemo pripremiti karticu koju možete uručiti — osoba zatim rezerviše termin kada joj odgovara.",
+      "sq": "Dhuroni një trajtim në vend të një objekti. Zgjidhni një paketë, dhe ne përgatisim kartën që ju ta dorëzoni — personi rezervon kohën e tij kur i përshtatet."
     },
     "note": {
       "en": "Available to companies and to individuals. Packages are sold from three cards upwards.",
-      "sr": "Dostupno kompanijama i pojedincima. Paketi se prodaju za najmanje tri kartice."
+      "sr": "Dostupno kompanijama i pojedincima. Paketi se prodaju za najmanje tri kartice.",
+      "sq": "Në dispozicion për kompanitë dhe individët. Paketat shiten nga tre karta e lart."
     },
     "image": "/gallery/giftcard.jpg",
     "items": [
@@ -1243,11 +1246,13 @@
         "id": "g1",
         "badge": {
           "en": "Package 1",
-          "sr": "Paket 1"
+          "sr": "Paket 1",
+          "sq": "Paketa 1"
         },
         "name": {
           "en": "Manicure + pedicure + facial massage + mask",
-          "sr": "Manikir + pedikir + masaža lica + maska"
+          "sr": "Manikir + pedikir + masaža lica + maska",
+          "sq": "Manikyr + pedikyr + masazh fytyre + maskë"
         },
         "price": "60"
       },
@@ -1255,11 +1260,13 @@
         "id": "g2",
         "badge": {
           "en": "Package 2",
-          "sr": "Paket 2"
+          "sr": "Paket 2",
+          "sq": "Paketa 2"
         },
         "name": {
           "en": "Scrub + 30 min massage + body mask",
-          "sr": "Piling + masaža 30 min + maska za telo"
+          "sr": "Piling + masaža 30 min + maska za telo",
+          "sq": "Skrab + masazh 30 min + maskë trupi"
         },
         "price": "55"
       },
@@ -1267,11 +1274,13 @@
         "id": "g3",
         "badge": {
           "en": "Package 3",
-          "sr": "Paket 3"
+          "sr": "Paket 3",
+          "sq": "Paketa 3"
         },
         "name": {
           "en": "Vitamin infusion facial",
-          "sr": "Tretman lica vitaminskom infuzijom"
+          "sr": "Tretman lica vitaminskom infuzijom",
+          "sq": "Facial me infuzion vitaminash"
         },
         "price": "45"
       },
@@ -1279,11 +1288,13 @@
         "id": "g4",
         "badge": {
           "en": "Package 4",
-          "sr": "Paket 4"
+          "sr": "Paket 4",
+          "sq": "Paketa 4"
         },
         "name": {
           "en": "Body mask + facial massage",
-          "sr": "Maska za telo + masaža lica"
+          "sr": "Maska za telo + masaža lica",
+          "sq": "Maskë trupi + masazh fytyre"
         },
         "price": "35"
       },
@@ -1291,11 +1302,13 @@
         "id": "g5",
         "badge": {
           "en": "Package 5",
-          "sr": "Paket 5"
+          "sr": "Paket 5",
+          "sq": "Paketa 5"
         },
         "name": {
           "en": "Lunch packet + Dermalux",
-          "sr": "Lunch paket + Dermalux"
+          "sr": "Lunch paket + Dermalux",
+          "sq": "Paketa e drekës + Dermalux"
         },
         "price": "30"
       },
@@ -1303,11 +1316,13 @@
         "id": "g6",
         "badge": {
           "en": "Package 6",
-          "sr": "Paket 6"
+          "sr": "Paket 6",
+          "sq": "Paketa 6"
         },
         "name": {
           "en": "Vivace + exosomes",
-          "sr": "Vivace + egzozomi"
+          "sr": "Vivace + egzozomi",
+          "sq": "Vivace + ekzozome"
         },
         "price": "200"
       },
@@ -1315,11 +1330,13 @@
         "id": "g7",
         "badge": {
           "en": "Package 7",
-          "sr": "Paket 7"
+          "sr": "Paket 7",
+          "sq": "Paketa 7"
         },
         "name": {
           "en": "Vivace + skin boosters",
-          "sr": "Vivace + skin boosteri"
+          "sr": "Vivace + skin boosteri",
+          "sq": "Vivace + përforcues lëkure"
         },
         "price": "190"
       },
@@ -1327,11 +1344,13 @@
         "id": "g8",
         "badge": {
           "en": "Package 8",
-          "sr": "Paket 8"
+          "sr": "Paket 8",
+          "sq": "Paketa 8"
         },
         "name": {
           "en": "Vivace",
-          "sr": "Vivace"
+          "sr": "Vivace",
+          "sq": "Vivace"
         },
         "price": "170"
       },
@@ -1339,11 +1358,13 @@
         "id": "g9",
         "badge": {
           "en": "Package 9",
-          "sr": "Paket 9"
+          "sr": "Paket 9",
+          "sq": "Paketa 9"
         },
         "name": {
           "en": "SkinPen",
-          "sr": "SkinPen"
+          "sr": "SkinPen",
+          "sq": "SkinPen"
         },
         "price": "120"
       },
@@ -1351,11 +1372,13 @@
         "id": "g10",
         "badge": {
           "en": "Package 10",
-          "sr": "Paket 10"
+          "sr": "Paket 10",
+          "sq": "Paketa 10"
         },
         "name": {
           "en": "PRX-T33",
-          "sr": "PRX-T33"
+          "sr": "PRX-T33",
+          "sq": "PRX-T33"
         },
         "price": "50"
       }
@@ -1370,30 +1393,36 @@
     },
     "title": {
       "en": "Find us",
-      "sr": "Pronađite nas"
+      "sr": "Pronađite nas",
+      "sq": "Na gjeni"
     },
     "intro": {
       "en": "We are on Johan V. Hahn in the centre of Prishtina, at number 7 — look for the burgundy sign and the little terrace with the plants.",
-      "sr": "Nalazimo se u ulici Johan V. Hahn broj 7, u centru Prištine — potražite bordo natpis i malu terasu sa biljkama."
+      "sr": "Nalazimo se u ulici Johan V. Hahn broj 7, u centru Prištine — potražite bordo natpis i malu terasu sa biljkama.",
+      "sq": "Jemi në Johan V. Hahn në qendër të Prishtinës, në numrin 7 — kërkoni tabelën burgundy dhe tarracën e vogël me bimë."
     },
     "video": "/video/salon.mp4",
     "videoPoster": "/video/salon-poster.jpg",
     "directions": [
       {
         "en": "A few minutes on foot from Grand Hotel Prishtina and the Newborn monument.",
-        "sr": "Nekoliko minuta pešice od Grand Hotela Priština i spomenika Newborn."
+        "sr": "Nekoliko minuta pešice od Grand Hotela Priština i spomenika Newborn.",
+        "sq": "Disa minuta në këmbë nga Grand Hotel Prishtina dhe monumenti Newborn."
       },
       {
         "en": "The entrance is at street level, with tables and greenery outside the window.",
-        "sr": "Ulaz je u nivou ulice, sa stolovima i zelenilom ispred izloga."
+        "sr": "Ulaz je u nivou ulice, sa stolovima i zelenilom ispred izloga.",
+        "sq": "Hyrja është në nivelin e rrugës, me tavolina dhe gjelbërim jashtë dritares."
       },
       {
         "en": "Street parking runs along Johan V. Hahn; come a little early at busy hours.",
-        "sr": "Ulično parkiranje dostupno je duž ulice Johan V. Hahn; tokom gužve dođite malo ranije."
+        "sr": "Ulično parkiranje dostupno je duž ulice Johan V. Hahn; tokom gužve dođite malo ranije.",
+        "sq": "Parkimi në rrugë shkon përgjatë Johan V. Hahn; ejani pak më herët në orët e ngarkuara."
       },
       {
         "en": "Not sure you have found it? Send us a message on WhatsApp and we will guide you in.",
-        "sr": "Niste sigurni da ste nas pronašli? Pošaljite nam poruku putem WhatsApp-a i pomoći ćemo vam da stignete."
+        "sr": "Niste sigurni da ste nas pronašli? Pošaljite nam poruku putem WhatsApp-a i pomoći ćemo vam da stignete.",
+        "sq": "Nuk jeni të sigurt se e keni gjetur? Na dërgoni një mesazh në WhatsApp dhe ne do t'ju udhëzojmë."
       }
     ]
   }
