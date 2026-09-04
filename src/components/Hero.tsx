@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-3 z-0 rounded-[1.7rem] border border-white/45 sm:inset-5 sm:rounded-[2.5rem]" aria-hidden="true" />
 
       <div className="mx-auto flex min-h-[calc(46rem-64px)] max-w-6xl items-end px-4 pb-7 pt-24 sm:min-h-[calc(48rem-68px)] sm:items-center sm:px-8 sm:py-14">
-        <div className="hero-copy glass-panel relative z-10 w-full max-w-[39rem] -translate-y-8 rounded-[1.75rem] px-5 py-7 sm:translate-y-0 sm:rounded-[2.25rem] sm:px-10 sm:py-10 lg:px-12 lg:py-11">
+        <div className="hero-copy glass-panel relative z-10 w-full max-w-[39rem] -translate-y-10 rounded-[1.75rem] px-5 py-7 sm:translate-y-0 sm:rounded-[2.25rem] sm:px-10 sm:py-10 lg:px-12 lg:py-11">
           <div className="rise mb-4 flex items-center gap-3 sm:mb-6" style={{ animationDelay: "80ms" }}>
             <span className="h-px w-8 bg-gold sm:w-12" aria-hidden="true" />
             <p className="eyebrow text-espresso-soft">{tt(c.hero.kicker)}</p>
