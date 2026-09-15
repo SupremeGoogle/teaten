@@ -683,56 +683,76 @@
       "sr": "Aktuelne ponude"
     },
     "intro": {
-      "en": "Special prices on selected treatments. Book your appointment while they last.",
-      "sq": "Çmime speciale për trajtime të përzgjedhura. Rezervoni terminin tuaj sot!",
-      "sr": "Posebne cene za odabrane tretmane. Rezervišite termin dok ponuda traje."
+      "en": "Special prices on selected products. ",
+      "sq": "Çmime speciale për produkte të zgjedhura.",
+      "sr": "Posebne cene na odabrane proizvode."
     },
     "validity": {
-      "en": "Valid 26 August – 3 September",
-      "sq": "Oferta vlen prej 26 Gusht – 3 Shtator",
-      "sr": "Važi od 26. avgusta do 3. septembra"
+      "en": "Valid 15 September –5 October",
+      "sq": "E vlefshme 15 Shtator –5 Tetor",
+      "sr": "Važi 15. septembar – 5. oktobar"
     },
-    "image": "/gallery/skin-routine.jpg",
+    "image": "/uploads/mu2r1uae-cllllllaarrrrrrinns-5.jpg",
     "items": [
       {
         "id": "o1",
         "name": {
-          "en": "Scrub + Mask",
-          "sq": "Piling + Maskë",
-          "sr": "Piling + maska"
+          "en": "Clarins Super Restorative Night Cream - All Skin Types ",
+          "sq": "Clarins Super Restorative Night Cream - All Skin Types",
+          "sr": "Clarins Super Restorative Night Cream - All Skin Types"
         },
-        "oldPrice": "60",
-        "newPrice": "49"
+        "oldPrice": "108.20",
+        "newPrice": "91.97"
       },
       {
         "id": "o2",
         "name": {
-          "en": "30 min Massage + Mask",
-          "sq": "30 min Masazh + Maskë",
-          "sr": "Masaža 30 min + maska"
+          "en": " My Clarins RE-BOOST Matte Hydra-Matifying Cream",
+          "sq": "My Clarins RE-BOOST Matte Hydra-Matifying Cream",
+          "sr": "My Clarins RE-BOOST Matte Hydra-Matifying Cream"
         },
-        "oldPrice": "50",
-        "newPrice": "35"
+        "oldPrice": "30",
+        "newPrice": "25.5"
       },
       {
         "id": "o3",
         "name": {
-          "en": "Circadia Treatment · New Session Glow Up",
-          "sq": "Trajtim Circadia · New Session Glow Up",
-          "sr": "Circadia Treatment · New Session Glow Up"
+          "en": "My Clarins RE-BOOST Hydra-Energizing Cream ",
+          "sq": "My Clarins RE-BOOST Hydra-Energizing Cream",
+          "sr": "My Clarins RE-BOOST Hydra-Energizing Cream"
         },
-        "oldPrice": "90",
-        "newPrice": "65"
+        "oldPrice": "30",
+        "newPrice": "25.5"
       },
       {
         "id": "o4",
         "name": {
-          "en": "Hydrafacial",
-          "sq": "Hydrafacial",
-          "sr": "Hydrafacial"
+          "en": " My Clarins RE-MOVE Purifying Cleansing Gel ",
+          "sq": "My Clarins RE-MOVE Purifying Cleansing Gel",
+          "sr": "My Clarins RE-MOVE Purifying Cleansing Gel"
         },
-        "oldPrice": "100",
-        "newPrice": "75"
+        "oldPrice": "23.5",
+        "newPrice": "19.90"
+      },
+      {
+        "id": "o7o4tfb",
+        "name": {
+          "en": "Pure Reset Lotion Pureté Matifiante 200ml",
+          "sq": "Pure Reset Lotion Pureté Matifiante 200ml",
+          "sr": "Pure Reset Lotion Pureté Matifiante 200ml"
+        },
+        "oldPrice": "27",
+        "newPrice": "22.95"
+      },
+      {
+        "id": "ox8yc8r",
+        "name": {
+          "en": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml",
+          "sq": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml",
+          "sr": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml"
+        },
+        "oldPrice": "33",
+        "newPrice": "28.05"
       }
     ]
   },
