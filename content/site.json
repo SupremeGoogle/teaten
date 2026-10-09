@@ -692,67 +692,107 @@
       "sq": "E vlefshme 15 Shtator –5 Tetor",
       "sr": "Važi 15. septembar – 5. oktobar"
     },
-    "image": "/uploads/mu2r1uae-cllllllaarrrrrrinns-5.jpg",
+    "image": "/uploads/mv0qofbb-pink.jpg",
     "items": [
       {
         "id": "o1",
         "name": {
-          "en": "Clarins Super Restorative Night Cream - All Skin Types ",
-          "sq": "Clarins Super Restorative Night Cream - All Skin Types",
-          "sr": "Clarins Super Restorative Night Cream - All Skin Types"
+          "en": "Vivace (microneedle RF)",
+          "sq": "Vivace (microneedle RF)",
+          "sr": "Vivace (microneedle RF)"
         },
-        "oldPrice": "108.20",
-        "newPrice": "91.97"
+        "oldPrice": "200",
+        "newPrice": "175"
       },
       {
         "id": "o2",
         "name": {
-          "en": " My Clarins RE-BOOST Matte Hydra-Matifying Cream",
-          "sq": "My Clarins RE-BOOST Matte Hydra-Matifying Cream",
-          "sr": "My Clarins RE-BOOST Matte Hydra-Matifying Cream"
+          "en": "SkinPen (microneedle)",
+          "sq": "SkinPen (microneedle)",
+          "sr": "SkinPen (microneedle)"
         },
-        "oldPrice": "30",
-        "newPrice": "25.5"
+        "oldPrice": "150",
+        "newPrice": "120"
       },
       {
         "id": "o3",
         "name": {
-          "en": "My Clarins RE-BOOST Hydra-Energizing Cream ",
-          "sq": "My Clarins RE-BOOST Hydra-Energizing Cream",
-          "sr": "My Clarins RE-BOOST Hydra-Energizing Cream"
+          "en": "Vitamin C Facial",
+          "sq": "Trajtimi me Vitamin C",
+          "sr": "Vitamin C Facial"
         },
-        "oldPrice": "30",
-        "newPrice": "25.5"
+        "oldPrice": "80",
+        "newPrice": "55"
       },
       {
         "id": "o4",
         "name": {
-          "en": " My Clarins RE-MOVE Purifying Cleansing Gel ",
-          "sq": "My Clarins RE-MOVE Purifying Cleansing Gel",
-          "sr": "My Clarins RE-MOVE Purifying Cleansing Gel"
+          "en": "Microdermabrasion protocol",
+          "sq": "Protokolli i mikrodermabrazionit",
+          "sr": "Microdermabrasion protocol"
         },
-        "oldPrice": "23.5",
-        "newPrice": "19.90"
+        "oldPrice": "70",
+        "newPrice": "45"
       },
       {
         "id": "o7o4tfb",
         "name": {
-          "en": "Pure Reset Lotion Pureté Matifiante 200ml",
-          "sq": "Pure Reset Lotion Pureté Matifiante 200ml",
-          "sr": "Pure Reset Lotion Pureté Matifiante 200ml"
+          "en": "Klasik Treatment",
+          "sq": "Trajtimi Klasik",
+          "sr": "Klasik Treatment"
         },
-        "oldPrice": "27",
-        "newPrice": "22.95"
+        "oldPrice": "40",
+        "newPrice": "30"
       },
       {
         "id": "ox8yc8r",
         "name": {
-          "en": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml",
-          "sq": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml",
-          "sr": "My Clarins PURE-RESET Resurfacing Blemish Serum, 30ml"
+          "en": "Body Scrub +mask+15 min Face massage",
+          "sq": "Scrub trupi + maskë + masazh i fytyrës 15 min",
+          "sr": "Body Scrub +mask+15 min Face massage"
         },
-        "oldPrice": "33",
-        "newPrice": "28.05"
+        "oldPrice": "80",
+        "newPrice": "40"
+      },
+      {
+        "id": "o8r4e3v",
+        "name": {
+          "en": "Massage 30 min +mask",
+          "sq": "Masazh 30 min + maskë",
+          "sr": "Massage 30 min +mask"
+        },
+        "oldPrice": "55",
+        "newPrice": "35"
+      },
+      {
+        "id": "o27l9x4",
+        "name": {
+          "en": "Spa manicure +Spa pedicure ( natural,gel lak,lak)",
+          "sq": "Manikyr Spa + pedikyr Spa (natyral, gel lak, lak)",
+          "sr": "Spa manicure +Spa pedicure ( natural,gel lak,lak)"
+        },
+        "oldPrice": "70",
+        "newPrice": "50"
+      },
+      {
+        "id": "o9kx81n",
+        "name": {
+          "en": "Full Body Wax",
+          "sq": "Depilim i trupit të plotë",
+          "sr": "Full Body Wax"
+        },
+        "oldPrice": "45",
+        "newPrice": "30"
+      },
+      {
+        "id": "orwx2zn",
+        "name": {
+          "en": "Eyebrows Form+ mustage",
+          "sq": "Formësim i vetullave + mustaqe",
+          "sr": "Eyebrows Form+ mustage"
+        },
+        "oldPrice": "12",
+        "newPrice": "10"
       }
     ]
   },
