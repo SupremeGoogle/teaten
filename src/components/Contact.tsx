@@ -2,7 +2,7 @@
 
 import Logo from "./Logo";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 
 export default function Contact() {
   const { c, tt, L } = useSite();
@@ -64,7 +64,7 @@ export default function Contact() {
 
             <div className="mt-11 flex flex-wrap items-center gap-3">
               <a
-                href={whatsappLink(c.contact.whatsapp, L.greeting)}
+                href={bookingLink(c.contact, L.greeting)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass rounded-full px-5 py-3 text-[0.68rem] tracking-[0.16em] uppercase text-espresso transition-colors hover:bg-gold hover:text-cream sm:px-6 sm:py-3.5 sm:text-xs sm:tracking-[0.2em]"

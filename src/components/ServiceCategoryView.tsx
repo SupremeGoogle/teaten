@@ -2,7 +2,7 @@
 
 import PageShell from "./PageShell";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 import { WhatsAppIcon } from "./icons";
 import type { ServiceCategory, SiteContent } from "@/lib/types";
 
@@ -52,7 +52,7 @@ function CategoryPage({ categoryId }: { categoryId: string }) {
               </p>
             )}
             <a
-              href={whatsappLink(c.contact.whatsapp, `${L.greeting}\n\n${tt(cat.title)}`)}
+              href={bookingLink(c.contact, `${L.greeting}\n\n${tt(cat.title)}`)}
               target="_blank"
               rel="noopener noreferrer"
               className="sheen mt-7 inline-flex items-center gap-2.5 rounded-full bg-espresso px-6 py-3.5 text-[0.68rem] tracking-[0.18em] uppercase text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-espresso-soft sm:text-xs"
@@ -92,8 +92,8 @@ function CategoryPage({ categoryId }: { categoryId: string }) {
                   style={{ animationDelay: `${i * 45}ms` }}
                 >
                   <a
-                    href={whatsappLink(
-                      c.contact.whatsapp,
+                    href={bookingLink(
+                      c.contact,
                       `${L.greeting}\n\n${L.service}: ${tt(item.name)}`,
                     )}
                     target="_blank"

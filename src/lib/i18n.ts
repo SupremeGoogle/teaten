@@ -45,7 +45,7 @@ type UiKey =
 export const UI: Record<Lang, Record<UiKey, string>> = {
   en: {
     book: "Book",
-    bookOnWhatsapp: "Book on WhatsApp",
+    bookOnWhatsapp: "Book online",
     call: "Call us",
     menu: "Menu",
     close: "Close",
@@ -80,7 +80,7 @@ export const UI: Record<Lang, Record<UiKey, string>> = {
   },
   sq: {
     book: "Rezervo",
-    bookOnWhatsapp: "Rezervo në WhatsApp",
+    bookOnWhatsapp: "Rezervo online",
     call: "Na telefono",
     menu: "Menu",
     close: "Mbyll",
@@ -115,7 +115,7 @@ export const UI: Record<Lang, Record<UiKey, string>> = {
   },
   sr: {
     book: "Rezerviši",
-    bookOnWhatsapp: "Rezerviši putem WhatsApp-a",
+    bookOnWhatsapp: "Rezerviši online",
     call: "Pozovite nas",
     menu: "Meni",
     close: "Zatvori",

@@ -24,6 +24,7 @@
       "044 158 234"
     ],
     "whatsapp": "+38344158234",
+    "bookingUrl": "https://pikkoh.com/biznes/tea-ten-beautyspa",
     "address": {
       "en": "Rr. Johan V. Hahn 7, Prishtina 10000, Kosovo",
       "sq": "Rr. Johan V. Hahn 7, Prishtinë 10000, Kosovë",
@@ -123,9 +124,9 @@
       "sr": "Profesionalni tretmani lica i tela, noktiju i obrva — u mirnom, toplom prostoru osmišljenom za vas. Vašoj lepoti uvek pristupamo s pažnjom."
     },
     "primaryCta": {
-      "en": "Book on WhatsApp",
-      "sq": "Rezervo në WhatsApp",
-      "sr": "Rezervišite putem WhatsApp-a"
+      "en": "Book online",
+      "sq": "Rezervo online",
+      "sr": "Rezervišite online"
     },
     "secondaryCta": {
       "en": "See services",
@@ -996,15 +997,15 @@
       "sr": "Rezervišite termin"
     },
     "intro": {
-      "en": "Fill in the form and we will open WhatsApp with your request ready to send. We confirm your time as soon as we read it.",
-      "sq": "Plotësoni formularin dhe do të hapim WhatsApp me kërkesën tuaj gati për dërgim. Ne e konfirmojmë terminin sapo ta lexojmë.",
-      "sr": "Popunite formular i otvorićemo WhatsApp sa spremnim zahtevom. Potvrdićemo vaš termin čim pročitamo poruku."
+      "en": "Pick your treatment and a time that suits you in our online booking. You get a confirmation right away. Prefer to talk? Message us on Viber or call.",
+      "sq": "Zgjidhni trajtimin dhe orën që ju përshtatet në rezervimin tonë online. Konfirmimin e merrni menjëherë. Preferoni të flisni? Na shkruani në Viber ose na telefononi.",
+      "sr": "Izaberite tretman i termin koji vam odgovara u našem online zakazivanju. Potvrdu dobijate odmah. Želite da razgovarate? Pišite nam na Viber ili pozovite."
     },
     "image": "/gallery/welcome-robe.jpg",
     "note": {
-      "en": "Your request is sent through WhatsApp — nothing is stored on this website.",
-      "sq": "Kërkesa juaj dërgohet përmes WhatsApp — asgjë nuk ruhet në këtë faqe.",
-      "sr": "Vaš zahtev se šalje putem WhatsApp-a — ništa se ne čuva na ovom sajtu."
+      "en": "Booking is handled securely by Pikkoh — nothing is stored on this website.",
+      "sq": "Rezervimi trajtohet nga Pikkoh — asgjë nuk ruhet në këtë faqe.",
+      "sr": "Rezervaciju obrađuje Pikkoh — ništa se ne čuva na ovom sajtu."
     }
   },
   "footer": {
@@ -1022,9 +1023,9 @@
       "sr": "Tea Ten Beauty & Spa — Priština"
     },
     "description": {
-      "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book on WhatsApp.",
-      "sq": "Trajtime fytyre dhe trupi, manikyr dhe vetulla në Prishtinë. Hydrafacial, Circadia, Clarins, Dermalux Flex dhe OxyGeneo. Rezervoni në WhatsApp.",
-      "sr": "Tretmani lica i tela, noktiju i obrva u Prištini. Hydrafacial, Circadia, Clarins, Dermalux Flex i OxyGeneo. Rezervišite putem WhatsApp-a."
+      "en": "Facial and body treatments, nails and brows in Prishtina. Hydrafacial, Circadia, Clarins, Dermalux Flex and OxyGeneo. Book online.",
+      "sq": "Trajtime fytyre dhe trupi, manikyr dhe vetulla në Prishtinë. Hydrafacial, Circadia, Clarins, Dermalux Flex dhe OxyGeneo. Rezervoni online.",
+      "sr": "Tretmani lica i tela, noktiju i obrva u Prištini. Hydrafacial, Circadia, Clarins, Dermalux Flex i OxyGeneo. Rezervišite online."
     },
     "ogImage": "/gallery/studio.jpg"
   },
@@ -1479,9 +1480,9 @@
         "sq": "Parkimi në rrugë shkon përgjatë Johan V. Hahn; ejani pak më herët në orët e ngarkuara."
       },
       {
-        "en": "Not sure you have found it? Send us a message on WhatsApp and we will guide you in.",
-        "sr": "Niste sigurni da ste nas pronašli? Pošaljite nam poruku putem WhatsApp-a i pomoći ćemo vam da stignete.",
-        "sq": "Nuk jeni të sigurt se e keni gjetur? Na dërgoni një mesazh në WhatsApp dhe ne do t'ju udhëzojmë."
+        "en": "Not sure you have found it? Send us a message on Viber and we will guide you in.",
+        "sr": "Niste sigurni da ste nas pronašli? Pošaljite nam poruku putem Vibera i pomoći ćemo vam da stignete.",
+        "sq": "Nuk jeni të sigurt se e keni gjetur? Na dërgoni një mesazh në Viber dhe ne do t'ju udhëzojmë."
       }
     ]
   }

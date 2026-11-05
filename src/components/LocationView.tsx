@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import PageShell from "./PageShell";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 import { WhatsAppIcon } from "./icons";
 import type { SiteContent } from "@/lib/types";
 
@@ -121,7 +121,7 @@ function Location() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href={whatsappLink(c.contact.whatsapp, L.greeting)}
+                href={bookingLink(c.contact, L.greeting)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="sheen inline-flex items-center gap-2.5 rounded-full bg-espresso px-6 py-3.5 text-[0.68rem] tracking-[0.18em] uppercase text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-espresso-soft sm:text-xs"

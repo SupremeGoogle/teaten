@@ -2,7 +2,7 @@
 
 import PageShell from "./PageShell";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 import { WhatsAppIcon } from "./icons";
 import type { SiteContent } from "@/lib/types";
 
@@ -41,7 +41,7 @@ function GiftCards() {
               </p>
             )}
             <a
-              href={whatsappLink(c.contact.whatsapp, `${L.greeting}\n\n${tt(g.title)}`)}
+              href={bookingLink(c.contact, `${L.greeting}\n\n${tt(g.title)}`)}
               target="_blank"
               rel="noopener noreferrer"
               className="sheen mt-7 inline-flex items-center gap-2.5 rounded-full bg-espresso px-6 py-3.5 text-[0.68rem] tracking-[0.18em] uppercase text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-espresso-soft sm:text-xs"
@@ -69,8 +69,8 @@ function GiftCards() {
           {g.items.map((item, i) => (
             <Reveal key={item.id} delay={(i % 3) * 60} variant="scale">
               <a
-                href={whatsappLink(
-                  c.contact.whatsapp,
+                href={bookingLink(
+                  c.contact,
                   `${L.greeting}\n\n${tt(g.title)}: ${tt(item.name)} — ${L.currency}${item.price}`,
                 )}
                 target="_blank"

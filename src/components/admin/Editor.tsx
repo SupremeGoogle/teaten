@@ -440,8 +440,11 @@ function ContactSection({ draft, set }: Props) {
           }
         />
       </Field>
+      <Field label="Online booking link" hint="Pikkoh (or other) booking page. Every Book button on the site opens it.">
+        <TextInput value={c.bookingUrl} onChange={(v) => set("contact", { ...c, bookingUrl: v })} />
+      </Field>
       <Field
-        label="WhatsApp number"
+        label="Viber number"
         hint="International format, digits only. Kosovo 044 158 234 becomes 38344158234."
       >
         <TextInput value={c.whatsapp} onChange={(v) => set("contact", { ...c, whatsapp: v })} />

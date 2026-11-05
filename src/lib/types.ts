@@ -89,7 +89,8 @@ export type SiteContent = {
   };
   contact: {
     phones: string[];
-    whatsapp: string; // digits only, international format
+    whatsapp: string; // digits only, international format (also the Viber number)
+    bookingUrl: string; // online booking page
     address: I18nText;
     mapUrl: string;
     mapEmbedUrl: string;

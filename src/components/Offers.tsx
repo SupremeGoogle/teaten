@@ -2,7 +2,7 @@
 
 import { LeafLine } from "./Decor";
 import Reveal from "./Reveal";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 
 export default function Offers() {
   const { c, tt, L } = useSite();
@@ -34,7 +34,7 @@ export default function Offers() {
                       style={{ animationDelay: `${i * 70}ms` }}
                     >
                       <a
-                        href={whatsappLink(c.contact.whatsapp, msg)}
+                        href={bookingLink(c.contact, msg)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group flex h-full items-start justify-between gap-4 rounded-[1.4rem] border border-white/15 bg-white/[0.06] p-5 transition-all duration-500 hover:translate-x-1.5 hover:border-gold/60 sm:items-baseline sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-transparent sm:px-0 sm:py-4"

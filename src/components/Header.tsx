@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { useSite, whatsappLink } from "./site-context";
+import { useSite, bookingLink } from "./site-context";
 import { LANGS } from "@/lib/types";
 
 export default function Header() {
@@ -29,7 +29,7 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  const wa = whatsappLink(c.contact.whatsapp, L.greeting);
+  const wa = bookingLink(c.contact, L.greeting);
   const current = LANGS.find((l) => l.code === lang) ?? LANGS[0];
 
   return (

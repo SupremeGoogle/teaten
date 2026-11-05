@@ -70,8 +70,12 @@ export function useSite(): Ctx {
   return ctx;
 }
 
-/** Builds the wa.me link that carries a pre-filled booking request. */
-export function whatsappLink(number: string, message: string): string {
-  const digits = (number || "").replace(/\D/g, "");
-  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+/** Online booking link (Pikkoh). The message is ignored: the platform has its own booking form. */
+export function bookingLink(contact: { bookingUrl: string }, _message?: string): string {
+  return contact.bookingUrl;
+}
+
+/** Viber chat link for the salon number. */
+export function viberLink(number: string): string {
+  return `viber://chat?number=%2B${(number || "").replace(/\D/g, "")}`;
 }
