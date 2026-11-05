@@ -1060,9 +1060,9 @@
         },
         "body": [
           {
-            "en": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtina, Kosovo, is the controller of the personal data described here. You can reach us on 044 158 234 or 038 226 789, or through the WhatsApp number shown on the site.",
-            "sq": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtinë, Kosovë, është kontrolluesi i të dhënave personale të përshkruara këtu. Mund të na kontaktoni në 044 158 234 ose 038 226 789, ose përmes numrit të WhatsApp të treguar në faqe.",
-            "sr": "Tea Ten Beauty & Spa, ul. Johan V. Hahn, Priština, Kosovo, rukovalac je ličnih podataka opisanih na ovoj stranici. Možete nas kontaktirati na 044 158 234 ili 038 226 789, ili putem WhatsApp broja navedenog na sajtu."
+            "en": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtina, Kosovo, is the controller of the personal data described here. You can reach us on 044 158 234 or 038 226 789, or on Viber.",
+            "sq": "Tea Ten Beauty & Spa, Rr. Johan V. Hahn, Prishtinë, Kosovë, është kontrolluesi i të dhënave personale të përshkruara këtu. Mund të na kontaktoni në 044 158 234 ose 038 226 789, ose në Viber.",
+            "sr": "Tea Ten Beauty & Spa, ul. Johan V. Hahn, Priština, Kosovo, rukovalac je ličnih podataka opisanih na ovoj stranici. Možete nas kontaktirati na 044 158 234 ili 038 226 789, ili putem Vibera."
           },
           {
             "en": "Personal data is processed in line with the Law on Protection of Personal Data of the Republic of Kosovo (No. 06/L-082), which follows the same principles as the EU General Data Protection Regulation.",
@@ -1080,14 +1080,14 @@
         },
         "body": [
           {
-            "en": "The booking form on this website does not submit anything to a server and nothing is stored here. When you press the button, your browser opens WhatsApp with a message already written out — your name, the treatment, your preferred date and time, and anything you added.",
-            "sq": "Formulari i rezervimit në këtë faqe nuk dërgon asgjë në një server dhe asgjë nuk ruhet këtu. Kur shtypni butonin, shfletuesi juaj hap WhatsApp me një mesazh të shkruar paraprakisht — emrin tuaj, trajtimin, datën dhe orën e preferuar, dhe çdo gjë që keni shtuar.",
-            "sr": "Formular za rezervaciju na ovom sajtu ne šalje ništa serveru i ovde se ništa ne čuva. Kada pritisnete dugme, pregledač otvara WhatsApp sa već pripremljenom porukom — vašim imenom, tretmanom, željenim datumom i vremenom i svime što ste dodali."
+            "en": "Online booking is handled by Pikkoh (pikkoh.com), an independent booking platform. This website does not store your booking: when you press the booking button, you are taken to the Pikkoh page, where you enter your name, phone number, the treatment and your preferred date and time.",
+            "sq": "Rezervimi online trajtohet nga Pikkoh (pikkoh.com), një platformë e pavarur rezervimesh. Kjo faqe nuk e ruan rezervimin tuaj: kur shtypni butonin e rezervimit, drejtoheni te faqja e Pikkoh, ku shkruani emrin, numrin e telefonit, trajtimin dhe datën e orën e preferuar.",
+            "sr": "Online zakazivanje obrađuje Pikkoh (pikkoh.com), nezavisna platforma za rezervacije. Ovaj sajt ne čuva vašu rezervaciju: kada pritisnete dugme za zakazivanje, preusmeravamo vas na stranicu Pikkoh, gde unosite ime, broj telefona, tretman i željeni datum i vreme."
           },
           {
-            "en": "Nothing is sent until you press send inside WhatsApp yourself. You can edit or delete the message before that, or simply close it.",
-            "sq": "Asgjë nuk dërgohet derisa të shtypni dërgo brenda WhatsApp vetë. Mund ta redaktoni ose fshini mesazhin para kësaj, ose thjesht ta mbyllni.",
-            "sr": "Ništa se ne šalje dok sami ne pritisnete dugme za slanje u WhatsApp-u. Pre toga možete izmeniti ili obrisati poruku, ili je jednostavno zatvoriti."
+            "en": "Nothing is booked until you confirm it on the Pikkoh page. You can close it at any time.",
+            "sq": "Asgjë nuk rezervohet derisa ta konfirmoni në faqen e Pikkoh. Mund ta mbyllni në çdo kohë.",
+            "sr": "Ništa se ne zakazuje dok ne potvrdite na stranici Pikkoh. Možete je zatvoriti u bilo kom trenutku."
           }
         ]
       },
@@ -1100,9 +1100,9 @@
         },
         "body": [
           {
-            "en": "Once you send the message, we receive what it contains: your name, your WhatsApp phone number, the treatment you are interested in, your preferred time, and any notes you chose to add.",
-            "sq": "Pasi të dërgoni mesazhin, ne marrim atë që përmban: emrin tuaj, numrin tuaj të telefonit WhatsApp, trajtimin që ju intereson, kohën tuaj të preferuar dhe çdo shënim që zgjidhni të shtoni.",
-            "sr": "Kada pošaljete poruku, primamo njen sadržaj: vaše ime, broj telefona povezan sa WhatsApp-om, tretman koji vas zanima, željeno vreme i sve napomene koje ste dodali."
+            "en": "Once you book, we receive what the booking contains: your name, phone number, the treatment you chose, your preferred time, and any notes you added.",
+            "sq": "Pasi të rezervoni, ne marrim atë që përmban rezervimi: emrin tuaj, numrin e telefonit, trajtimin e zgjedhur, kohën e preferuar dhe çdo shënim që keni shtuar.",
+            "sr": "Kada zakažete, primamo sadržaj rezervacije: vaše ime, broj telefona, izabrani tretman, željeno vreme i sve napomene koje ste dodali."
           },
           {
             "en": "We use this only to answer you, agree a time and provide the treatment. The legal basis is the steps taken at your request before entering into a service agreement, and our legitimate interest in running the salon.",
@@ -1110,29 +1110,29 @@
             "sr": "Ove podatke koristimo samo da vam odgovorimo, dogovorimo termin i pružimo tretman. Pravni osnov su koraci preduzeti na vaš zahtev pre sklapanja ugovora o usluzi i naš legitimni interes za vođenje salona."
           },
           {
-            "en": "Please do not send health details through WhatsApp. If a treatment requires them, we will ask you at the salon and record only what is necessary.",
-            "sq": "Ju lutemi mos dërgoni detaje shëndetësore përmes WhatsApp. Nëse një trajtim i kërkon ato, ne do t'ju pyesim në sallon dhe do të regjistrojmë vetëm atë që është e nevojshme.",
-            "sr": "Molimo vas da zdravstvene podatke ne šaljete putem WhatsApp-a. Ako ih tretman zahteva, pitaćemo vas u salonu i zabeležiti samo ono što je neophodno."
+            "en": "Please do not enter health details in the booking or in Viber messages. If a treatment requires them, we will ask you at the salon and record only what is necessary.",
+            "sq": "Ju lutemi mos shkruani detaje shëndetësore në rezervim ose në mesazhet në Viber. Nëse një trajtim i kërkon ato, do t'ju pyesim në sallon dhe do të regjistrojmë vetëm atë që është e nevojshme.",
+            "sr": "Molimo vas da zdravstvene podatke ne upisujete u rezervaciju niti u poruke na Viberu. Ako ih tretman zahteva, pitaćemo vas u salonu i zabeležiti samo ono što je neophodno."
           }
         ]
       },
       {
         "id": "l4",
         "heading": {
-          "en": "WhatsApp is a separate service",
-          "sq": "WhatsApp është një shërbim i veçantë",
-          "sr": "WhatsApp je zasebna usluga"
+          "en": "Pikkoh and Viber are separate services",
+          "sq": "Pikkoh dhe Viber janë shërbime të veçanta",
+          "sr": "Pikkoh i Viber su zasebne usluge"
         },
         "body": [
           {
-            "en": "Your conversation with us takes place inside WhatsApp, which is operated by Meta Platforms Ireland Ltd. Meta processes the message and its metadata under its own privacy policy, over which we have no control.",
-            "sq": "Biseda juaj me ne zhvillohet brenda WhatsApp, i cili operohet nga Meta Platforms Ireland Ltd. Meta përpunon mesazhin dhe të dhënat shoqëruese sipas politikës së vet të privatësisë, mbi të cilën ne nuk kemi kontroll.",
-            "sr": "Razgovor sa nama odvija se unutar aplikacije WhatsApp, kojom upravlja Meta Platforms Ireland Ltd. Meta obrađuje poruku i njene metapodatke prema sopstvenoj politici privatnosti, na koju nemamo uticaj."
+            "en": "Your booking is processed by Pikkoh under its own privacy policy, and messages sent over Viber are processed by Viber (Rakuten Viber) under its own policy. We have no control over how they handle your data.",
+            "sq": "Rezervimi juaj përpunohet nga Pikkoh sipas politikës së tij të privatësisë, ndërsa mesazhet përmes Viber përpunohen nga Viber (Rakuten Viber) sipas politikës së tij. Ne nuk kemi kontroll mbi mënyrën si i trajtojnë të dhënat tuaja.",
+            "sr": "Vašu rezervaciju obrađuje Pikkoh prema sopstvenoj politici privatnosti, a poruke poslate preko Vibera obrađuje Viber (Rakuten Viber) prema svojoj politici. Nemamo kontrolu nad tim kako postupaju sa vašim podacima."
           },
           {
-            "en": "If you would rather not use WhatsApp, call us on 044 158 234 or come to the salon.",
-            "sq": "Nëse preferoni të mos përdorni WhatsApp, na telefononi në 044 158 234 ose ejani në sallon.",
-            "sr": "Ako ne želite da koristite WhatsApp, pozovite nas na 044 158 234 ili dođite u salon."
+            "en": "If you would rather not use them, call us on 044 158 234 or come to the salon.",
+            "sq": "Nëse preferoni të mos i përdorni, na telefononi në 044 158 234 ose ejani në sallon.",
+            "sr": "Ako ne želite da ih koristite, pozovite nas na 044 158 234 ili dođite u salon."
           }
         ]
       },
@@ -1200,9 +1200,9 @@
         },
         "body": [
           {
-            "en": "WhatsApp conversations and appointment details are kept for as long as you are a client and for a reasonable period afterwards, so we can refer to what was done in previous sessions. Ask us and we will delete your conversation.",
-            "sq": "Bisedat në WhatsApp dhe detajet e takimeve mbahen për aq kohë sa ju jeni klient dhe për një periudhë të arsyeshme pas kësaj, në mënyrë që të mund të referohemi për atë që është bërë në seancat e mëparshme. Na pyesni dhe ne do ta fshijmë bisedën tuaj.",
-            "sr": "WhatsApp razgovore i detalje termina čuvamo dok ste naš klijent i razuman period nakon toga, kako bismo mogli da proverimo šta je rađeno tokom prethodnih poseta. Obratite nam se i obrisaćemo vaš razgovor."
+            "en": "Bookings and appointment details are kept for as long as you are a client and for a reasonable period afterwards, so we can refer to what was done in previous sessions. Ask us and we will delete your Viber conversation and our own records of you.",
+            "sq": "Rezervimet dhe detajet e takimeve mbahen për aq kohë sa ju jeni klient dhe për një periudhë të arsyeshme pas kësaj, që të mund t'i referohemi asaj që është bërë në seancat e mëparshme. Na kërkoni dhe do ta fshijmë bisedën në Viber dhe të dhënat tona për ju.",
+            "sr": "Rezervacije i detalje termina čuvamo dok ste naš klijent i razuman period nakon toga, kako bismo mogli da se osvrnemo na ono što je rađeno u prethodnim terminima. Zatražite i obrisaćemo vašu Viber prepisku i naše evidencije o vama."
           },
           {
             "en": "Records we are required by law to keep, such as accounting documents, are kept for the period the law requires.",
@@ -1220,9 +1220,9 @@
         },
         "body": [
           {
-            "en": "We do not sell personal data and we do not share it for marketing. It is seen by the people working at Tea Ten who need it to serve you, and by the service providers named on this page — our host and WhatsApp — acting in their own capacity.",
-            "sq": "Ne nuk i shesim të dhënat personale dhe nuk i ndajmë ato për marketing. Ato shihen nga njerëzit që punojnë në Tea Ten që u nevojiten për t'ju shërbyer, dhe nga ofruesit e shërbimeve të përmendur në këtë faqe — hosti ynë dhe WhatsApp — që veprojnë në kapacitetin e tyre.",
-            "sr": "Ne prodajemo lične podatke niti ih delimo u marketinške svrhe. Vide ih zaposleni u Tea Ten kojima su potrebni da bi vam pružili uslugu, kao i pružaoci usluga navedeni na ovoj stranici — naš hosting i WhatsApp — u okviru svojih uloga."
+            "en": "We do not sell personal data and we do not share it for marketing. It is seen by the people working at Tea Ten who need it to serve you, and by the service providers named on this page — our host, Pikkoh and Viber — acting in their own capacity.",
+            "sq": "Ne nuk i shesim të dhënat personale dhe nuk i ndajmë ato për marketing. Ato shihen nga njerëzit që punojnë në Tea Ten dhe që i duhen për t'ju shërbyer, si dhe nga ofruesit e shërbimeve të përmendur në këtë faqe — host-i ynë, Pikkoh dhe Viber — që veprojnë në cilësinë e tyre.",
+            "sr": "Ne prodajemo lične podatke niti ih delimo u marketinške svrhe. Vide ih zaposleni u Tea Ten kojima su potrebni da vam pruže uslugu i pružaoci usluga navedeni na ovoj stranici — naš hosting, Pikkoh i Viber — koji deluju u sopstvenom svojstvu."
           }
         ]
       },
@@ -1240,9 +1240,9 @@
             "sr": "Možete zatražiti kopiju ličnih podataka koje čuvamo o vama, njihovu ispravku ili brisanje, ili uložiti prigovor na način na koji ih koristimo. Takođe možete povući saglasnost kada se obrada zasniva na njoj, bez uticaja na ranije izvršenu obradu."
           },
           {
-            "en": "Write to us on WhatsApp or call 044 158 234 and we will answer. If you believe we have handled your data wrongly, you may complain to the Information and Privacy Agency of the Republic of Kosovo.",
-            "sq": "Na shkruani në WhatsApp ose na telefononi në 044 158 234 dhe ne do të përgjigjemi. Nëse besoni se i kemi trajtuar të dhënat tuaja gabimisht, mund të ankoheni pranë Agjencisë për Informim dhe Privatësi të Republikës së Kosovës.",
-            "sr": "Pišite nam putem WhatsApp-a ili pozovite 044 158 234 i odgovorićemo vam. Ako smatrate da smo nepravilno postupali sa vašim podacima, možete podneti pritužbu Agenciji za informacije i privatnost Republike Kosovo."
+            "en": "Write to us on Viber or call 044 158 234 and we will answer. If you believe we have handled your data wrongly, you may complain to the Information and Privacy Agency of the Republic of Kosovo.",
+            "sq": "Na shkruani në Viber ose na telefononi në 044 158 234 dhe ne do të përgjigjemi. Nëse besoni se i kemi trajtuar gabim të dhënat tuaja, mund të ankoheni te Agjencia për Informim dhe Privatësi e Republikës së Kosovës.",
+            "sr": "Pišite nam putem Vibera ili pozovite 044 158 234 i odgovorićemo vam. Ako smatrate da smo pogrešno postupali sa vašim podacima, možete se žaliti Agenciji za informacije i privatnost Republike Kosovo."
           }
         ]
       },
